@@ -4,7 +4,7 @@
 
 仓库聚焦于可直接放入 Codex skill 目录使用的工作流资产。每个子目录自包含其说明和所需资源；目录按名称排序，避免同一 skill 在不同位置出现不同版本。
 
-## 核心技能
+## 个人自建好用技能
 
 | Skill | 定位 |
 | --- | --- |
@@ -12,6 +12,7 @@
 | [visual-style-router](skills/visual-style-router/) | 为图像和视觉表达任务选择合适的呈现风格。 |
 | [scene-to-art-lab](skills/scene-to-art-lab/) | 将实景照片转换为具有艺术指导的竖版海报。 |
 | [context-bridge](skills/context-bridge/) | 为长任务建立可追溯检查点，并支持在新对话中继续工作。 |
+| [scientific-data-visualization](skills/scientific-data-visualization/) | 科学数据可视化。 |
 
 ## 目录
 
