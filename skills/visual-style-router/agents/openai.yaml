@@ -1,0 +1,4 @@
+interface:
+  display_name: "Visual Style Router"
+  short_description: "Route prompts to the right visual style"
+  default_prompt: "Use $visual-style-router to choose the right visual style and write a complete image prompt for my project."

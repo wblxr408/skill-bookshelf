@@ -1,0 +1,26 @@
+version: 1
+methods:
+  column-statistics: {label: Column statistics, requires: ["numeric field role", "unit and missing-data rule", "mean versus median rationale"]}
+  row-statistics: {label: Row statistics, requires: ["rows are common-scale repeated measures", "direction and missing-data rule"]}
+  statistical-table: {label: Statistical table, requires: ["units", "grouping and denominator", "missing-data rule"]}
+  crosstab-chi-square: {label: Crosstab or chi-square, requires: ["two categorical variables", "independent observations", "expected-cell-count review"]}
+  discrete-frequency: {label: Discrete frequency, requires: ["category meaning", "denominator", "zero-category rule"]}
+  frequency-distribution: {label: Frequency distribution, requires: ["bin sensitivity review", "sample support", "outlier and zero-inflation review"]}
+  binomial-distribution: {label: Binomial distribution, requires: ["fixed independent trials", "common probability", "overdispersion review"]}
+  normality-test: {label: Normality test, requires: ["continuous residual or sample", "Q-Q plot", "outlier and scientific-plausibility review"]}
+  grubbs-outlier: {label: Grubbs outlier test, requires: ["pre-specified single-outlier rule", "normal single-sample premise", "measurement-error rationale"]}
+  dixon-q: {label: Dixon Q test, requires: ["genuinely small sample", "single-outlier premise", "measurement-error rationale"]}
+  one-sample-z: {label: One-sample z test, requires: ["known external population variance", "independent sampling", "reference source"]}
+  one-sample-variance: {label: One-sample variance test, requires: ["normal population", "independent observations", "fixed reference variance"]}
+  two-sample-variance: {label: Two-sample variance test, requires: ["independent normal groups", "robust alternative review", "not a pooled-t pretest"]}
+  one-sample-proportion: {label: One-sample proportion, requires: ["binary outcome", "independent trials", "expected successes and failures"]}
+  two-way-repeated-anova: {label: Two-way repeated ANOVA, requires: ["two within-subject factors", "complete subject-by-cell mapping", "sphericity/covariance and power review"]}
+  one-sample-wilcoxon: {label: One-sample Wilcoxon, requires: ["paired-to-reference differences", "symmetry review", "zero-difference handling"]}
+  paired-sign: {label: Paired sign test, requires: ["true pairs", "independent pairs", "zero-difference handling"]}
+  two-sample-ks: {label: Two-sample KS test, requires: ["independent continuous groups", "tie handling", "full-distribution question"]}
+  mood-median: {label: Mood median test, requires: ["independent groups", "enough observations above and below median", "median-comparison question"]}
+  pca: {label: PCA, requires: ["numeric features", "scaling and missing-data plan", "sample-to-variable support", "stability and loading interpretation"]}
+  weibull-fit: {label: Weibull fit, requires: ["nonnegative duration", "censoring handling", "parametric shape rationale", "model comparison and validation"]}
+  power-one-proportion: {label: Power one proportion, requires: ["reference and target proportions", "alpha and sidedness", "target power", "clustering plan"]}
+  power-one-sample-t: {label: Power one-sample t, requires: ["meaningful effect", "variance source", "alpha and sidedness", "target power"]}
+  power-one-way-anova: {label: Power one-way ANOVA, requires: ["group allocation", "effect size or means and variance", "alpha", "target power and multiplicity plan"]}

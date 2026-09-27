@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific Data Visualization"
+  short_description: "Reproducible scientific and engineering figures"
+  default_prompt: "Use $scientific-data-visualization to analyze my data and create a publication-ready figure."
