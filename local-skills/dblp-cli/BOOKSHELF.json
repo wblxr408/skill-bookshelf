@@ -1,0 +1,23 @@
+{
+  "name": "dblp-cli",
+  "title": "DBLP 文献检索",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "dblp-cli",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/dblp-cli",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 5
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/dblp-cli"
+}

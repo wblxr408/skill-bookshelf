@@ -1,0 +1,28 @@
+{
+  "name": "imagegen",
+  "title": "图像生成与编辑",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI Skills",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "imagegen",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/imagegen",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 12
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/imagegen"
+}

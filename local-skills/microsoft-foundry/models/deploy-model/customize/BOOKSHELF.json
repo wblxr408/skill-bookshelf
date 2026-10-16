@@ -1,0 +1,28 @@
+{
+  "name": "customize",
+  "title": "自定义模型部署",
+  "author": "Microsoft Foundry 技能分发",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Microsoft Foundry",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "customize",
+      "label": "1.0.1",
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/customize",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 安装"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/customize"
+}

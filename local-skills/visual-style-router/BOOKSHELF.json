@@ -1,0 +1,30 @@
+{
+  "name": "visual-style-router",
+  "title": "视觉风格路由",
+  "author": "王博 / wblxr408",
+  "origin": "own",
+  "sources": [
+    {
+      "name": "王博 / wblxr408",
+      "url": "https://github.com/wblxr408/skill-bookshelf"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "visual-style-router",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/visual-style-router",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/visual-style-router"
+}

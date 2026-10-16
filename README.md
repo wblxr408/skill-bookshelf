@@ -4,6 +4,18 @@
 
 仓库聚焦于可直接放入 Codex skill 目录使用的工作流资产。每个子目录自包含其说明和所需资源；目录按名称排序，避免同一 skill 在不同位置出现不同版本。
 
+## 本地全量书橱 · 已去重
+
+书橱网站：https://bo-skill-bookshelf.vercel.app/ 。本次盘点 **288 份本地入口**、184 个名称，归并为 **163 个逻辑 Skill**，合并 125 份重复/兼容入口，并保留 218 个不同资源版本。
+
+范围覆盖共享、Codex、Claude Code、插件目录（含缓存）及本项目；有文件不等于插件当前已启用。相同用途但没有充分归并依据的技能仍分开保留。同名和已确证的兼容/融合入口合为一张书卡，原名称仍可搜索。
+
+- [逐项去重报告](docs/local-skill-dedup-report.md) · [全部记录与版本落点 JSON](docs/local-skill-dedup-report.json)
+- [全部作者与来源](ATTRIBUTION.md) · [安装器和依赖清单](distribution/)
+- [下载全部可分发主版本](https://bo-skill-bookshelf.vercel.app/downloads/bo-local-skills.zip)
+
+主版本复用 `fused-skills/` 或保存于 `local-skills/`，不同资源来源保存在 `skill-versions/` 或已有 `skills/`。每项 `BOOKSHELF.md` / `BOOKSHELF.json` 记录安装、来源与此次分发适配；保留上游原始说明和许可。明确禁止再分发的 Niko 条目仍收录，链接现有来源，不加入下载包。
+
 ## 完整融合版 · 下载即用
 
 线上书橱：https://bo-skill-bookshelf.vercel.app/ 。融合目录位于 [`fused-skills/`](fused-skills/)，保留完整脚本、参考资料、模板与模块。原 `skills/` 目录是较早的收录版本；安装时选择其中一个同名版本，避免重复启用。

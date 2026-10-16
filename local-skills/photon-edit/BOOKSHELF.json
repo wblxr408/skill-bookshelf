@@ -1,0 +1,24 @@
+{
+  "name": "photon-edit",
+  "title": "Photon 图像编辑",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "photon-edit",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/photon-edit",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/photon-edit"
+}

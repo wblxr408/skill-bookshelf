@@ -1,0 +1,28 @@
+{
+  "name": "skill-creator",
+  "title": "Skill 创建与维护",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI Skills",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "skill-creator",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/skill-creator",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 9
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/skill-creator"
+}

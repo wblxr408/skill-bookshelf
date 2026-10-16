@@ -1,0 +1,28 @@
+{
+  "name": "artifact-template-project-kickoff",
+  "title": "模板 · 项目启动",
+  "author": "OpenAI 插件分发 · 原作者以文件署名为准",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI 插件分发来源",
+      "url": "https://openai.com/codex/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "artifact-template-project-kickoff",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "local-skills/artifact-template-project-kickoff",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 6
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/artifact-template-project-kickoff"
+}

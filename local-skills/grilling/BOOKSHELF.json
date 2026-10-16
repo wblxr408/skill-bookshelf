@@ -1,0 +1,35 @@
+{
+  "name": "grilling",
+  "title": "方案追问与推敲",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [
+    "grill-me"
+  ],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "grilling",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/grilling",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 2
+    },
+    {
+      "name": "grill-me",
+      "label": "共享 Skill 目录",
+      "sourcePath": "skill-versions/grilling/v02",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/grilling"
+}

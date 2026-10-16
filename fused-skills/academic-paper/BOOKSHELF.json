@@ -1,0 +1,92 @@
+{
+  "name": "academic-paper",
+  "title": "统一学术写作",
+  "author": "Imbad0202 / Academic Research Skills / bahayonghang",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "Imbad0202 / Academic Research Skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    },
+    {
+      "name": "bahayonghang",
+      "url": "https://github.com/bahayonghang/academic-writing-skills"
+    }
+  ],
+  "aliases": [
+    "latex-paper-en",
+    "latex-thesis-zh",
+    "typst-paper"
+  ],
+  "installedCopies": 12,
+  "variants": [
+    {
+      "name": "academic-paper",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/academic-paper",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 399
+    },
+    {
+      "name": "academic-paper",
+      "label": "3.2.0",
+      "sourcePath": "skill-versions/academic-paper/v02",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 62
+    },
+    {
+      "name": "academic-paper",
+      "label": "3.2.0",
+      "sourcePath": "skill-versions/academic-paper/v03",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 62
+    },
+    {
+      "name": "typst-paper",
+      "label": "5.1.0",
+      "sourcePath": "skill-versions/academic-paper/v04",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 70
+    },
+    {
+      "name": "latex-thesis-zh",
+      "label": "5.1.0",
+      "sourcePath": "skill-versions/academic-paper/v05",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 60
+    },
+    {
+      "name": "latex-paper-en",
+      "label": "5.1.0",
+      "sourcePath": "skill-versions/academic-paper/v06",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 77
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/academic-paper"
+}

@@ -1,0 +1,92 @@
+mode: standard
+output_language: zh-CN
+source_languages: []
+candidate_budget: 300
+analysis_budget: 70
+max_depth: 3
+min_relevance_to_expand: 0.55
+marginal_yield_stop: 0.10
+latest_frontier_years: 2
+crosscheck_sources:
+  - openalex
+  - semantic_scholar
+metadata_sources:
+  - crossref
+  - arxiv
+fulltext_preference:
+  - user_file
+  - publisher_open_access
+  - arxiv
+  - institutional_repository
+  - repository_copy
+repository:
+  pin_commit: true
+  inspect_issues: true
+  inspect_releases: true
+  inspect_tests: true
+ranking_weights:
+  focus_relevance: 0.30
+  lineage_importance: 0.15
+  bridge_centrality: 0.12
+  methodological_novelty: 0.12
+  conflict_likelihood: 0.10
+  benchmark_or_repo_evidence: 0.08
+  recency_frontier: 0.08
+  evidence_quality: 0.05
+visualization:
+  show_candidate_graph: false
+  highlight_main_path: true
+  highlight_conflicts: true
+  default_min_relevance: 0.35
+  show_featured_figures: true
+  embed_local_figure_assets: true
+  allow_remote_figure_images: false
+  max_embedded_figure_bytes: 2500000
+  max_figure_width_px: 1600
+
+expansion:
+  direction: both
+  mode: standard
+  max_depth: 2
+  candidate_budget: 120
+  analysis_budget: 35
+  allow_main_path_revision: true
+  refresh_existing_searches: false
+  highlight_latest_increment: true
+localization:
+  preserve_original_titles: true
+  include_original_claim_wording: true
+  build_terminology_glossary: true
+
+summarization:
+  audience: field_familiar_unread
+  exposition_depth: explanatory
+  explain_background: true
+  define_paper_specific_terms: true
+  expand_acronyms_on_first_use: true
+  name_comparison_baselines: true
+  separate_focal_summary_from_reader_summary: true
+  require_limitations_and_scope: true
+
+venue_tiering:
+  enabled: true
+  require_basis_for_top: true
+  default_tier: unknown
+  registry: config/venue_tiers.example.yaml
+  show_top_badge: true
+
+featured_figures:
+  enabled: true
+  selection_mode: selective
+  max_per_paper: 1
+  prefer_kinds:
+    - method_overview
+    - architecture
+    - pipeline
+    - conceptual_diagram
+    - qualitative_result
+  require_source_attribution: true
+  require_alt_text: true
+  prefer_open_or_author_provided_assets: true
+  allow_analyst_reconstruction: true
+  avoid_decorative_or_unreadable_figures: true

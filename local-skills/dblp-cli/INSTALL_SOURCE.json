@@ -1,0 +1,12 @@
+{
+  "skill": "dblp-cli",
+  "source": "GrayXu/dblp-skills",
+  "ref": "ef0477bf5250046d6e32ff7f8198e728666522ac",
+  "source_path": "",
+  "files": [
+    ".gitignore",
+    "README.md",
+    "SKILL.md",
+    "scripts\\dblp_cli.py"
+  ]
+}

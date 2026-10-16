@@ -1,0 +1,23 @@
+{
+  "name": "systematic-literature-review",
+  "title": "系统性文献综述",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "systematic-literature-review",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/systematic-literature-review",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 8
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/systematic-literature-review"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "figma-use-motion",
+  "title": "Figma 动效操作",
+  "author": "OpenAI 插件分发 · 原作者以文件署名为准",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI 插件分发来源",
+      "url": "https://openai.com/codex/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "figma-use-motion",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "local-skills/figma-use-motion",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 3
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/figma-use-motion"
+}

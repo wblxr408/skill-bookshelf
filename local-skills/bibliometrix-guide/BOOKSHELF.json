@@ -1,0 +1,23 @@
+{
+  "name": "bibliometrix-guide",
+  "title": "文献计量分析",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "bibliometrix-guide",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/bibliometrix-guide",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/bibliometrix-guide"
+}

@@ -1,0 +1,30 @@
+{
+  "name": "cover-letter",
+  "title": "投稿附信",
+  "author": "bahayonghang",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "bahayonghang",
+      "url": "https://github.com/bahayonghang/academic-writing-skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "cover-letter",
+      "label": "5.1.0",
+      "sourcePath": "local-skills/cover-letter",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 39
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/cover-letter"
+}

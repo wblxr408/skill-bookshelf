@@ -1,0 +1,38 @@
+{
+  "name": "skill-install",
+  "title": "Skill 安装助手",
+  "author": "stellarlinkco / myclaude（原 cexll）",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "stellarlinkco / myclaude（原 cexll）",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "skill-install",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/skill-install",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 2
+    },
+    {
+      "name": "skill-install",
+      "label": "Claude Code 目录",
+      "sourcePath": "skill-versions/skill-install/v02",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/skill-install"
+}

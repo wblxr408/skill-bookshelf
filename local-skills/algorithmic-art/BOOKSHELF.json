@@ -1,0 +1,39 @@
+{
+  "name": "algorithmic-art",
+  "title": "生成式算法艺术",
+  "author": "Anthropic",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Anthropic",
+      "url": "https://github.com/anthropics/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "algorithmic-art",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/algorithmic-art",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "algorithmic-art",
+      "label": "Codex 目录",
+      "sourcePath": "skill-versions/algorithmic-art/v02",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/algorithmic-art"
+}

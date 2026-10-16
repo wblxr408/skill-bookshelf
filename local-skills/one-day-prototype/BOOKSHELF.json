@@ -1,0 +1,23 @@
+{
+  "name": "one-day-prototype",
+  "title": "一天原型",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "one-day-prototype",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/one-day-prototype",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/one-day-prototype"
+}

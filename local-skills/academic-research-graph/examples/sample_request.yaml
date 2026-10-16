@@ -1,0 +1,48 @@
+operation: build
+input:
+  type: paper
+  value: "An Image is Worth 16x16 Words: Transformers for Image Recognition at Scale"
+focus: "追踪 ViT 如何继承 Transformer、后续工作改变了什么，以及结果或解释在哪里发生冲突。"
+mode: standard
+output_language: zh-CN
+source_languages:
+  - en
+emphasis:
+  - origins
+  - descendants
+  - conflicts
+  - latest_frontier
+  - repository
+candidate_budget: 300
+analysis_budget: 70
+max_depth: 3
+
+venue_tier_policy:
+  enabled: true
+  name: "示例机器学习/计算机视觉会议分层"
+  basis: "使用者或机构明确提供的领域规则；不得无依据硬编码。"
+  as_of: "2026-08-05"
+  require_basis_for_top: true
+
+summary_policy:
+  audience: field_familiar_unread
+  exposition_depth: explanatory
+  explain_background: true
+  define_paper_specific_terms: true
+  expand_acronyms_on_first_use: true
+  name_comparison_baselines: true
+  require_limitations_and_scope: true
+
+figure_policy:
+  enabled: true
+  selection_mode: selective
+  max_per_paper: 1
+  prefer_kinds:
+    - method_overview
+    - architecture
+    - pipeline
+  require_source_attribution: true
+  require_alt_text: true
+  embed_local_assets: true
+  allow_remote_images: false
+  max_embedded_bytes: 2500000

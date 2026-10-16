@@ -1,0 +1,7 @@
+interface:
+  display_name: "Creative Campaign Brief"
+  short_description: "Create with the Creative Campaign Brief template"
+  icon_large: "./assets/preview.png"
+  default_prompt: "Create a new presentation with this template."
+policy:
+  allow_implicit_invocation: false

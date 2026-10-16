@@ -16,7 +16,7 @@ def install(source, destination, selected=None, replace=False):
     planned=[];seen=set()
     def visit(name):
         if name in seen:return
-        if not re.fullmatch(r'[a-z0-9][a-z0-9-]*',name) or name not in skills:raise ValueError('Unknown skill: '+str(name))
+        if not re.fullmatch(r'[a-z0-9-]+',name) or name not in skills:raise ValueError('Unknown skill: '+str(name))
         seen.add(name)
         for dependency in skills[name].get('dependencies',[]):visit(dependency)
         planned.append(name)

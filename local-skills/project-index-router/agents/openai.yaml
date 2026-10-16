@@ -1,0 +1,4 @@
+interface:
+  display_name: "Project Index Router"
+  short_description: "Route tasks to the smallest required docs"
+  default_prompt: "Use $project-index-router to find the minimum project docs I need to read before coding."

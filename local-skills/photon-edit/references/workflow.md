@@ -1,0 +1,15 @@
+# Choosing an editing route
+
+Prefer focused operations for layer properties, fills, text, paths, masks, selections, transforms, and document geometry. Core adapters and filters expose existing Photon engine operations. `tool.gesture` is for document-space tool strokes with explicit target layers and pressure data; it does not send pointer events to the visible app. Use gestures when their tool semantics matter and exact model operations for precise geometry.
+
+Before a gesture, read `tool.describe` with its `toolId`. Tool opacity, flow, hardness and smoothing use percentages from 0 to 100. Pointer pressure uses 0 to 1; enable `options.pressureForSize` or `options.pressureForOpacity` to apply it. A fixed `options.strokeSeed` makes brush dynamics repeatable. Use `target: "layerMask"` with one explicitly named layer that already has a pixel mask; `target: "quickMask"` paints selection coverage. View or thumbnail selection does not change the target of an isolated gesture. Unknown option names are errors.
+
+Document and view operations work in background sessions. Workspace controls and native printing advertise requiresVisibleUI and require session.show. Do not activate a human's tab merely to target its document. After edits, inspect structure and preview; verify text remains type, paths remain vectors, effects and masks remain editable, and the original source is preserved when requested.
+
+Inspect with `inspect` and preview with `render` (there are no document.inspect/document.render aliases). Discover result fields before using batch references: some layer operations return `selectedLayerIds`, while `shape.create` and `image.place` return `layerId`. A failed reference rolls back the batch.
+
+Use `presets.export` and `presets.import` to move saved patterns and sampled brushes between documents; an ID alone does not transfer its resource. `pixels.fade` needs an explicit prior history state ID. `clipboard.cut` reports whether its external clipboard write occurred if a subsequent revision conflict prevents clearing. `session.closeMany` requires an explicit revision and save/discard choice for every document; `application.quit` requires all documents closed.
+
+Use `effect.describe` and `layer.effect.set` for typed partial effect changes; whole-style replacement can erase effects you intended to retain. `text.format` edits character and paragraph attributes while retaining live type. Shared panel libraries are discoverable under `library.*`; persist swatches, styles and tool presets before applying them. Application library writes are external effects, separate from undoable document edits.
+
+`layer.mask.add` refuses an existing mask unless `replace:true` is explicit. Inspect first and prefer modifying its contents when the existing mask should survive. `document.histogram` provides bounded sampled statistics; `pixels.sample` reads document-space samples with depth/profile metadata. Notes and measurement records are available through `note.*` and `measurement.*`.

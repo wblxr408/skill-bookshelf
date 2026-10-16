@@ -1,0 +1,23 @@
+{
+  "name": "research-gap",
+  "title": "研究空白分析",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "research-gap",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/research-gap",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 3
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/research-gap"
+}

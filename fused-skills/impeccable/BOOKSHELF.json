@@ -1,0 +1,55 @@
+{
+  "name": "impeccable",
+  "title": "统一前端设计",
+  "author": "Paul Bakaus / Impeccable / Anthropic",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "Paul Bakaus / Impeccable",
+      "url": "https://github.com/pbakaus/impeccable"
+    },
+    {
+      "name": "Anthropic",
+      "url": "https://github.com/anthropics/skills"
+    }
+  ],
+  "aliases": [
+    "frontend-design"
+  ],
+  "installedCopies": 4,
+  "variants": [
+    {
+      "name": "impeccable",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/impeccable",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 141
+    },
+    {
+      "name": "frontend-design",
+      "label": "Codex 目录",
+      "sourcePath": "skill-versions/impeccable/v02",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    },
+    {
+      "name": "frontend-design",
+      "label": "共享 Skill 目录",
+      "sourcePath": "skill-versions/impeccable/v03",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/impeccable"
+}

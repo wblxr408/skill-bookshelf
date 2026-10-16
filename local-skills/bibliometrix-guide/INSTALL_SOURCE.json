@@ -1,0 +1,9 @@
+{
+  "skill": "bibliometrix-guide",
+  "source": "wentorai/research-plugins",
+  "ref": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+  "source_path": "skills/literature/metadata/bibliometrix-guide",
+  "files": [
+    "SKILL.md"
+  ]
+}

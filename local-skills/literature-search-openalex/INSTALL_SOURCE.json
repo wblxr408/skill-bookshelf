@@ -1,0 +1,20 @@
+{
+  "skill": "literature-search-openalex",
+  "source": "google-deepmind/science-skills",
+  "ref": "99f3085bcb40514cdba7833205b3dedbf473b26d",
+  "source_path": "skills/literature_search_openalex",
+  "files": [
+    "SKILL.md",
+    "references\\authors.md",
+    "references\\citation.bib",
+    "references\\geo_and_language.md",
+    "references\\institutions.md",
+    "references\\publishers_funders.md",
+    "references\\sources.md",
+    "references\\taxonomy.md",
+    "references\\topics.md",
+    "references\\type_values.md",
+    "references\\works.md",
+    "scripts\\openalex_cli.py"
+  ]
+}

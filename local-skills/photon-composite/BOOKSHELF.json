@@ -1,0 +1,24 @@
+{
+  "name": "photon-composite",
+  "title": "Photon 图层合成",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "photon-composite",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/photon-composite",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/photon-composite"
+}

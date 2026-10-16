@@ -1,0 +1,3 @@
+# The included scripts use only the Python standard library.
+# Optional for strict JSON Schema validation:
+# jsonschema>=4.20

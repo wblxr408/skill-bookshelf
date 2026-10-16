@@ -1,0 +1,30 @@
+{
+  "name": "-21risk-automation",
+  "title": "风险业务自动化",
+  "author": "Composio",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Composio",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "-21risk-automation",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/-21risk-automation",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/-21risk-automation"
+}

@@ -1,0 +1,38 @@
+{
+  "name": "bm-status",
+  "title": "记忆服务状态",
+  "author": "Basic Machines",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Basic Machines / Basic Memory",
+      "url": "https://github.com/basicmachines-co/basic-memory"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "bm-status",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "local-skills/bm-status",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 3
+    },
+    {
+      "name": "bm-status",
+      "label": "Claude 插件目录",
+      "sourcePath": "skill-versions/bm-status/v02",
+      "copies": 1,
+      "hosts": [
+        "Claude 插件目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/bm-status"
+}

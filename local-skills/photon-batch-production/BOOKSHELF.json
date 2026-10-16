@@ -1,0 +1,24 @@
+{
+  "name": "photon-batch-production",
+  "title": "Photon 批量变体",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "photon-batch-production",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/photon-batch-production",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/photon-batch-production"
+}

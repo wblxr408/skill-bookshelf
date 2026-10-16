@@ -1,0 +1,77 @@
+{
+  "name": "paper-audit",
+  "title": "统一论文审查",
+  "author": "bahayonghang / Imbad0202 / Academic Research Skills",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "bahayonghang",
+      "url": "https://github.com/bahayonghang/academic-writing-skills"
+    },
+    {
+      "name": "Imbad0202 / Academic Research Skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    }
+  ],
+  "aliases": [
+    "academic-paper-review",
+    "academic-paper-reviewer"
+  ],
+  "installedCopies": 7,
+  "variants": [
+    {
+      "name": "paper-audit",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/paper-audit",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 330
+    },
+    {
+      "name": "paper-audit",
+      "label": "5.1.0",
+      "sourcePath": "skill-versions/paper-audit/v02",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 90
+    },
+    {
+      "name": "academic-paper-reviewer",
+      "label": "1.10.0",
+      "sourcePath": "skill-versions/paper-audit/v03",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录"
+      ],
+      "fileCount": 26
+    },
+    {
+      "name": "academic-paper-review",
+      "label": "Codex 目录",
+      "sourcePath": "skill-versions/paper-audit/v04",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    },
+    {
+      "name": "academic-paper-reviewer",
+      "label": "1.10.0",
+      "sourcePath": "skill-versions/paper-audit/v05",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 26
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/paper-audit"
+}

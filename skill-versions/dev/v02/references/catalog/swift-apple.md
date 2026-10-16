@@ -1,0 +1,13 @@
+# swift-apple
+
+Read only relevant technical detail. The local contract governs source mandates, test style, tool/agent usage and user authorization.
+
+| Capability | Existing owner / integration | Use when |
+|---|---|---|
+| [foundation-models-on-device](../../modules/ecc/library/foundation-models-on-device/GUIDE.md) | dev / engineering-toolbox; technical-reference | Apple FoundationModels framework for on-device LLM — text generation, guided generation with @Generable, tool calling, and snapshot streaming in iOS 26+. Use when adding on-device LLM features with Apple FoundationModels |
+| [ios-icon-gen](../../modules/ecc/library/ios-icon-gen/GUIDE.md) | dev / engineering-toolbox; technical-reference | Generate iOS app icons as PNG imagesets for Xcode asset catalogs from SF Symbols (5000+ Apple-native) or Iconify API (275k+ open source icons from 200+ collections). Use when generating icons, creating icon assets, addin |
+| [liquid-glass-design](../../modules/ecc/library/liquid-glass-design/GUIDE.md) | dev / engineering-toolbox; technical-reference | iOS 26 Liquid Glass design system — dynamic glass material with blur, reflection, and interactive morphing for SwiftUI, UIKit, and WidgetKit. Use when building iOS 26 Liquid Glass UI in SwiftUI, UIKit, or WidgetKit. |
+| [swift-actor-persistence](../../modules/ecc/library/swift-actor-persistence/GUIDE.md) | dev / engineering-toolbox; technical-reference | Thread-safe data persistence in Swift using actors — in-memory cache with file-backed storage, eliminating data races by design. Use when persisting data in Swift and a data race or thread-safety problem needs designing  |
+| [swift-concurrency-6-2](../../modules/ecc/library/swift-concurrency-6-2/GUIDE.md) | dev / engineering-toolbox; technical-reference | Swift 6.2 Approachable Concurrency — single-threaded by default, @concurrent for explicit background offloading, isolated conformances for main actor types. Use when adopting Swift 6.2 concurrency — offloading with @conc |
+| [swift-protocol-di-testing](../../modules/ecc/library/swift-protocol-di-testing/GUIDE.md) | dev / engineering-toolbox; technical-reference | Protocol-based dependency injection for testable Swift code — mock file system, network, and external APIs using focused protocols and Swift Testing. Use when Swift code needs testing and file system, network, or externa |
+| [swiftui-patterns](../../modules/ecc/library/swiftui-patterns/GUIDE.md) | dev / engineering-toolbox; technical-reference | SwiftUI architecture patterns, state management with @Observable, view composition, navigation, performance optimization, and modern iOS/macOS UI best practices. Use when building or reviewing SwiftUI views, @Observable  |

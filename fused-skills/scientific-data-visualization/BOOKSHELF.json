@@ -1,0 +1,55 @@
+{
+  "name": "scientific-data-visualization",
+  "title": "统一科研绘图",
+  "author": "王博 / wblxr408 / Haojae",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "王博 / wblxr408",
+      "url": "https://github.com/wblxr408/skill-bookshelf"
+    },
+    {
+      "name": "Haojae",
+      "url": "https://github.com/Haojae/scipilot-figure-skill"
+    }
+  ],
+  "aliases": [
+    "scipilot-figure-skill"
+  ],
+  "installedCopies": 4,
+  "variants": [
+    {
+      "name": "scientific-data-visualization",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/scientific-data-visualization",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 130
+    },
+    {
+      "name": "scientific-data-visualization",
+      "label": "共享 Skill 目录",
+      "sourcePath": "skill-versions/scientific-data-visualization/v02",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 44
+    },
+    {
+      "name": "scipilot-figure-skill",
+      "label": "Codex 目录",
+      "sourcePath": "skill-versions/scientific-data-visualization/v03",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 18
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/scientific-data-visualization"
+}

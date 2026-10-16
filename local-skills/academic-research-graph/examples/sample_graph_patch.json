@@ -1,0 +1,240 @@
+{
+  "meta": {
+    "expansion_id": "exp:deit-data-efficiency:example",
+    "base_graph_id": "arg:vit-lineage:example",
+    "base_revision": 1,
+    "start_node_id": "paper:deit",
+    "focus": "从 DeiT 节点继续追踪数据高效视觉 Transformer 的后续方法、架构分支和争议。",
+    "direction": "forward",
+    "output_language": "zh-CN",
+    "created_at": "2026-08-05T00:10:00+08:00",
+    "search_cutoff": "2026-08-05",
+    "sources": [
+      "OpenAlex",
+      "Semantic Scholar",
+      "arXiv"
+    ],
+    "warnings": [
+      "示例 patch 仅用于展示增量合并结构。"
+    ],
+    "summary_policy": {
+      "audience": "field_familiar_unread",
+      "exposition_depth": "explanatory",
+      "explain_background": true,
+      "define_paper_specific_terms": true,
+      "expand_acronyms_on_first_use": true,
+      "name_comparison_baselines": true,
+      "require_limitations_and_scope": true
+    },
+    "figure_policy": {
+      "enabled": true,
+      "selection_mode": "selective",
+      "max_per_paper": 1,
+      "prefer_kinds": [
+        "method_overview",
+        "architecture",
+        "pipeline",
+        "conceptual_diagram",
+        "qualitative_result"
+      ],
+      "require_source_attribution": true,
+      "require_alt_text": true,
+      "embed_local_assets": true,
+      "allow_remote_images": false,
+      "max_embedded_bytes": 2500000,
+      "max_display_width_px": 1600
+    }
+  },
+  "upsert_nodes": [
+    {
+      "id": "paper:cait",
+      "type": "paper",
+      "title": "Going Deeper with Image Transformers",
+      "authors": [
+        "Hugo Touvron et al."
+      ],
+      "year": 2021,
+      "date": "2021-03-31",
+      "venue": "ICCV",
+      "status": "published",
+      "summary": "在数据高效训练背景下，通过 LayerScale 与 class-attention 等设计让更深的图像 Transformer 更易训练。",
+      "summaries": {
+        "zh-CN": "在数据高效训练背景下，通过 LayerScale 与 class-attention 等设计让更深的图像 Transformer 更易训练。",
+        "en": "Introduces LayerScale and class-attention designs to make deeper image Transformers easier to train in a data-efficient setting."
+      },
+      "role": "数据效率与深层架构分支",
+      "roles": {
+        "zh-CN": "数据效率与深层架构分支",
+        "en": "deep architecture branch"
+      },
+      "cluster": "Data Efficiency",
+      "relevance": 0.86,
+      "quality": 0.86,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2103.17239"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2103.17239"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev:cait:method"
+      ],
+      "notes": [
+        "示例节点。"
+      ],
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "ICCV",
+          "short_name": "ICCV",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2021-03-31",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2103.17239",
+            "identifier": "arXiv:2103.17239",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2021",
+            "status": "published",
+            "venue": "ICCV",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "DeiT 说明视觉 Transformer 可以在 ImageNet-1K 等较小数据条件下训练，但简单增加层数时，深层 Transformer 的优化会变得不稳定，分类 token 过早参与所有层的交互也可能干扰 patch 表示的形成。",
+          "problem": "CaiT 试图在保持数据高效训练条件的同时，把图像 Transformer 做得更深，并避免深度增加造成训练退化。",
+          "approach": "论文使用 LayerScale，为每个残差分支加入从很小数值开始学习的缩放系数，使深层网络初始更接近恒等映射。它还把分类 token 与 patch 的交互推迟到后段的 class-attention 层：前面先让 patch 彼此建立图像表示，后面再由分类 token 从这些表示中汇总信息。",
+          "key_findings": [
+            "在相近数据条件下，LayerScale 和后置 class-attention 使更深的图像 Transformer 能稳定训练，并改善 ImageNet 分类结果。",
+            "消融实验支持这两个组件分别对深层优化和分类信息汇总有贡献。"
+          ],
+          "why_it_matters": "CaiT 延伸了 DeiT 的数据高效路线，说明视觉 Transformer 的深度不仅取决于算力，还取决于残差缩放和分类 token 进入网络的方式。",
+          "limitations": [
+            "结构增加了专用组件与超参数，收益可能依赖深度、初始化和训练配方。",
+            "论文主要围绕分类评估，不能直接推出 class-attention 对所有密集视觉任务同样有利。"
+          ],
+          "concepts": [
+            {
+              "term": "LayerScale",
+              "explanation": "为残差分支输出乘上可学习的小系数，使非常深的网络在训练开始时变化更温和。"
+            },
+            {
+              "term": "class-attention",
+              "explanation": "让分类 token 作为查询，从 patch token 中读取信息，而不是让所有 token 继续完全对称地相互注意。"
+            }
+          ]
+        }
+      },
+      "featured_figure": {
+        "kind": "architecture",
+        "display_kind": "analyst_reconstruction",
+        "label": "Class-Attention 示意重绘",
+        "captions": {
+          "zh-CN": "CaiT 先让图像块 token 经过较深的自注意力层，再在后段引入类别 token，并通过 Class-Attention 层只更新类别 token 来汇总图像信息。"
+        },
+        "alt_texts": {
+          "zh-CN": "流程图展示三组图像块 token 先进入深层自注意力模块，随后类别 token 与处理后的图像块进入 Class-Attention 模块，最终输出分类结果。"
+        },
+        "reader_notes": {
+          "zh-CN": "这张图强调类别 token 被推迟到网络后段。这样可以把“图像块之间的特征处理”和“为分类任务汇总信息”分开。"
+        },
+        "selection_reasons": {
+          "zh-CN": "CaiT 的关键结构变化集中在 Class-Attention 和类别 token 的引入时机，这张图比单纯描述“更深的 ViT”更能体现论文贡献。"
+        },
+        "source": {
+          "citation": "Academic Research Graph Skill 示例图；依据 Touvron et al. (2021) 的 Class-Attention 机制自行重绘。",
+          "paper_version": "ICCV 2021 / arXiv:2103.17239",
+          "figure_number": null,
+          "page": null,
+          "url": "https://arxiv.org/abs/2103.17239",
+          "license": "示例原创 SVG",
+          "rights_status": "analyst_original",
+          "retrieved_at": "2026-08-05",
+          "notes": "非论文原图，不复刻论文版式。"
+        },
+        "asset": {
+          "path": "assets/figures/paper-cait/cait-depth-reconstruction.svg",
+          "mime_type": "image/svg+xml",
+          "sha256": "e4e8cd24f46a57bfe9cf7bf9c59aa80b68389c2f5d7a0705fa5a0fbe429345fb",
+          "width": 960,
+          "height": 360,
+          "cropped": false,
+          "crop_notes": null
+        },
+        "evidence_ids": [
+          "ev:cait-class-attention"
+        ]
+      }
+    }
+  ],
+  "upsert_edges": [
+    {
+      "id": "edge:deit-cait",
+      "source": "paper:cait",
+      "target": "paper:deit",
+      "relationship": [
+        "extends_method",
+        "modifies_architecture"
+      ],
+      "primary_relationship": "extends_method",
+      "explanation": "CaiT 延续 DeiT 所代表的数据高效训练方向，并通过 LayerScale 与 class-attention 支持更深的 Transformer。",
+      "explanations": {
+        "zh-CN": "CaiT 延续 DeiT 所代表的数据高效训练方向，并通过 LayerScale 与 class-attention 支持更深的 Transformer。",
+        "en": "CaiT continues the data-efficient direction represented by DeiT and adds LayerScale and class-attention to support deeper Transformers."
+      },
+      "confidence": 0.88,
+      "evidence_level": "direct",
+      "main_path": false,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev:cait:method"
+      ],
+      "citation_direction": "source_cites_target"
+    }
+  ],
+  "upsert_conflicts": [],
+  "upsert_clusters": [],
+  "coverage_delta": {
+    "candidate_works": 24
+  },
+  "main_path_reassessment": {
+    "changed": false,
+    "reason": "新增内容构成局部分支，不改变当前全局主链路。"
+  },
+  "notes": [
+    "演示从已有节点发起局部扩展并补回原图。"
+  ]
+}

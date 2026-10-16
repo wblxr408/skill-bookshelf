@@ -1,0 +1,13 @@
+{
+  "version": "1.2.1",
+  "protocolVersion": 1,
+  "requiredCapabilities": [
+    "inspect",
+    "render",
+    "session.create",
+    "generation.context",
+    "image.place",
+    "layer.mask.add",
+    "document.save"
+  ]
+}

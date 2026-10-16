@@ -1,0 +1,28 @@
+{
+  "name": "artifact-template-creative-campaign-brief",
+  "title": "模板 · 创意活动简报",
+  "author": "OpenAI 插件分发 · 原作者以文件署名为准",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI 插件分发来源",
+      "url": "https://openai.com/codex/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "artifact-template-creative-campaign-brief",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "local-skills/artifact-template-creative-campaign-brief",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 6
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/artifact-template-creative-campaign-brief"
+}

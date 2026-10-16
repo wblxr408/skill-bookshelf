@@ -1,0 +1,10 @@
+{
+  "schemaVersion": 1,
+  "kind": "presentation",
+  "reference": "assets/reference.pptx",
+  "preview": "assets/preview.png",
+  "nativePresentation": {
+    "schemaVersion": 1,
+    "reference": "assets/native-presentation.pb"
+  }
+}

@@ -1,0 +1,84 @@
+{
+  "name": "microsoft-foundry",
+  "title": "Microsoft Foundry 总入口",
+  "author": "Microsoft Foundry 技能分发",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Microsoft Foundry",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/"
+    }
+  ],
+  "aliases": [
+    "capacity",
+    "customize",
+    "deploy-model",
+    "finetuning",
+    "preset"
+  ],
+  "installedCopies": 6,
+  "variants": [
+    {
+      "name": "microsoft-foundry",
+      "label": "1.2.27",
+      "sourcePath": "local-skills/microsoft-foundry",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 195
+    },
+    {
+      "name": "preset",
+      "label": "1.0.1",
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/preset",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "customize",
+      "label": "1.0.1",
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/customize",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    },
+    {
+      "name": "capacity",
+      "label": "1.0.0",
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/capacity",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 5
+    },
+    {
+      "name": "deploy-model",
+      "label": "1.0.0",
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 17
+    },
+    {
+      "name": "finetuning",
+      "label": "0.0.0-placeholder",
+      "sourcePath": "local-skills/microsoft-foundry/finetuning",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 34
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/microsoft-foundry"
+}

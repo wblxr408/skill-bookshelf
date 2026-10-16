@@ -1,0 +1,28 @@
+{
+  "name": "review-agent",
+  "title": "代码审查",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI Skills",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "review-agent",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/review-agent",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/review-agent"
+}

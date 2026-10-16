@@ -1,0 +1,23 @@
+{
+  "name": "intelligence-collection-disciplines",
+  "title": "多来源情报研究",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "intelligence-collection-disciplines",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/intelligence-collection-disciplines",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/intelligence-collection-disciplines"
+}

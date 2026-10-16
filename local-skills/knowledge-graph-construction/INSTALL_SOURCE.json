@@ -1,0 +1,12 @@
+{
+  "skill": "knowledge-graph-construction",
+  "source": "lyndonkl/claude",
+  "ref": "4acc337d4dbdb19da6469eb2504c16669c1cafa1",
+  "source_path": "skills/knowledge-graph-construction",
+  "files": [
+    "SKILL.md",
+    "resources\\data-models.md",
+    "resources\\evaluators\\rubric_kg_construction.json",
+    "resources\\methodology.md"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "engineering-toolbox",
+  "title": "工程专项工具箱",
+  "author": "Affaan Mustafa / ECC",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "Affaan Mustafa / ECC",
+      "url": "https://github.com/affaan-m/ECC"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "engineering-toolbox",
+      "label": "fusion-ecc-2026-10-12",
+      "sourcePath": "fused-skills/engineering-toolbox",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/engineering-toolbox"
+}

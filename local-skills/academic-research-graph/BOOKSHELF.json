@@ -1,0 +1,23 @@
+{
+  "name": "academic-research-graph",
+  "title": "研究脉络与争议图谱",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "academic-research-graph",
+      "label": "0.2.4",
+      "sourcePath": "local-skills/academic-research-graph",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 46
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/academic-research-graph"
+}

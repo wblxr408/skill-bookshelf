@@ -1,0 +1,1238 @@
+{
+  "meta": {
+    "title": "ViT 研究演化图（示例）",
+    "focus": "ViT 如何继承 Transformer，后续工作如何改善数据效率、改变架构，并产生哪些解释冲突？",
+    "generated_at": "2026-08-05T14:12:59.763714+00:00",
+    "search_cutoff": "2026-08-05",
+    "sources": [
+      "GitHub",
+      "OpenAlex",
+      "Semantic Scholar",
+      "arXiv"
+    ],
+    "coverage": {
+      "candidate_works": 152,
+      "reviewed_nodes": 7,
+      "reviewed_edges": 8,
+      "abstract_only": 0
+    },
+    "warnings": [
+      "这是可视化与增量合并示例，不是完整文献综述。"
+    ],
+    "graph_id": "arg:vit-lineage:example",
+    "revision": 2,
+    "parent_revision": 1,
+    "output_language": "zh-CN",
+    "terminology_glossary": {
+      "data efficiency": "数据效率",
+      "shifted window": "移位窗口",
+      "distillation token": "蒸馏 token"
+    },
+    "expansion_history": [
+      {
+        "id": "exp:deit-data-efficiency:example",
+        "base_revision": 1,
+        "revision": 2,
+        "start_node_id": "paper:deit",
+        "focus": "从 DeiT 节点继续追踪数据高效视觉 Transformer 的后续方法、架构分支和争议。",
+        "direction": "forward",
+        "output_language": "zh-CN",
+        "summary_policy": {
+          "audience": "field_familiar_unread",
+          "exposition_depth": "explanatory",
+          "explain_background": true,
+          "define_paper_specific_terms": true,
+          "expand_acronyms_on_first_use": true,
+          "name_comparison_baselines": true,
+          "require_limitations_and_scope": true
+        },
+        "figure_policy": {
+          "enabled": true,
+          "selection_mode": "selective",
+          "max_per_paper": 1,
+          "prefer_kinds": [
+            "method_overview",
+            "architecture",
+            "pipeline",
+            "conceptual_diagram",
+            "qualitative_result"
+          ],
+          "require_source_attribution": true,
+          "require_alt_text": true,
+          "embed_local_assets": true,
+          "allow_remote_images": false,
+          "max_embedded_bytes": 2500000,
+          "max_display_width_px": 1600
+        },
+        "created_at": "2026-08-05T00:10:00+08:00",
+        "merged_at": "2026-08-05T14:12:59.763714+00:00",
+        "search_cutoff": "2026-08-05",
+        "sources": [
+          "OpenAlex",
+          "Semantic Scholar",
+          "arXiv"
+        ],
+        "delta": {
+          "nodes_added": 1,
+          "nodes_updated": 0,
+          "edges_added": 1,
+          "edges_updated": 0,
+          "conflicts_added": 0,
+          "conflicts_updated": 0,
+          "clusters_added": 0,
+          "clusters_updated": 0,
+          "figure_assets_copied": 1
+        },
+        "main_path_reassessment": {
+          "changed": false,
+          "reason": "新增内容构成局部分支，不改变当前全局主链路。"
+        },
+        "warnings": [
+          "示例 patch 仅用于展示增量合并结构。"
+        ]
+      }
+    ],
+    "venue_tier_policy": {
+      "name": "示例机器学习/计算机视觉会议分层",
+      "basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+      "as_of": "2026-08-05",
+      "notes": [
+        "仅用于演示数据结构，不构成通用会议排名。"
+      ]
+    },
+    "summary_policy": {
+      "audience": "field_familiar_unread",
+      "exposition_depth": "explanatory",
+      "explain_background": true,
+      "define_paper_specific_terms": true,
+      "expand_acronyms_on_first_use": true,
+      "name_comparison_baselines": true,
+      "require_limitations_and_scope": true
+    },
+    "figure_policy": {
+      "enabled": true,
+      "selection_mode": "selective",
+      "max_per_paper": 1,
+      "prefer_kinds": [
+        "method_overview",
+        "architecture",
+        "pipeline",
+        "conceptual_diagram",
+        "qualitative_result"
+      ],
+      "require_source_attribution": true,
+      "require_alt_text": true,
+      "embed_local_assets": true,
+      "allow_remote_images": false,
+      "max_embedded_bytes": 2500000,
+      "max_display_width_px": 1600
+    },
+    "latest_increment": {
+      "revision": 2,
+      "expansion_id": "exp:deit-data-efficiency:example",
+      "base_revision": 1,
+      "start_node_id": "paper:deit",
+      "merged_at": "2026-08-05T14:12:59.763714+00:00"
+    }
+  },
+  "nodes": [
+    {
+      "id": "paper:transformer",
+      "type": "paper",
+      "title": "Attention Is All You Need",
+      "authors": [
+        "Ashish Vaswani et al."
+      ],
+      "year": 2017,
+      "date": "2017-06-12",
+      "venue": "NeurIPS",
+      "status": "published",
+      "summary": "Transformer 架构引入自注意力与序列 token 处理机制，构成 ViT 继承的主要概念基础。",
+      "role": "来源",
+      "cluster": "Origins",
+      "relevance": 0.95,
+      "quality": 0.95,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "1706.03762"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/1706.03762"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev1"
+      ],
+      "notes": [],
+      "roles": {
+        "zh-CN": "来源",
+        "en": "origin"
+      },
+      "summaries": {
+        "zh-CN": "Transformer 架构引入自注意力与序列 token 处理机制，构成 ViT 继承的主要概念基础。",
+        "en": "Introduces the Transformer architecture whose self-attention and token sequence processing form the conceptual backbone inherited by ViT."
+      },
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "NeurIPS",
+          "short_name": "NeurIPS",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2017-06-12",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/1706.03762",
+            "identifier": "arXiv:1706.03762",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2017",
+            "status": "published",
+            "venue": "NeurIPS",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "在这篇论文之前，主流序列模型通常依靠循环神经网络逐步处理 token，或用卷积在局部窗口内聚合信息。循环结构难以充分并行，长距离依赖也需要信息跨越许多时间步传播。",
+          "problem": "作者希望构造一种不依赖循环和卷积的序列建模方法，使任意位置之间可以直接交换信息，并提高训练阶段的并行效率。",
+          "approach": "论文提出 Transformer。它先把每个 token 表示为向量，再用自注意力计算一个 token 应该从序列中其他位置读取多少信息。多头注意力让模型同时学习多种关系；位置编码补回了纯注意力本身缺少的顺序信息；前馈网络和残差连接则完成逐位置变换并稳定深层训练。",
+          "key_findings": [
+            "在论文的机器翻译实验中，Transformer 在不使用循环结构的情况下达到或超过当时强基线，并显著减少训练时间。",
+            "消融与分析表明，多头注意力和位置表示是模型捕捉不同依赖关系的重要组成部分。"
+          ],
+          "why_it_matters": "它把“序列可以被看成一组可全局交互的 token”变成了通用架构原则。ViT 后来正是把图像 patch 当作 token，继承了这一计算框架。",
+          "limitations": [
+            "标准自注意力的计算与内存开销随 token 数量近似二次增长，长序列成本较高。",
+            "论文主要验证机器翻译任务，并没有直接证明同一结构适合视觉输入；这一点由后续工作探索。"
+          ],
+          "concepts": [
+            {
+              "term": "自注意力（self-attention）",
+              "explanation": "让每个 token 根据内容，从同一序列的其他 token 聚合信息的机制。"
+            },
+            {
+              "term": "多头注意力（multi-head attention）",
+              "explanation": "并行计算多组注意力，使不同组可以关注不同类型的关系。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "paper:vit",
+      "type": "paper",
+      "title": "An Image is Worth 16x16 Words",
+      "authors": [
+        "Alexey Dosovitskiy et al."
+      ],
+      "year": 2020,
+      "date": "2020-10-22",
+      "venue": "ICLR",
+      "status": "published",
+      "summary": "将图像切分为 patch 并视为 token，采用接近标准的 Transformer 编码器进行图像分类；结果强调大规模预训练的重要性。",
+      "role": "种子论文",
+      "cluster": "Main Lineage",
+      "relevance": 1.0,
+      "quality": 0.92,
+      "is_seed": true,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2010.11929"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2010.11929"
+      },
+      "claims": [
+        {
+          "text": "A pure Transformer can perform competitively on image classification when pretrained at sufficient scale."
+        }
+      ],
+      "evidence_ids": [
+        "ev2"
+      ],
+      "notes": [],
+      "roles": {
+        "zh-CN": "种子论文",
+        "en": "seed"
+      },
+      "summaries": {
+        "zh-CN": "将图像切分为 patch 并视为 token，采用接近标准的 Transformer 编码器进行图像分类；结果强调大规模预训练的重要性。",
+        "en": "Treats image patches as tokens and applies a largely standard Transformer encoder to image classification, showing strong performance with large-scale pretraining."
+      },
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "ICLR",
+          "short_name": "ICLR",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2020-10-22",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2010.11929",
+            "identifier": "arXiv:2010.11929",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2020",
+            "status": "published",
+            "venue": "ICLR",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "图像分类长期由卷积神经网络主导，因为卷积天然利用局部邻域和空间平移结构。与此同时，Transformer 已在语言任务中证明了大规模预训练与全局 token 交互的能力，但图像并不是现成的 token 序列。",
+          "problem": "论文要回答：能否尽量少地加入视觉专用结构，直接把标准 Transformer 用于图像分类；如果可以，它需要怎样的数据规模和训练条件。",
+          "approach": "ViT 把一张图像切成固定大小的 patch，将每个 patch 展平并映射成一个向量，把这些向量当作类似词 token 的序列。模型在序列前加入用于汇总整幅图像的分类 token，再用标准 Transformer 编码器处理所有 patch。最后用分类 token 的表示进行预测。",
+          "key_findings": [
+            "在中等规模数据上直接训练时，ViT 未必优于强卷积基线；当先在很大规模数据集上预训练、再迁移到目标任务时，它能取得很强的图像分类结果。",
+            "结果说明架构中的视觉归纳偏置可以减少，但减少后通常需要更多数据来学习原本由卷积直接提供的局部结构。"
+          ],
+          "why_it_matters": "这篇论文建立了视觉 Transformer 的主干范式：图像 patch token 化后可以直接使用 Transformer。后续大量工作围绕数据效率、局部性、层次结构和计算成本改造这一范式。",
+          "limitations": [
+            "论文最突出的优势依赖超大规模预训练数据和计算资源，普通研究者难以完全复现该条件。",
+            "固定 patch 和全局注意力对密集预测、多尺度目标以及高分辨率输入并非天然高效。"
+          ],
+          "concepts": [
+            {
+              "term": "图像 patch",
+              "explanation": "把图像按固定网格切出的矩形小块，每个小块被编码为一个 token。"
+            },
+            {
+              "term": "归纳偏置（inductive bias）",
+              "explanation": "模型结构预先假定的数据规律；卷积例如预设局部连接和平移共享，而 ViT 更少依赖这些先验。"
+            }
+          ]
+        }
+      },
+      "featured_figure": {
+        "kind": "method_overview",
+        "display_kind": "analyst_reconstruction",
+        "label": "方法总览（示意重绘）",
+        "captions": {
+          "zh-CN": "ViT 将输入图像切分为固定大小的图像块，把每个图像块映射为一个 token，并把这些 token 连同类别 token 一起送入 Transformer 编码器完成分类。"
+        },
+        "alt_texts": {
+          "zh-CN": "流程图从左到右展示：图像被切成网格图像块，图像块转换为带位置编码的 token 序列，序列经过多层 Transformer 编码器，最后由类别 token 输出类别预测。"
+        },
+        "reader_notes": {
+          "zh-CN": "重点看“图像块变成 token 序列”这一步。ViT 的核心变化不是发明新的注意力结构，而是把原本用于序列的 Transformer 直接应用到图像块序列。"
+        },
+        "selection_reasons": {
+          "zh-CN": "这张图能够在不阅读公式和实现细节的情况下，直观解释 ViT 相对卷积网络最关键的输入表示变化。"
+        },
+        "source": {
+          "citation": "Academic Research Graph Skill 示例图；依据 Dosovitskiy et al. (2020) 的方法流程自行重绘。",
+          "paper_version": "arXiv:2010.11929",
+          "figure_number": null,
+          "page": null,
+          "url": "https://arxiv.org/abs/2010.11929",
+          "license": "示例原创 SVG",
+          "rights_status": "analyst_original",
+          "retrieved_at": "2026-08-05",
+          "notes": "非论文原图，不复刻论文版式。"
+        },
+        "asset": {
+          "path": "assets/figures/paper-vit/vit-overview-reconstruction.svg",
+          "mime_type": "image/svg+xml",
+          "sha256": "786bee64f6faec25921b04e0c60a534eb97d6c0ceab33b75f1813ca354a833fa",
+          "width": 960,
+          "height": 420,
+          "cropped": false,
+          "crop_notes": null
+        },
+        "evidence_ids": [
+          "ev:vit-method-overview"
+        ]
+      }
+    },
+    {
+      "id": "paper:deit",
+      "type": "paper",
+      "title": "Training Data-Efficient Image Transformers & Distillation through Attention",
+      "authors": [
+        "Hugo Touvron et al."
+      ],
+      "year": 2021,
+      "date": "2020-12-23",
+      "venue": "ICML",
+      "status": "published",
+      "summary": "通过训练策略与蒸馏 token 改善数据效率，降低对超大规模私有预训练数据的依赖。",
+      "role": "数据效率变体",
+      "cluster": "Data Efficiency",
+      "relevance": 0.92,
+      "quality": 0.88,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2012.12877"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2012.12877"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev3"
+      ],
+      "notes": [],
+      "roles": {
+        "zh-CN": "数据效率变体",
+        "en": "data-efficiency variant"
+      },
+      "summaries": {
+        "zh-CN": "通过训练策略与蒸馏 token 改善数据效率，降低对超大规模私有预训练数据的依赖。",
+        "en": "Improves data efficiency through a training recipe and a distillation token, reducing dependence on extremely large private pretraining datasets."
+      },
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "ICML",
+          "short_name": "ICML",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2020-12-23",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2012.12877",
+            "identifier": "arXiv:2012.12877",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2021",
+            "status": "published",
+            "venue": "ICML",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "原始 ViT 的强结果主要来自在超大私有数据集上预训练。这使人难以判断视觉 Transformer 本身是否必须依赖极大数据，还是训练流程尚未被充分优化。",
+          "problem": "DeiT 试图在仅使用公开 ImageNet-1K 规模数据的条件下，让视觉 Transformer 获得有竞争力的分类性能，并减少对超大规模预训练的依赖。",
+          "approach": "论文首先系统调整数据增强、正则化、优化器和训练日程，使 ViT 在较小数据上训练得更稳定。随后加入蒸馏 token：它像分类 token 一样参与注意力，但学习模仿一个已训练教师模型的输出。这样学生 Transformer 不只从真实标签学习，也从教师提供的类别偏好中获得额外监督。",
+          "key_findings": [
+            "在 ImageNet-1K 上从头训练时，经过改进的训练配方显著缩小了 ViT 与强卷积网络之间的差距。",
+            "使用卷积教师进行蒸馏后，DeiT 在不使用额外私有预训练数据的情况下进一步提升分类表现。"
+          ],
+          "why_it_matters": "DeiT 表明，ViT 的数据需求并不完全是架构不可避免的属性，训练策略和知识蒸馏可以显著改变数据效率。这开辟了数据高效视觉 Transformer 分支。",
+          "limitations": [
+            "性能依赖精心调节的训练配方，换数据集或任务时不一定原样成立。",
+            "蒸馏版本需要额外训练教师模型，而且教师的归纳偏置会影响学生学到的行为。"
+          ],
+          "concepts": [
+            {
+              "term": "知识蒸馏（knowledge distillation）",
+              "explanation": "让学生模型在真实标签之外模仿教师模型的预测，从教师的软信息中学习。"
+            },
+            {
+              "term": "蒸馏 token",
+              "explanation": "DeiT 中专门接收教师监督的可学习 token，与普通分类 token 一起经过 Transformer。"
+            }
+          ]
+        }
+      },
+      "expansion_status": {
+        "last_expanded_at": "2026-08-05T14:12:59.763714+00:00",
+        "last_expansion_id": "exp:deit-data-efficiency:example",
+        "last_expansion_revision": 2,
+        "expansion_count": 1
+      },
+      "expansion_seed_for": [
+        "exp:deit-data-efficiency:example"
+      ],
+      "updated_in_revision": 2
+    },
+    {
+      "id": "paper:swin",
+      "type": "paper",
+      "title": "Swin Transformer: Hierarchical Vision Transformer using Shifted Windows",
+      "authors": [
+        "Ze Liu et al."
+      ],
+      "year": 2021,
+      "date": "2021-03-25",
+      "venue": "ICCV",
+      "status": "published",
+      "summary": "引入局部移位窗口注意力与层次化表示，使 Transformer 主干更适合密集视觉任务。",
+      "role": "架构分支",
+      "cluster": "Architecture",
+      "relevance": 0.88,
+      "quality": 0.91,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2103.14030"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2103.14030"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev4"
+      ],
+      "notes": [],
+      "roles": {
+        "zh-CN": "架构分支",
+        "en": "architectural branch"
+      },
+      "summaries": {
+        "zh-CN": "引入局部移位窗口注意力与层次化表示，使 Transformer 主干更适合密集视觉任务。",
+        "en": "Introduces local shifted-window attention and a hierarchical representation, making Transformer backbones more suitable for dense vision tasks."
+      },
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "ICCV",
+          "short_name": "ICCV",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2021-03-25",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2103.14030",
+            "identifier": "arXiv:2103.14030",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2021",
+            "status": "published",
+            "venue": "ICCV",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "原始 ViT 在单一分辨率的 patch 序列上做全局注意力，适合图像分类，但目标检测和语义分割需要多尺度特征；高分辨率图像上的全局注意力计算也很昂贵。",
+          "problem": "Swin Transformer 要把 Transformer 改造成可作为通用视觉主干的层次化网络，同时把注意力成本控制在随图像大小近似线性增长的范围。",
+          "approach": "模型只在局部窗口内计算自注意力，从而避免所有 patch 两两交互。随着网络加深，它逐步合并相邻 patch，形成类似卷积网络的多尺度层次。相邻层使用错开的窗口划分，使前一层不同窗口中的 token 能在下一层发生信息交换。",
+          "key_findings": [
+            "Swin 在图像分类、目标检测和语义分割等多类任务上都能作为统一主干，并与当时强卷积和 Transformer 基线竞争。",
+            "局部窗口把高分辨率输入的注意力成本显著降低，移位机制则缓解了固定窗口之间彼此隔离的问题。"
+          ],
+          "why_it_matters": "它把视觉 Transformer 从“分类器结构”推进为可服务密集视觉任务的层次化主干，并成为局部注意力和多尺度设计的重要主链路。",
+          "limitations": [
+            "局部窗口减少了单层的全局交互，远距离信息需要跨多层传播。",
+            "窗口大小、层次划分和任务适配引入更多视觉专用设计，使结构不再像原始 ViT 那样接近标准 Transformer。"
+          ],
+          "concepts": [
+            {
+              "term": "移位窗口（shifted window）",
+              "explanation": "相邻层把局部窗口网格错开，使原来分属不同窗口的 token 能在后续层相互作用。"
+            },
+            {
+              "term": "密集视觉任务",
+              "explanation": "需要对图像多个位置输出结果的任务，例如目标检测和语义分割，而不是只输出一个类别。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "paper:convnext",
+      "type": "paper",
+      "title": "A ConvNet for the 2020s",
+      "authors": [
+        "Zhuang Liu et al."
+      ],
+      "year": 2022,
+      "date": "2022-01-10",
+      "venue": "CVPR",
+      "status": "published",
+      "summary": "用现代化卷积网络复现多项视觉 Transformer 设计收益，从而质疑“性能提升主要来自注意力算子”的强解释。",
+      "role": "批判性比较",
+      "cluster": "Criticism",
+      "relevance": 0.81,
+      "quality": 0.88,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2201.03545"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2201.03545"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev5"
+      ],
+      "notes": [],
+      "roles": {
+        "zh-CN": "批判性比较",
+        "en": "critical comparison"
+      },
+      "summaries": {
+        "zh-CN": "用现代化卷积网络复现多项视觉 Transformer 设计收益，从而质疑“性能提升主要来自注意力算子”的强解释。",
+        "en": "Modernizes convolutional networks using design choices associated with vision Transformers, challenging claims that attention alone explains recent gains."
+      },
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "CVPR",
+          "short_name": "CVPR",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2022-01-10",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2201.03545",
+            "identifier": "arXiv:2201.03545",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2022",
+            "status": "published",
+            "venue": "CVPR",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "ViT 和 Swin 的成功一度容易被概括为“注意力取代卷积带来了更好性能”。但这些模型同时采用了新的训练策略、归一化方式、层次设计和大核感受野，因此性能来源并不只由算子名称决定。",
+          "problem": "ConvNeXt 要检验：如果保留纯卷积网络的基本形式，但逐步采用视觉 Transformer 时代的训练与宏观设计，卷积网络能否重新达到同等级别的表现。",
+          "approach": "作者从标准 ResNet 出发，依次调整训练配方、阶段比例、下采样方式、卷积核大小、深度可分离卷积、归一化和激活函数。每一步仍使用卷积，却让整体结构和训练习惯更接近现代视觉 Transformer。",
+          "key_findings": [
+            "经过这些现代化修改后，ConvNeXt 在 ImageNet 分类以及下游检测、分割任务上达到与强视觉 Transformer 相近的表现。",
+            "逐项改造显示，训练与宏观架构选择能够解释相当一部分此前被归因于注意力的收益。"
+          ],
+          "why_it_matters": "这篇论文构成对简单架构叙事的批判：视觉 Transformer 的进步不能仅解释为“自注意力优于卷积”，比较时必须控制训练配方和整体设计。",
+          "limitations": [
+            "它证明现代卷积网络可以竞争，但并没有证明卷积在所有规模、数据和任务上都优于注意力。",
+            "逐步改造实验仍受到具体实现和训练预算影响，不能完全分离所有设计因素的因果贡献。"
+          ],
+          "concepts": [
+            {
+              "term": "深度可分离卷积（depthwise convolution）",
+              "explanation": "主要在每个通道内独立做空间卷积，再用其他操作混合通道，从而降低计算并改变特征处理方式。"
+            }
+          ]
+        }
+      }
+    },
+    {
+      "id": "repo:vit-pytorch",
+      "type": "repository",
+      "title": "google-research/vision_transformer",
+      "authors": [
+        "Google Research"
+      ],
+      "year": 2020,
+      "date": "2020-10-22",
+      "venue": null,
+      "status": "active repository",
+      "summary": "ViT 对应的官方实现仓库，包含模型定义以及训练和评估配置。",
+      "role": "官方仓库",
+      "cluster": "Implementation",
+      "relevance": 0.94,
+      "quality": 0.86,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "commit": "example-sha"
+      },
+      "urls": {
+        "GitHub": "https://github.com/google-research/vision_transformer"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev6"
+      ],
+      "notes": [
+        "Example commit only; a real run must pin an actual SHA."
+      ],
+      "roles": {
+        "zh-CN": "官方仓库",
+        "en": "official repository"
+      },
+      "summaries": {
+        "zh-CN": "ViT 对应的官方实现仓库，包含模型定义以及训练和评估配置。",
+        "en": "Official implementation associated with ViT, including model definitions and training/evaluation configurations."
+      }
+    },
+    {
+      "id": "paper:cait",
+      "type": "paper",
+      "title": "Going Deeper with Image Transformers",
+      "authors": [
+        "Hugo Touvron et al."
+      ],
+      "year": 2021,
+      "date": "2021-03-31",
+      "venue": "ICCV",
+      "status": "published",
+      "summary": "在数据高效训练背景下，通过 LayerScale 与 class-attention 等设计让更深的图像 Transformer 更易训练。",
+      "summaries": {
+        "zh-CN": "在数据高效训练背景下，通过 LayerScale 与 class-attention 等设计让更深的图像 Transformer 更易训练。",
+        "en": "Introduces LayerScale and class-attention designs to make deeper image Transformers easier to train in a data-efficient setting."
+      },
+      "role": "数据效率与深层架构分支",
+      "roles": {
+        "zh-CN": "数据效率与深层架构分支",
+        "en": "deep architecture branch"
+      },
+      "cluster": "Data Efficiency",
+      "relevance": 0.86,
+      "quality": 0.86,
+      "is_seed": false,
+      "latest_frontier": false,
+      "identifiers": {
+        "arXiv": "2103.17239"
+      },
+      "urls": {
+        "arXiv": "https://arxiv.org/abs/2103.17239"
+      },
+      "claims": [],
+      "evidence_ids": [
+        "ev:cait:method"
+      ],
+      "notes": [
+        "示例节点。"
+      ],
+      "publication": {
+        "status": "published",
+        "type": "conference_paper",
+        "peer_reviewed": true,
+        "primary_venue": {
+          "name": "ICCV",
+          "short_name": "ICCV",
+          "type": "conference",
+          "tier": "top",
+          "tier_label": {
+            "zh-CN": "顶会",
+            "en": "Top-tier conference"
+          },
+          "tier_basis": "示例领域配置；实际运行时必须记录采用的学科榜单、机构规则或用户指定标准。",
+          "tier_as_of": "2026-08-05",
+          "url": null
+        },
+        "versions": [
+          {
+            "kind": "preprint",
+            "label": "arXiv preprint",
+            "date": "2021-03-31",
+            "status": "public",
+            "venue": "arXiv",
+            "url": "https://arxiv.org/abs/2103.17239",
+            "identifier": "arXiv:2103.17239",
+            "peer_reviewed": false,
+            "is_primary": false
+          },
+          {
+            "kind": "conference",
+            "label": "Conference version",
+            "date": "2021",
+            "status": "published",
+            "venue": "ICCV",
+            "url": null,
+            "identifier": null,
+            "peer_reviewed": true,
+            "is_primary": true
+          }
+        ],
+        "notes": [
+          "示例中的 venue tier 仅用于演示 UI；实际运行必须按明确规则核验。"
+        ]
+      },
+      "reader_summary": {
+        "audience": "field_familiar_unread",
+        "zh-CN": {
+          "background": "DeiT 说明视觉 Transformer 可以在 ImageNet-1K 等较小数据条件下训练，但简单增加层数时，深层 Transformer 的优化会变得不稳定，分类 token 过早参与所有层的交互也可能干扰 patch 表示的形成。",
+          "problem": "CaiT 试图在保持数据高效训练条件的同时，把图像 Transformer 做得更深，并避免深度增加造成训练退化。",
+          "approach": "论文使用 LayerScale，为每个残差分支加入从很小数值开始学习的缩放系数，使深层网络初始更接近恒等映射。它还把分类 token 与 patch 的交互推迟到后段的 class-attention 层：前面先让 patch 彼此建立图像表示，后面再由分类 token 从这些表示中汇总信息。",
+          "key_findings": [
+            "在相近数据条件下，LayerScale 和后置 class-attention 使更深的图像 Transformer 能稳定训练，并改善 ImageNet 分类结果。",
+            "消融实验支持这两个组件分别对深层优化和分类信息汇总有贡献。"
+          ],
+          "why_it_matters": "CaiT 延伸了 DeiT 的数据高效路线，说明视觉 Transformer 的深度不仅取决于算力，还取决于残差缩放和分类 token 进入网络的方式。",
+          "limitations": [
+            "结构增加了专用组件与超参数，收益可能依赖深度、初始化和训练配方。",
+            "论文主要围绕分类评估，不能直接推出 class-attention 对所有密集视觉任务同样有利。"
+          ],
+          "concepts": [
+            {
+              "term": "LayerScale",
+              "explanation": "为残差分支输出乘上可学习的小系数，使非常深的网络在训练开始时变化更温和。"
+            },
+            {
+              "term": "class-attention",
+              "explanation": "让分类 token 作为查询，从 patch token 中读取信息，而不是让所有 token 继续完全对称地相互注意。"
+            }
+          ]
+        }
+      },
+      "featured_figure": {
+        "kind": "architecture",
+        "display_kind": "analyst_reconstruction",
+        "label": "Class-Attention 示意重绘",
+        "captions": {
+          "zh-CN": "CaiT 先让图像块 token 经过较深的自注意力层，再在后段引入类别 token，并通过 Class-Attention 层只更新类别 token 来汇总图像信息。"
+        },
+        "alt_texts": {
+          "zh-CN": "流程图展示三组图像块 token 先进入深层自注意力模块，随后类别 token 与处理后的图像块进入 Class-Attention 模块，最终输出分类结果。"
+        },
+        "reader_notes": {
+          "zh-CN": "这张图强调类别 token 被推迟到网络后段。这样可以把“图像块之间的特征处理”和“为分类任务汇总信息”分开。"
+        },
+        "selection_reasons": {
+          "zh-CN": "CaiT 的关键结构变化集中在 Class-Attention 和类别 token 的引入时机，这张图比单纯描述“更深的 ViT”更能体现论文贡献。"
+        },
+        "source": {
+          "citation": "Academic Research Graph Skill 示例图；依据 Touvron et al. (2021) 的 Class-Attention 机制自行重绘。",
+          "paper_version": "ICCV 2021 / arXiv:2103.17239",
+          "figure_number": null,
+          "page": null,
+          "url": "https://arxiv.org/abs/2103.17239",
+          "license": "示例原创 SVG",
+          "rights_status": "analyst_original",
+          "retrieved_at": "2026-08-05",
+          "notes": "非论文原图，不复刻论文版式。"
+        },
+        "asset": {
+          "path": "assets/figures/paper-cait/cait-depth-reconstruction.svg",
+          "mime_type": "image/svg+xml",
+          "sha256": "e4e8cd24f46a57bfe9cf7bf9c59aa80b68389c2f5d7a0705fa5a0fbe429345fb",
+          "width": 960,
+          "height": 360,
+          "cropped": false,
+          "crop_notes": null
+        },
+        "evidence_ids": [
+          "ev:cait-class-attention"
+        ]
+      },
+      "added_in_revision": 2,
+      "updated_in_revision": 2
+    }
+  ],
+  "edges": [
+    {
+      "id": "edge:transformer-vit",
+      "source": "paper:vit",
+      "target": "paper:transformer",
+      "relationship": [
+        "extends_method",
+        "applies_method"
+      ],
+      "primary_relationship": "applies_method",
+      "explanation": "ViT 将 Transformer 编码器从文本 token 序列迁移到图像 patch 序列。",
+      "confidence": 0.99,
+      "evidence_level": "direct",
+      "main_path": true,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev7"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "ViT 将 Transformer 编码器从文本 token 序列迁移到图像 patch 序列。",
+        "en": "ViT transfers the Transformer encoder from tokenized text sequences to sequences of image patches."
+      }
+    },
+    {
+      "id": "edge:vit-deit",
+      "source": "paper:deit",
+      "target": "paper:vit",
+      "relationship": [
+        "extends_method",
+        "improves_data_regime"
+      ],
+      "primary_relationship": "improves_data_regime",
+      "explanation": "DeiT 保留 ViT 架构族，但改变训练与蒸馏方式，以提高数据效率。",
+      "confidence": 0.97,
+      "evidence_level": "direct",
+      "main_path": true,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev8"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "DeiT 保留 ViT 架构族，但改变训练与蒸馏方式，以提高数据效率。",
+        "en": "DeiT retains the ViT architecture family but changes training and distillation to improve data efficiency."
+      }
+    },
+    {
+      "id": "edge:vit-swin",
+      "source": "paper:swin",
+      "target": "paper:vit",
+      "relationship": [
+        "extends_method",
+        "modifies_architecture"
+      ],
+      "primary_relationship": "modifies_architecture",
+      "explanation": "Swin 用层次化移位窗口注意力替代全局、扁平的 patch 处理，以提升可扩展性和密集预测能力。",
+      "confidence": 0.96,
+      "evidence_level": "direct",
+      "main_path": true,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev9"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "Swin 用层次化移位窗口注意力替代全局、扁平的 patch 处理，以提升可扩展性和密集预测能力。",
+        "en": "Swin replaces global flat patch processing with hierarchical shifted-window attention for scalability and dense prediction."
+      }
+    },
+    {
+      "id": "edge:vit-convnext",
+      "source": "paper:convnext",
+      "target": "paper:vit",
+      "relationship": [
+        "criticizes",
+        "compares_against"
+      ],
+      "primary_relationship": "criticizes",
+      "explanation": "ConvNeXt 表明，现代化卷积设计也能达到有竞争力的性能，因此注意力的优势更可能是条件性的，而非绝对的。",
+      "confidence": 0.86,
+      "evidence_level": "direct",
+      "main_path": false,
+      "conflict": true,
+      "conflict_type": "interpretation_conflict",
+      "evidence_ids": [
+        "ev10"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "ConvNeXt 表明，现代化卷积设计也能达到有竞争力的性能，因此注意力的优势更可能是条件性的，而非绝对的。",
+        "en": "ConvNeXt argues that modernized convolutional design can recover competitive performance, making the superiority of attention conditional rather than absolute."
+      }
+    },
+    {
+      "id": "edge:repo-vit",
+      "source": "repo:vit-pytorch",
+      "target": "paper:vit",
+      "relationship": [
+        "repository_of",
+        "implements"
+      ],
+      "primary_relationship": "repository_of",
+      "explanation": "该仓库作为 ViT 官方实现，包含对应模型与配置代码。",
+      "confidence": 0.99,
+      "evidence_level": "direct",
+      "main_path": false,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev11"
+      ],
+      "citation_direction": "non_citation",
+      "explanations": {
+        "zh-CN": "该仓库作为 ViT 官方实现，包含对应模型与配置代码。",
+        "en": "The repository is presented as the official implementation of ViT and contains corresponding model and configuration code."
+      }
+    },
+    {
+      "id": "edge:transformer-swin",
+      "source": "paper:swin",
+      "target": "paper:transformer",
+      "relationship": [
+        "extends_method"
+      ],
+      "primary_relationship": "extends_method",
+      "explanation": "Swin 仍属于 Transformer 演化链路，但改变了注意力的局部性与层次结构。",
+      "confidence": 0.9,
+      "evidence_level": "strong_indirect",
+      "main_path": false,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev12"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "Swin 仍属于 Transformer 演化链路，但改变了注意力的局部性与层次结构。",
+        "en": "Swin remains part of the Transformer lineage while changing the attention locality and hierarchy."
+      }
+    },
+    {
+      "id": "edge:deit-swin",
+      "source": "paper:swin",
+      "target": "paper:deit",
+      "relationship": [
+        "compares_against"
+      ],
+      "primary_relationship": "compares_against",
+      "explanation": "Swin 将其层次化架构与当时的数据高效 Transformer 基线进行比较。",
+      "confidence": 0.78,
+      "evidence_level": "direct",
+      "main_path": false,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev13"
+      ],
+      "citation_direction": "source_cites_target",
+      "explanations": {
+        "zh-CN": "Swin 将其层次化架构与当时的数据高效 Transformer 基线进行比较。",
+        "en": "Swin compares its hierarchical architecture against contemporary data-efficient Transformer baselines."
+      }
+    },
+    {
+      "id": "edge:deit-cait",
+      "source": "paper:cait",
+      "target": "paper:deit",
+      "relationship": [
+        "extends_method",
+        "modifies_architecture"
+      ],
+      "primary_relationship": "extends_method",
+      "explanation": "CaiT 延续 DeiT 所代表的数据高效训练方向，并通过 LayerScale 与 class-attention 支持更深的 Transformer。",
+      "explanations": {
+        "zh-CN": "CaiT 延续 DeiT 所代表的数据高效训练方向，并通过 LayerScale 与 class-attention 支持更深的 Transformer。",
+        "en": "CaiT continues the data-efficient direction represented by DeiT and adds LayerScale and class-attention to support deeper Transformers."
+      },
+      "confidence": 0.88,
+      "evidence_level": "direct",
+      "main_path": false,
+      "conflict": false,
+      "conflict_type": null,
+      "evidence_ids": [
+        "ev:cait:method"
+      ],
+      "citation_direction": "source_cites_target",
+      "added_in_revision": 2,
+      "updated_in_revision": 2
+    }
+  ],
+  "conflicts": [
+    {
+      "id": "conflict:attention-vs-modern-convnet",
+      "edge_ids": [
+        "edge:vit-convnext"
+      ],
+      "question": "Are the gains of modern vision Transformers primarily caused by the attention operator?",
+      "classification": "interpretation_conflict",
+      "assessment": "The comparison suggests that several training and architectural design choices, not attention alone, account for part of the observed improvement.",
+      "confidence": 0.82,
+      "question_zh": "现代视觉 Transformer 的收益是否主要由注意力算子造成？",
+      "assessment_zh": "比较结果表明，训练方式与架构设计选择也解释了相当一部分收益，不能把提升完全归因于注意力。"
+    }
+  ],
+  "clusters": [
+    {
+      "id": "Origins",
+      "description": "Architectural sources",
+      "description_zh": "来源"
+    },
+    {
+      "id": "Main Lineage",
+      "description": "Seed and direct conceptual descendants",
+      "description_zh": "主链路"
+    },
+    {
+      "id": "Data Efficiency",
+      "description": "Reduced pretraining data requirements",
+      "description_zh": "数据效率"
+    },
+    {
+      "id": "Architecture",
+      "description": "Structural variants",
+      "description_zh": "架构"
+    },
+    {
+      "id": "Criticism",
+      "description": "Alternative explanations and comparisons",
+      "description_zh": "批评与替代解释"
+    },
+    {
+      "id": "Implementation",
+      "description": "Code and reproducibility",
+      "description_zh": "实现与复现"
+    }
+  ],
+  "expansions": [
+    {
+      "id": "exp:deit-data-efficiency:example",
+      "base_revision": 1,
+      "revision": 2,
+      "start_node_id": "paper:deit",
+      "focus": "从 DeiT 节点继续追踪数据高效视觉 Transformer 的后续方法、架构分支和争议。",
+      "direction": "forward",
+      "output_language": "zh-CN",
+      "summary_policy": {
+        "audience": "field_familiar_unread",
+        "exposition_depth": "explanatory",
+        "explain_background": true,
+        "define_paper_specific_terms": true,
+        "expand_acronyms_on_first_use": true,
+        "name_comparison_baselines": true,
+        "require_limitations_and_scope": true
+      },
+      "figure_policy": {
+        "enabled": true,
+        "selection_mode": "selective",
+        "max_per_paper": 1,
+        "prefer_kinds": [
+          "method_overview",
+          "architecture",
+          "pipeline",
+          "conceptual_diagram",
+          "qualitative_result"
+        ],
+        "require_source_attribution": true,
+        "require_alt_text": true,
+        "embed_local_assets": true,
+        "allow_remote_images": false,
+        "max_embedded_bytes": 2500000,
+        "max_display_width_px": 1600
+      },
+      "created_at": "2026-08-05T00:10:00+08:00",
+      "merged_at": "2026-08-05T14:12:59.763714+00:00",
+      "search_cutoff": "2026-08-05",
+      "sources": [
+        "OpenAlex",
+        "Semantic Scholar",
+        "arXiv"
+      ],
+      "delta": {
+        "nodes_added": 1,
+        "nodes_updated": 0,
+        "edges_added": 1,
+        "edges_updated": 0,
+        "conflicts_added": 0,
+        "conflicts_updated": 0,
+        "clusters_added": 0,
+        "clusters_updated": 0,
+        "figure_assets_copied": 1
+      },
+      "main_path_reassessment": {
+        "changed": false,
+        "reason": "新增内容构成局部分支，不改变当前全局主链路。"
+      },
+      "warnings": [
+        "示例 patch 仅用于展示增量合并结构。"
+      ]
+    }
+  ]
+}

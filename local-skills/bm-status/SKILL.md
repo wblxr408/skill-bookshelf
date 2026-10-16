@@ -1,0 +1,100 @@
+---
+name: bm-status
+description: Report the Basic Memory for Codex configuration, reachability, hook expectations, recent Codex checkpoints, and active tasks.
+---
+
+# Basic Memory For Codex Status
+
+Gather a concise diagnostic. Do not over-investigate.
+
+## Gather
+
+1. CLI reachability:
+   - `basic-memory --version`
+   - fallback `bm --version`
+   - fallback `uvx --prerelease=allow basic-memory --version`
+
+   Keep going if no launcher resolves. The plugin hook scripts can still use
+   their uv-managed environment; report hook health as unavailable instead of
+   claiming the hooks cannot work.
+
+2. Plugin config:
+   - read `~/.codex/basic-memory.json`, then the nearest project
+     `.codex/basic-memory.json`; project keys override user keys
+   - report the resolved `primaryProject`, `secondaryProjects`, `teamProjects`,
+     `captureFolder`, `rememberFolder`, `recallTimeframe`, `focus`,
+     `sessionProfile`, `repository`, `checkpointOnCompact`, and `captureEvents`
+   - resolve omitted Codex defaults as `rememberFolder=codex/remember`,
+     and `checkpointOnCompact=true`
+
+3. Core hook health:
+   - with the first available launcher, run
+     `basic-memory hook status --harness codex --project-dir <repo-root>`
+   - report the shared inbox path, pending envelopes, archived envelopes, last
+     flush, settings state, resolved primary project, capture state, capture
+     folder, checkpoint-prompt state, Basic Memory version, and uv version from
+     that command
+   - inbox counts are global across supported harnesses; do not attribute a
+     backlog solely to Codex
+   - treat the command's settings resolution as canonical for hook behavior; if
+     it disagrees with the manually read config, show the mismatch
+
+4. Hook files and launcher visibility:
+   - check `uv --version` in the current environment independently of CLI
+     reachability; uv is a required hook prerequisite
+   - distinguish "uv missing from this shell" from "Desktop hook runtime
+     verified"; shell success does not establish the Desktop hook process's PATH
+   - when Desktop/WSL hooks fail while TUI works, inspect the actual hook
+     launch error and PATH; `uv: command not found` occurs before the Python
+     script can emit a diagnostic
+   - consult `../../README.md` under "Troubleshooting Desktop hooks on WSL"
+     for the default-location probe and conditional symlink workaround
+   - only report Desktop hook execution as verified when startup context and a
+     post-compaction checkpoint note were observed; otherwise label it unverified
+   - confirm `plugins/codex/hooks/hooks.json` exists if running from this repo
+   - remind the user that Codex plugin hooks must be reviewed and trusted before
+     they run
+
+5. Basic Memory queries:
+   - query recent `type=codex_session`; when
+     `sessionProfile=coding`, also query `type=coding_session` with
+     `repository=<configured repository>`, then merge, deduplicate, sort newest
+     first, and keep the newest five; never run an unscoped coding-session query
+     when the repository is missing; these are agent-authored checkpoints, while
+     lifecycle envelopes remain local operational trace
+   - active `type=task`, `status=active`
+   - open `type=decision`, `status=open`
+
+## Present
+
+Use this shape:
+
+```text
+Basic Memory for Codex
+- CLI: <version or missing>
+- Project: <primaryProject or default>
+- Reads from: <secondaryProjects or none>
+- Share targets: <teamProjects or none>
+- Capture folder: <captureFolder>
+- Remember folder: <rememberFolder>
+- Recall timeframe: <recallTimeframe>
+- Session profile: <general | coding>
+- Repository: <owner/name or none>
+- Checkpoint on compact: <enabled | disabled>
+- Event capture: <enabled | disabled>
+- Shared hook inbox: <path or unavailable>
+- Shared pending envelopes: <count or unavailable>
+- Shared archived envelopes: <count or unavailable>
+- Last flush: <timestamp, never, or unavailable>
+- Hook runtime in this environment: basic-memory <version>; uv <version or missing>
+- Desktop hook execution: <verified from context and checkpoint | unverified>
+- Recent checkpoints: <count across coding_session and codex_session>
+- Active tasks: <count>
+- Open decisions: <count>
+- Hooks: installed; trust review required in Codex
+```
+
+List recent checkpoints by type, title, and permalink when available. Warn when
+event capture is enabled and pending envelopes are accumulating or the last flush
+is `never`, while noting that another harness may contribute to the shared counts.
+Do not warn about an empty inbox when capture is disabled.

@@ -1,0 +1,9 @@
+{
+  "skill": "academic-paper-review",
+  "source": "bytedance/deer-flow",
+  "ref": "8d994cc1e7ee63c61283a71a169248beb4ed1c52",
+  "source_path": "skills/public/academic-paper-review",
+  "files": [
+    "SKILL.md"
+  ]
+}

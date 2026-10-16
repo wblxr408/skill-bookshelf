@@ -1,0 +1,39 @@
+{
+  "name": "openspec-archive-change",
+  "title": "OpenSpec 归档",
+  "author": "OpenSpec",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenSpec",
+      "url": "https://github.com/Fission-AI/OpenSpec"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "openspec-archive-change",
+      "label": "1.0",
+      "sourcePath": "local-skills/openspec-archive-change",
+      "copies": 2,
+      "hosts": [
+        "共享 Skill 目录",
+        "本项目目录"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "openspec-archive-change",
+      "label": "1.0",
+      "sourcePath": "skill-versions/openspec-archive-change/v02",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/openspec-archive-change"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "find-skills",
+  "title": "发现与安装 Skill",
+  "author": "Vercel Skills 生态",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Skills 目录",
+      "url": "https://skills.sh/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "find-skills",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/find-skills",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/find-skills"
+}

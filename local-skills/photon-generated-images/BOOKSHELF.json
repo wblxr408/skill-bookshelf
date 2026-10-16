@@ -1,0 +1,24 @@
+{
+  "name": "photon-generated-images",
+  "title": "Photon 生成图像",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "photon-generated-images",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/photon-generated-images",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/photon-generated-images"
+}

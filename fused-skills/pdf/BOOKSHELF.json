@@ -1,0 +1,38 @@
+{
+  "name": "pdf",
+  "title": "统一 PDF 工作流",
+  "author": "OpenAI",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "OpenAI",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "pdf",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/pdf",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 40
+    },
+    {
+      "name": "pdf",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "skill-versions/pdf/v02",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/pdf"
+}

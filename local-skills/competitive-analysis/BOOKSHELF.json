@@ -1,0 +1,23 @@
+{
+  "name": "competitive-analysis",
+  "title": "竞品分析",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "competitive-analysis",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/competitive-analysis",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/competitive-analysis"
+}

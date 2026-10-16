@@ -18,15 +18,16 @@ def build(out):
   return sorted(names)
  results=[]
  for selection in [list(manifest['skills'])]+[[name] for name in manifest['skills']]:
-  names=closure(selection);filename='bo-fused-skills.zip' if len(selection)>1 else 'bo-skill-'+selection[0]+'.zip'
+  names=closure(selection);filename='bo-local-skills.zip' if len(selection)>1 else 'bo-skill-'+selection[0]+'.zip'
   payload={**manifest,'skills':{n:manifest['skills'][n] for n in names},'selected':selection}
   with zipfile.ZipFile(out/filename,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as z:
    z.write(ROOT/'distribution/install.py','install.py')
    z.write(ROOT/'distribution/README.md','README.md')
    z.writestr('manifest.json',json.dumps(payload,ensure_ascii=False,indent=2))
    for name in names:
-    for p in sorted((ROOT/'fused-skills'/name).rglob('*')):
-     if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ['.pyc','.pyo']:z.write(p,Path('skills')/name/p.relative_to(ROOT/'fused-skills'/name))
+    source=ROOT/manifest['skills'][name].get('sourcePath','fused-skills/'+name)
+    for p in sorted(source.rglob('*')):
+     if p.is_file() and '__pycache__' not in p.parts and p.suffix not in ['.pyc','.pyo']:z.write(p,Path('skills')/name/p.relative_to(source))
   results.append({'name':selection[0] if len(selection)==1 else 'all','file':filename,'bytes':(out/filename).stat().st_size,'includedSkills':names})
  (out/'index.json').write_text(json.dumps({'version':manifest['version'],'packages':results},ensure_ascii=False,indent=2),encoding='utf-8')
  return results

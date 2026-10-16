@@ -1,0 +1,23 @@
+{
+  "name": "geopandas",
+  "title": "地理空间数据分析",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "geopandas",
+      "label": "1.4",
+      "sourcePath": "local-skills/geopandas",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 15
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/geopandas"
+}

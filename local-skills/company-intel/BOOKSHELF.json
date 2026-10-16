@@ -1,0 +1,23 @@
+{
+  "name": "company-intel",
+  "title": "公司与行业研究",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "company-intel",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/company-intel",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 4
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/company-intel"
+}

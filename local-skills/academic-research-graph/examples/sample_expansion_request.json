@@ -1,0 +1,44 @@
+{
+  "operation": "expand",
+  "base_graph": "sample_graph.base.json",
+  "base_graph_id": "arg:vit-lineage:example",
+  "base_revision": 1,
+  "start_node_id": "paper:deit",
+  "start_node_title": "Training Data-Efficient Image Transformers & Distillation through Attention",
+  "focus": "从 DeiT 节点继续追踪数据高效视觉 Transformer 的后续方法、架构分支和争议。",
+  "direction": "forward",
+  "mode": "standard",
+  "max_depth": 2,
+  "candidate_budget": 120,
+  "analysis_budget": 35,
+  "output_language": "zh-CN",
+  "allow_main_path_revision": true,
+  "created_at": "2026-08-05T00:10:00+08:00",
+  "summary_policy": {
+    "audience": "field_familiar_unread",
+    "exposition_depth": "explanatory",
+    "explain_background": true,
+    "define_paper_specific_terms": true,
+    "expand_acronyms_on_first_use": true,
+    "name_comparison_baselines": true,
+    "require_limitations_and_scope": true
+  },
+  "figure_policy": {
+    "enabled": true,
+    "selection_mode": "selective",
+    "max_per_paper": 1,
+    "prefer_kinds": [
+      "method_overview",
+      "architecture",
+      "pipeline",
+      "conceptual_diagram",
+      "qualitative_result"
+    ],
+    "require_source_attribution": true,
+    "require_alt_text": true,
+    "embed_local_assets": true,
+    "allow_remote_images": false,
+    "max_embedded_bytes": 2500000,
+    "max_display_width_px": 1600
+  }
+}

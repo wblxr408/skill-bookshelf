@@ -1,0 +1,10 @@
+{
+  "skill": "research-gap",
+  "source": "cocoafun/paperskills",
+  "ref": "99e7a2ff93ec025697ee8aaf51ddea9d3573cb24",
+  "source_path": "skills/paperskills-core/research-gap",
+  "files": [
+    "SKILL.md",
+    "assets\\report-template.md"
+  ]
+}

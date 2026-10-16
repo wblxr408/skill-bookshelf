@@ -1,0 +1,22 @@
+{
+  "skill": "geopandas",
+  "source": "K-Dense-AI/scientific-agent-skills",
+  "ref": "a1043ef544e3a100c28e70a736b6cf32554d0677",
+  "source_path": "skills/geopandas",
+  "files": [
+    "SKILL.md",
+    "references\\crs-management.md",
+    "references\\data-io.md",
+    "references\\data-structures.md",
+    "references\\geometric-operations.md",
+    "references\\spatial-analysis.md",
+    "references\\visualization.md",
+    "scripts\\_common.py",
+    "scripts\\crs_reprojection_plan.py",
+    "scripts\\export_plan.py",
+    "scripts\\geometry_validity_report.py",
+    "scripts\\sensitive_coordinates_checklist.py",
+    "scripts\\spatial_join_audit.py",
+    "scripts\\vector_inventory.py"
+  ]
+}

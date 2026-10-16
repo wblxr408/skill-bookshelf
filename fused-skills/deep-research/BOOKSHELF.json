@@ -1,0 +1,48 @@
+{
+  "name": "deep-research",
+  "title": "研究入口分流版",
+  "author": "Imbad0202 / Academic Research Skills",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "Imbad0202 / Academic Research Skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "deep-research",
+      "label": "fusion-2026-10-05",
+      "sourcePath": "fused-skills/deep-research",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 135
+    },
+    {
+      "name": "deep-research",
+      "label": "2.11.0",
+      "sourcePath": "skill-versions/deep-research/v02",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 52
+    },
+    {
+      "name": "deep-research",
+      "label": "2.11.0",
+      "sourcePath": "skill-versions/deep-research/v03",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 52
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/deep-research"
+}

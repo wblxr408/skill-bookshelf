@@ -1,0 +1,6511 @@
+{
+  "date": "2026-10-16",
+  "stats": {
+    "installedRecords": 288,
+    "distinctNames": 184,
+    "skills": 163,
+    "mergedRecords": 125,
+    "versions": 218,
+    "sourceOnly": 1,
+    "roots": {
+      "shared": 69,
+      "codex": 59,
+      "claude": 59,
+      "codex-plugins": 87,
+      "claude-plugins": 8,
+      "project": 6
+    }
+  },
+  "aliasRules": {
+    "frontend-design": "impeccable",
+    "academic-paper-reviewer": "paper-audit",
+    "academic-paper-review": "paper-audit",
+    "latex-paper-en": "academic-paper",
+    "latex-thesis-zh": "academic-paper",
+    "typst-paper": "academic-paper",
+    "scipilot-figure-skill": "scientific-data-visualization",
+    "do": "dev",
+    "omo": "dev",
+    "sparv": "dev",
+    "harness": "context-bridge",
+    "bm-checkpoint": "context-bridge",
+    "bm-orient": "context-bridge",
+    "intent-review": "agent-crosscheck",
+    "playwright": "browser",
+    "grill-me": "grilling",
+    "capacity": "microsoft-foundry",
+    "customize": "microsoft-foundry",
+    "deploy-model": "microsoft-foundry",
+    "finetuning": "microsoft-foundry",
+    "preset": "microsoft-foundry"
+  },
+  "groups": [
+    {
+      "name": "-21risk-automation",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "-21risk-automation",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/-21risk-automation",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "academic-paper",
+      "aliases": [
+        "latex-paper-en",
+        "latex-thesis-zh",
+        "typst-paper"
+      ],
+      "copies": 12,
+      "versions": [
+        {
+          "name": "academic-paper",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/academic-paper",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 399
+        },
+        {
+          "name": "academic-paper",
+          "label": "3.2.0",
+          "sourcePath": "skill-versions/academic-paper/v02",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 62
+        },
+        {
+          "name": "academic-paper",
+          "label": "3.2.0",
+          "sourcePath": "skill-versions/academic-paper/v03",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 62
+        },
+        {
+          "name": "typst-paper",
+          "label": "5.1.0",
+          "sourcePath": "skill-versions/academic-paper/v04",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 70
+        },
+        {
+          "name": "latex-thesis-zh",
+          "label": "5.1.0",
+          "sourcePath": "skill-versions/academic-paper/v05",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 60
+        },
+        {
+          "name": "latex-paper-en",
+          "label": "5.1.0",
+          "sourcePath": "skill-versions/academic-paper/v06",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 77
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "academic-pipeline",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "academic-pipeline",
+          "label": "3.19.0",
+          "sourcePath": "local-skills/academic-pipeline",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 30
+        },
+        {
+          "name": "academic-pipeline",
+          "label": "3.19.0",
+          "sourcePath": "skill-versions/academic-pipeline/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 30
+        },
+        {
+          "name": "academic-pipeline",
+          "label": "3.19.0",
+          "sourcePath": "skill-versions/academic-pipeline/v03",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 30
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "academic-research-graph",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "academic-research-graph",
+          "label": "0.2.4",
+          "sourcePath": "local-skills/academic-research-graph",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 46
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "agent-crosscheck",
+      "aliases": [
+        "intent-review"
+      ],
+      "copies": 4,
+      "versions": [
+        {
+          "name": "agent-crosscheck",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/agent-crosscheck",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 10
+        },
+        {
+          "name": "intent-review",
+          "label": "Codex 目录",
+          "sourcePath": "skill-versions/agent-crosscheck/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "algorithmic-art",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "algorithmic-art",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/algorithmic-art",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        },
+        {
+          "name": "algorithmic-art",
+          "label": "Codex 目录",
+          "sourcePath": "skill-versions/algorithmic-art/v02",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "all-images-ai-automation",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "all-images-ai-automation",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/all-images-ai-automation",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-analytics-dashboard",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-analytics-dashboard",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-analytics-dashboard",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-annual-impact-report",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-annual-impact-report",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-annual-impact-report",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-brand-guidelines",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-brand-guidelines",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-brand-guidelines",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-business-review",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-business-review",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-business-review",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-calder-architecture",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-calder-architecture",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-calder-architecture",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-creative-campaign-brief",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-creative-campaign-brief",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-creative-campaign-brief",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-design-report",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-design-report",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-design-report",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-experiment-analysis",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-experiment-analysis",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-experiment-analysis",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-financial-budget",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-financial-budget",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-financial-budget",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-growth-strategy",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-growth-strategy",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-growth-strategy",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-investment-committee-memo",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-investment-committee-memo",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-investment-committee-memo",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-legal-memorandum",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-legal-memorandum",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-legal-memorandum",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-market-trends-report",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-market-trends-report",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-market-trends-report",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-minimal-letterhead",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-minimal-letterhead",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-minimal-letterhead",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-next-generation-os",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-next-generation-os",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-next-generation-os",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-operating-calendar",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-operating-calendar",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-operating-calendar",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-photography-portfolio",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-photography-portfolio",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-photography-portfolio",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-product-pitch",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-product-pitch",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-product-pitch",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-product-strategy",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-product-strategy",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-product-strategy",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-project-kickoff",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-project-kickoff",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-project-kickoff",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-project-tracker",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-project-tracker",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-project-tracker",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-sales-pipeline",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-sales-pipeline",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-sales-pipeline",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-state-of-art",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-state-of-art",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-state-of-art",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-strategy-memorandum",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-strategy-memorandum",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-strategy-memorandum",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-system-design",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-system-design",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-system-design",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-three-statement-forecast",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-three-statement-forecast",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-three-statement-forecast",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "artifact-template-weekly-business-review",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "artifact-template-weekly-business-review",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/artifact-template-weekly-business-review",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bib-search-citation",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "bib-search-citation",
+          "label": "5.1.0",
+          "sourcePath": "local-skills/bib-search-citation",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bibliometrix-guide",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "bibliometrix-guide",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/bibliometrix-guide",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-decide",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-decide",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-decide",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-decide",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-decide/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-remember",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-remember",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-remember",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-remember",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-remember/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-setup",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-setup",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-setup",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-setup",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-setup/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-share",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-share",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-share",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-share",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-share/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-status",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-status",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-status",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-status",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-status/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "bm-writing",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "bm-writing",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/bm-writing",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-writing",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/bm-writing/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "browser",
+      "aliases": [
+        "playwright"
+      ],
+      "copies": 4,
+      "versions": [
+        {
+          "name": "browser",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/browser",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 65
+        },
+        {
+          "name": "browser",
+          "label": "共享 Skill 目录",
+          "sourcePath": "skill-versions/browser/v02",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 17
+        },
+        {
+          "name": "browser",
+          "label": "Claude Code 目录",
+          "sourcePath": "skill-versions/browser/v03",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 10
+        },
+        {
+          "name": "playwright",
+          "label": "Codex 目录",
+          "sourcePath": "skills/playwright",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 9
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "citation-network-builder",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "citation-network-builder",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/citation-network-builder",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "codeagent",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "codeagent",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/codeagent",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "codeagent",
+          "label": "Claude Code 目录",
+          "sourcePath": "skill-versions/codeagent/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "company-intel",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "company-intel",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/company-intel",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "competitive-analysis",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "competitive-analysis",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/competitive-analysis",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "computer-use",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "computer-use",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/computer-use",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "context-bridge",
+      "aliases": [
+        "bm-checkpoint",
+        "bm-orient",
+        "harness"
+      ],
+      "copies": 9,
+      "versions": [
+        {
+          "name": "context-bridge",
+          "label": "fusion-2026-10-12",
+          "sourcePath": "fused-skills/context-bridge",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 88
+        },
+        {
+          "name": "harness",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "skill-versions/context-bridge/v02",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 12
+        },
+        {
+          "name": "bm-orient",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/context-bridge/v03",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-checkpoint",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/context-bridge/v04",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        },
+        {
+          "name": "bm-orient",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/context-bridge/v05",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "bm-checkpoint",
+          "label": "Claude 插件目录",
+          "sourcePath": "skill-versions/context-bridge/v06",
+          "copies": 1,
+          "hosts": [
+            "Claude 插件目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "cover-letter",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "cover-letter",
+          "label": "5.1.0",
+          "sourcePath": "local-skills/cover-letter",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 39
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "create-pet",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "create-pet",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/create-pet",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 21
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "create-plugin",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "create-plugin",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/create-plugin",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 9
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "dblp-cli",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "dblp-cli",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/dblp-cli",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "deep-research",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "deep-research",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/deep-research",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 135
+        },
+        {
+          "name": "deep-research",
+          "label": "2.11.0",
+          "sourcePath": "skill-versions/deep-research/v02",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 52
+        },
+        {
+          "name": "deep-research",
+          "label": "2.11.0",
+          "sourcePath": "skill-versions/deep-research/v03",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 52
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "dev",
+      "aliases": [
+        "do",
+        "omo",
+        "sparv"
+      ],
+      "copies": 9,
+      "versions": [
+        {
+          "name": "dev",
+          "label": "fusion-ecc-2026-10-14",
+          "sourcePath": "fused-skills/dev",
+          "copies": 2,
+          "hosts": [
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1399
+        },
+        {
+          "name": "dev",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "skill-versions/dev/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1399
+        },
+        {
+          "name": "sparv",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "skill-versions/dev/v03",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 13
+        },
+        {
+          "name": "omo",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "skill-versions/dev/v04",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 9
+        },
+        {
+          "name": "do",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "skill-versions/dev/v05",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 12
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "documents",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "documents",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/documents",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 80
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "engineering-memory",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "engineering-memory",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/engineering-memory",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 7
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "engineering-toolbox",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "engineering-toolbox",
+          "label": "fusion-ecc-2026-10-12",
+          "sourcePath": "fused-skills/engineering-toolbox",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "excel-live-control",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "excel-live-control",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/excel-live-control",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-code-connect",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-code-connect",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-code-connect",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-create-new-file",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-create-new-file",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-create-new-file",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-design-to-code",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-design-to-code",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-design-to-code",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-generate-design",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-generate-design",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-generate-design",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-generate-diagram",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-generate-diagram",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-generate-diagram",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-generate-library",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-generate-library",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-generate-library",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 16
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-implement-motion",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-implement-motion",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-implement-motion",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 7
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-swiftui",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-swiftui",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-swiftui",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-use",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-use",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-use",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 21
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-use-figjam",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-use-figjam",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-use-figjam",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 14
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-use-motion",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-use-motion",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-use-motion",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "figma-use-slides",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "figma-use-slides",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/figma-use-slides",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 7
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "find-skills",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "find-skills",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/find-skills",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "firecrawl",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "firecrawl",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/firecrawl",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "frontend-app-builder",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "frontend-app-builder",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/frontend-app-builder",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "frontend-testing-debugging",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "frontend-testing-debugging",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/frontend-testing-debugging",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "geopandas",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "geopandas",
+          "label": "1.4",
+          "sourcePath": "local-skills/geopandas",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 15
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "google-docs",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "google-docs",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/google-docs",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 24
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "google-drive",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "google-drive",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/google-drive",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 10
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "google-drive-comments",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "google-drive-comments",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/google-drive-comments",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "google-sheets",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "google-sheets",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/google-sheets",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "google-slides",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "google-slides",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/google-slides",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 16
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "grilling",
+      "aliases": [
+        "grill-me"
+      ],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "grilling",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/grilling",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 2
+        },
+        {
+          "name": "grill-me",
+          "label": "共享 Skill 目录",
+          "sourcePath": "skill-versions/grilling/v02",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "gsap",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "gsap",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/gsap",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hatch-pet",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "hatch-pet",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/hatch-pet",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 27
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "hyperframes",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 31
+        },
+        {
+          "name": "hyperframes",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/hyperframes/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 40
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-animation",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-animation",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-animation",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 122
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-audio",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-audio",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-audio",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-cli",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "hyperframes-cli",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-cli",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 11
+        },
+        {
+          "name": "hyperframes-cli",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/hyperframes-cli/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-core",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-core",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-core",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 11
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-creative",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-creative",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-creative",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 79
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-keyframes",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-keyframes",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-keyframes",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-registry",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "hyperframes-registry",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-registry",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 12
+        },
+        {
+          "name": "hyperframes-registry",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/hyperframes-registry/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 9
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "hyperframes-studio",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "hyperframes-studio",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/hyperframes-studio",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "imagegen",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "imagegen",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/imagegen",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 12
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "impeccable",
+      "aliases": [
+        "frontend-design"
+      ],
+      "copies": 4,
+      "versions": [
+        {
+          "name": "impeccable",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/impeccable",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 141
+        },
+        {
+          "name": "frontend-design",
+          "label": "Codex 目录",
+          "sourcePath": "skill-versions/impeccable/v02",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        },
+        {
+          "name": "frontend-design",
+          "label": "共享 Skill 目录",
+          "sourcePath": "skill-versions/impeccable/v03",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "intelligence-collection-disciplines",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "intelligence-collection-disciplines",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/intelligence-collection-disciplines",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "knowledge-graph-construction",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "knowledge-graph-construction",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/knowledge-graph-construction",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "lean-agent-harness",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "lean-agent-harness",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/lean-agent-harness",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "linear",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "linear",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/linear",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "literature-search-openalex",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "literature-search-openalex",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/literature-search-openalex",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "maintain-space",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "maintain-space",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/maintain-space",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "manage-schedules",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "manage-schedules",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/manage-schedules",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "market-researcher-agent",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "market-researcher-agent",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/market-researcher-agent",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "media-use",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "media-use",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/media-use",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 110
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "microsoft-foundry",
+      "aliases": [
+        "capacity",
+        "customize",
+        "deploy-model",
+        "finetuning",
+        "preset"
+      ],
+      "copies": 6,
+      "versions": [
+        {
+          "name": "microsoft-foundry",
+          "label": "1.2.27",
+          "sourcePath": "local-skills/microsoft-foundry",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 195
+        },
+        {
+          "name": "preset",
+          "label": "1.0.1",
+          "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/preset",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        },
+        {
+          "name": "customize",
+          "label": "1.0.1",
+          "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/customize",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        },
+        {
+          "name": "capacity",
+          "label": "1.0.0",
+          "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/capacity",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 5
+        },
+        {
+          "name": "deploy-model",
+          "label": "1.0.0",
+          "sourcePath": "local-skills/microsoft-foundry/models/deploy-model",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 17
+        },
+        {
+          "name": "finetuning",
+          "label": "0.0.0-placeholder",
+          "sourcePath": "local-skills/microsoft-foundry/finetuning",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 34
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "multi-agent-security",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "multi-agent-security",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/multi-agent-security",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "networkx",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "networkx",
+          "label": "1.4",
+          "sourcePath": "local-skills/networkx",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "one-day-prototype",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "one-day-prototype",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/one-day-prototype",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "open-defense-factory",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "open-defense-factory",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/open-defense-factory",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openai-docs",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "openai-docs",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/openai-docs",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 17
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-apply-change",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-apply-change",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-apply-change",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-apply-change",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-apply-change/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-archive-change",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-archive-change",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-archive-change",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-archive-change",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-archive-change/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-explore",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-explore",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-explore",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-explore",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-explore/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-propose",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-propose",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-propose",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-propose",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-propose/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-sync-specs",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-sync-specs",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-sync-specs",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-sync-specs",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-sync-specs/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "openspec-update-change",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "openspec-update-change",
+          "label": "1.0",
+          "sourcePath": "local-skills/openspec-update-change",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "本项目目录"
+          ],
+          "fileCount": 1
+        },
+        {
+          "name": "openspec-update-change",
+          "label": "1.0",
+          "sourcePath": "skill-versions/openspec-update-change/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "orcid-api",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "orcid-api",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/orcid-api",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "organize-space",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "organize-space",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/organize-space",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "paper-audit",
+      "aliases": [
+        "academic-paper-review",
+        "academic-paper-reviewer"
+      ],
+      "copies": 7,
+      "versions": [
+        {
+          "name": "paper-audit",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/paper-audit",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 330
+        },
+        {
+          "name": "paper-audit",
+          "label": "5.1.0",
+          "sourcePath": "skill-versions/paper-audit/v02",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 90
+        },
+        {
+          "name": "academic-paper-reviewer",
+          "label": "1.10.0",
+          "sourcePath": "skill-versions/paper-audit/v03",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录"
+          ],
+          "fileCount": 26
+        },
+        {
+          "name": "academic-paper-review",
+          "label": "Codex 目录",
+          "sourcePath": "skill-versions/paper-audit/v04",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        },
+        {
+          "name": "academic-paper-reviewer",
+          "label": "1.10.0",
+          "sourcePath": "skill-versions/paper-audit/v05",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 26
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "paper-search",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "paper-search",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/paper-search",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 17
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "pdf",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "pdf",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/pdf",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 40
+        },
+        {
+          "name": "pdf",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "skill-versions/pdf/v02",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "pets",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "pets",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/pets",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-batch-production",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-batch-production",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-batch-production",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-composite",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-composite",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-composite",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-edit",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-edit",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-edit",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-generated-images",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-generated-images",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-generated-images",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-photo-finish",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-photo-finish",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-photo-finish",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "photon-vector-design",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "photon-vector-design",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/photon-vector-design",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "plugin-management",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "plugin-management",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/plugin-management",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "prepare-plugin-submission",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "prepare-plugin-submission",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/prepare-plugin-submission",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "presentations",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "Presentations",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/presentations",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 60
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "product-requirements",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "product-requirements",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/product-requirements",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "project-index-router",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "project-index-router",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/project-index-router",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "prototype-prompt-generator",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "prototype-prompt-generator",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/prototype-prompt-generator",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "react-best-practices",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "react-best-practices",
+          "label": "1.0.0",
+          "sourcePath": "local-skills/react-best-practices",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 71
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "remotion-best-practices",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "remotion-best-practices",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/remotion-best-practices",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 141
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "research-gap",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "research-gap",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/research-gap",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "reverse-engineer-anything",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "reverse-engineer-anything",
+          "label": "37",
+          "sourcePath": "local-skills/reverse-engineer-anything",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 7
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "review-agent",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "review-agent",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/review-agent",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "scene-to-art-lab",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "scene-to-art-lab",
+          "label": "Codex 目录",
+          "sourcePath": "skills/scene-to-art-lab",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 7
+        }
+      ],
+      "distribution": "source-only"
+    },
+    {
+      "name": "scientific-data-visualization",
+      "aliases": [
+        "scipilot-figure-skill"
+      ],
+      "copies": 4,
+      "versions": [
+        {
+          "name": "scientific-data-visualization",
+          "label": "fusion-2026-10-05",
+          "sourcePath": "fused-skills/scientific-data-visualization",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 130
+        },
+        {
+          "name": "scientific-data-visualization",
+          "label": "共享 Skill 目录",
+          "sourcePath": "skill-versions/scientific-data-visualization/v02",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 44
+        },
+        {
+          "name": "scipilot-figure-skill",
+          "label": "Codex 目录",
+          "sourcePath": "skill-versions/scientific-data-visualization/v03",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 18
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "shadcn",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "shadcn",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/shadcn",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "sites",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "sites",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/sites",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 137
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "skill-creator",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "skill-creator",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/skill-creator",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 9
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "skill-install",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "skill-install",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/skill-install",
+          "copies": 1,
+          "hosts": [
+            "共享 Skill 目录"
+          ],
+          "fileCount": 2
+        },
+        {
+          "name": "skill-install",
+          "label": "Claude Code 目录",
+          "sourcePath": "skill-versions/skill-install/v02",
+          "copies": 1,
+          "hosts": [
+            "Claude Code 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "skill-installer",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "skill-installer",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/skill-installer",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "spreadsheets",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "Spreadsheets",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/spreadsheets",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 19
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "starter-workflow",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "starter-workflow",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/create-plugin/assets/starter-plugin/skills/starter-workflow",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "stripe-best-practices",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "stripe-best-practices",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/stripe-best-practices",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "supabase-postgres-best-practices",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "supabase-postgres-best-practices",
+          "label": "1.1.0",
+          "sourcePath": "local-skills/supabase-postgres-best-practices",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 38
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "systematic-literature-review",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "systematic-literature-review",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/systematic-literature-review",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 8
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "task-contract",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "task-contract",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/task-contract",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "task-lanes",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "task-lanes",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/task-lanes",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "template-creator",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "template-creator",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/template-creator",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 6
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "test-cases",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "test-cases",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/test-cases",
+          "copies": 2,
+          "hosts": [
+            "Claude Code 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "update-pet",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "update-pet",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/update-pet",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 2
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "update-plugin",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "update-plugin",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/update-plugin",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 3
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "visual-style-router",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "visual-style-router",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/visual-style-router",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 4
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "visualize",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "visualize",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/visualize",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 13
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "website-to-hyperframes",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "website-to-hyperframes",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/website-to-hyperframes",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 10
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "wechat-to-memory",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "wechat-to-memory",
+          "label": "Codex 目录",
+          "sourcePath": "local-skills/wechat-to-memory",
+          "copies": 1,
+          "hosts": [
+            "Codex 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "workflow-skill-capture",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "workflow-skill-capture",
+          "label": "共享 Skill 目录",
+          "sourcePath": "local-skills/workflow-skill-capture",
+          "copies": 3,
+          "hosts": [
+            "Claude Code 目录",
+            "Codex 目录",
+            "共享 Skill 目录"
+          ],
+          "fileCount": 1
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
+      "name": "write-page",
+      "aliases": [],
+      "copies": 1,
+      "versions": [
+        {
+          "name": "write-page",
+          "label": "Codex 插件目录（含缓存）",
+          "sourcePath": "local-skills/write-page",
+          "copies": 1,
+          "hosts": [
+            "Codex 插件目录（含缓存）"
+          ],
+          "fileCount": 5
+        }
+      ],
+      "distribution": "packaged"
+    }
+  ],
+  "records": [
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "-21risk-automation",
+      "name": "-21risk-automation",
+      "version": "安装保存版",
+      "canonical": "-21risk-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/-21risk-automation"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "-21risk-automation",
+      "name": "-21risk-automation",
+      "version": "安装保存版",
+      "canonical": "-21risk-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/-21risk-automation"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "-21risk-automation",
+      "name": "-21risk-automation",
+      "version": "安装保存版",
+      "canonical": "-21risk-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/-21risk-automation"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "academic-paper",
+      "name": "academic-paper",
+      "version": "fusion-2026-10-05",
+      "canonical": "academic-paper",
+      "variant": 1,
+      "sourcePath": "fused-skills/academic-paper"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "academic-paper",
+      "name": "academic-paper",
+      "version": "3.2.0",
+      "canonical": "academic-paper",
+      "variant": 2,
+      "sourcePath": "skill-versions/academic-paper/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "academic-paper",
+      "name": "academic-paper",
+      "version": "3.2.0",
+      "canonical": "academic-paper",
+      "variant": 3,
+      "sourcePath": "skill-versions/academic-paper/v03"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "typst-paper",
+      "name": "typst-paper",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 4,
+      "sourcePath": "skill-versions/academic-paper/v04"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "typst-paper",
+      "name": "typst-paper",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 4,
+      "sourcePath": "skill-versions/academic-paper/v04"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "typst-paper",
+      "name": "typst-paper",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 4,
+      "sourcePath": "skill-versions/academic-paper/v04"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "latex-thesis-zh",
+      "name": "latex-thesis-zh",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 5,
+      "sourcePath": "skill-versions/academic-paper/v05"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "latex-thesis-zh",
+      "name": "latex-thesis-zh",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 5,
+      "sourcePath": "skill-versions/academic-paper/v05"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "latex-thesis-zh",
+      "name": "latex-thesis-zh",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 5,
+      "sourcePath": "skill-versions/academic-paper/v05"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "latex-paper-en",
+      "name": "latex-paper-en",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 6,
+      "sourcePath": "skill-versions/academic-paper/v06"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "latex-paper-en",
+      "name": "latex-paper-en",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 6,
+      "sourcePath": "skill-versions/academic-paper/v06"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "latex-paper-en",
+      "name": "latex-paper-en",
+      "version": "5.1.0",
+      "canonical": "academic-paper",
+      "variant": 6,
+      "sourcePath": "skill-versions/academic-paper/v06"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "academic-pipeline",
+      "name": "academic-pipeline",
+      "version": "3.19.0",
+      "canonical": "academic-pipeline",
+      "variant": 1,
+      "sourcePath": "local-skills/academic-pipeline"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "academic-pipeline",
+      "name": "academic-pipeline",
+      "version": "3.19.0",
+      "canonical": "academic-pipeline",
+      "variant": 2,
+      "sourcePath": "skill-versions/academic-pipeline/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "academic-pipeline",
+      "name": "academic-pipeline",
+      "version": "3.19.0",
+      "canonical": "academic-pipeline",
+      "variant": 3,
+      "sourcePath": "skill-versions/academic-pipeline/v03"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "academic-research-graph",
+      "name": "academic-research-graph",
+      "version": "0.2.4",
+      "canonical": "academic-research-graph",
+      "variant": 1,
+      "sourcePath": "local-skills/academic-research-graph"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "agent-crosscheck",
+      "name": "agent-crosscheck",
+      "version": "fusion-2026-10-05",
+      "canonical": "agent-crosscheck",
+      "variant": 1,
+      "sourcePath": "fused-skills/agent-crosscheck"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "agent-crosscheck",
+      "name": "agent-crosscheck",
+      "version": "fusion-2026-10-05",
+      "canonical": "agent-crosscheck",
+      "variant": 1,
+      "sourcePath": "fused-skills/agent-crosscheck"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "agent-crosscheck",
+      "name": "agent-crosscheck",
+      "version": "fusion-2026-10-05",
+      "canonical": "agent-crosscheck",
+      "variant": 1,
+      "sourcePath": "fused-skills/agent-crosscheck"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "intent-review",
+      "name": "intent-review",
+      "version": "安装保存版",
+      "canonical": "agent-crosscheck",
+      "variant": 2,
+      "sourcePath": "skill-versions/agent-crosscheck/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "algorithmic-art",
+      "name": "algorithmic-art",
+      "version": "安装保存版",
+      "canonical": "algorithmic-art",
+      "variant": 1,
+      "sourcePath": "local-skills/algorithmic-art"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "algorithmic-art",
+      "name": "algorithmic-art",
+      "version": "安装保存版",
+      "canonical": "algorithmic-art",
+      "variant": 2,
+      "sourcePath": "skill-versions/algorithmic-art/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "algorithmic-art",
+      "name": "algorithmic-art",
+      "version": "安装保存版",
+      "canonical": "algorithmic-art",
+      "variant": 2,
+      "sourcePath": "skill-versions/algorithmic-art/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "all-images-ai-automation",
+      "name": "all-images-ai-automation",
+      "version": "安装保存版",
+      "canonical": "all-images-ai-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/all-images-ai-automation"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "all-images-ai-automation",
+      "name": "all-images-ai-automation",
+      "version": "安装保存版",
+      "canonical": "all-images-ai-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/all-images-ai-automation"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "all-images-ai-automation",
+      "name": "all-images-ai-automation",
+      "version": "安装保存版",
+      "canonical": "all-images-ai-automation",
+      "variant": 1,
+      "sourcePath": "local-skills/all-images-ai-automation"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-analytics-dashboard",
+      "name": "artifact-template-analytics-dashboard",
+      "version": "安装保存版",
+      "canonical": "artifact-template-analytics-dashboard",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-analytics-dashboard"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-annual-impact-report",
+      "name": "artifact-template-annual-impact-report",
+      "version": "安装保存版",
+      "canonical": "artifact-template-annual-impact-report",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-annual-impact-report"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-brand-guidelines",
+      "name": "artifact-template-brand-guidelines",
+      "version": "安装保存版",
+      "canonical": "artifact-template-brand-guidelines",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-brand-guidelines"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-business-review",
+      "name": "artifact-template-business-review",
+      "version": "安装保存版",
+      "canonical": "artifact-template-business-review",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-business-review"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-calder-architecture",
+      "name": "artifact-template-calder-architecture",
+      "version": "安装保存版",
+      "canonical": "artifact-template-calder-architecture",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-calder-architecture"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-creative-campaign-brief",
+      "name": "artifact-template-creative-campaign-brief",
+      "version": "安装保存版",
+      "canonical": "artifact-template-creative-campaign-brief",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-creative-campaign-brief"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-design-report",
+      "name": "artifact-template-design-report",
+      "version": "安装保存版",
+      "canonical": "artifact-template-design-report",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-design-report"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-experiment-analysis",
+      "name": "artifact-template-experiment-analysis",
+      "version": "安装保存版",
+      "canonical": "artifact-template-experiment-analysis",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-experiment-analysis"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-financial-budget",
+      "name": "artifact-template-financial-budget",
+      "version": "安装保存版",
+      "canonical": "artifact-template-financial-budget",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-financial-budget"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-growth-strategy",
+      "name": "artifact-template-growth-strategy",
+      "version": "安装保存版",
+      "canonical": "artifact-template-growth-strategy",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-growth-strategy"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-investment-committee-memo",
+      "name": "artifact-template-investment-committee-memo",
+      "version": "安装保存版",
+      "canonical": "artifact-template-investment-committee-memo",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-investment-committee-memo"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-legal-memorandum",
+      "name": "artifact-template-legal-memorandum",
+      "version": "安装保存版",
+      "canonical": "artifact-template-legal-memorandum",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-legal-memorandum"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-market-trends-report",
+      "name": "artifact-template-market-trends-report",
+      "version": "安装保存版",
+      "canonical": "artifact-template-market-trends-report",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-market-trends-report"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-minimal-letterhead",
+      "name": "artifact-template-minimal-letterhead",
+      "version": "安装保存版",
+      "canonical": "artifact-template-minimal-letterhead",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-minimal-letterhead"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-next-generation-os",
+      "name": "artifact-template-next-generation-os",
+      "version": "安装保存版",
+      "canonical": "artifact-template-next-generation-os",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-next-generation-os"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-operating-calendar",
+      "name": "artifact-template-operating-calendar",
+      "version": "安装保存版",
+      "canonical": "artifact-template-operating-calendar",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-operating-calendar"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-photography-portfolio",
+      "name": "artifact-template-photography-portfolio",
+      "version": "安装保存版",
+      "canonical": "artifact-template-photography-portfolio",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-photography-portfolio"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-product-pitch",
+      "name": "artifact-template-product-pitch",
+      "version": "安装保存版",
+      "canonical": "artifact-template-product-pitch",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-product-pitch"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-product-strategy",
+      "name": "artifact-template-product-strategy",
+      "version": "安装保存版",
+      "canonical": "artifact-template-product-strategy",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-product-strategy"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-project-kickoff",
+      "name": "artifact-template-project-kickoff",
+      "version": "安装保存版",
+      "canonical": "artifact-template-project-kickoff",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-project-kickoff"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-project-tracker",
+      "name": "artifact-template-project-tracker",
+      "version": "安装保存版",
+      "canonical": "artifact-template-project-tracker",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-project-tracker"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-sales-pipeline",
+      "name": "artifact-template-sales-pipeline",
+      "version": "安装保存版",
+      "canonical": "artifact-template-sales-pipeline",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-sales-pipeline"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-state-of-art",
+      "name": "artifact-template-state-of-art",
+      "version": "安装保存版",
+      "canonical": "artifact-template-state-of-art",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-state-of-art"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-strategy-memorandum",
+      "name": "artifact-template-strategy-memorandum",
+      "version": "安装保存版",
+      "canonical": "artifact-template-strategy-memorandum",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-strategy-memorandum"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-system-design",
+      "name": "artifact-template-system-design",
+      "version": "安装保存版",
+      "canonical": "artifact-template-system-design",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-system-design"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-three-statement-forecast",
+      "name": "artifact-template-three-statement-forecast",
+      "version": "安装保存版",
+      "canonical": "artifact-template-three-statement-forecast",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-three-statement-forecast"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/openai-templates/0.1.6/skills/artifact-template-weekly-business-review",
+      "name": "artifact-template-weekly-business-review",
+      "version": "安装保存版",
+      "canonical": "artifact-template-weekly-business-review",
+      "variant": 1,
+      "sourcePath": "local-skills/artifact-template-weekly-business-review"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "bib-search-citation",
+      "name": "bib-search-citation",
+      "version": "5.1.0",
+      "canonical": "bib-search-citation",
+      "variant": 1,
+      "sourcePath": "local-skills/bib-search-citation"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "bib-search-citation",
+      "name": "bib-search-citation",
+      "version": "5.1.0",
+      "canonical": "bib-search-citation",
+      "variant": 1,
+      "sourcePath": "local-skills/bib-search-citation"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "bib-search-citation",
+      "name": "bib-search-citation",
+      "version": "5.1.0",
+      "canonical": "bib-search-citation",
+      "variant": 1,
+      "sourcePath": "local-skills/bib-search-citation"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "bibliometrix-guide",
+      "name": "bibliometrix-guide",
+      "version": "安装保存版",
+      "canonical": "bibliometrix-guide",
+      "variant": 1,
+      "sourcePath": "local-skills/bibliometrix-guide"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-decide",
+      "name": "bm-decide",
+      "version": "安装保存版",
+      "canonical": "bm-decide",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-decide"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-decide",
+      "name": "bm-decide",
+      "version": "安装保存版",
+      "canonical": "bm-decide",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-decide/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-remember",
+      "name": "bm-remember",
+      "version": "安装保存版",
+      "canonical": "bm-remember",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-remember"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-remember",
+      "name": "bm-remember",
+      "version": "安装保存版",
+      "canonical": "bm-remember",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-remember/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-setup",
+      "name": "bm-setup",
+      "version": "安装保存版",
+      "canonical": "bm-setup",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-setup"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-setup",
+      "name": "bm-setup",
+      "version": "安装保存版",
+      "canonical": "bm-setup",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-setup/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-share",
+      "name": "bm-share",
+      "version": "安装保存版",
+      "canonical": "bm-share",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-share"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-share",
+      "name": "bm-share",
+      "version": "安装保存版",
+      "canonical": "bm-share",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-share/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-status",
+      "name": "bm-status",
+      "version": "安装保存版",
+      "canonical": "bm-status",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-status"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-status",
+      "name": "bm-status",
+      "version": "安装保存版",
+      "canonical": "bm-status",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-status/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-writing",
+      "name": "bm-writing",
+      "version": "安装保存版",
+      "canonical": "bm-writing",
+      "variant": 1,
+      "sourcePath": "local-skills/bm-writing"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-writing",
+      "name": "bm-writing",
+      "version": "安装保存版",
+      "canonical": "bm-writing",
+      "variant": 2,
+      "sourcePath": "skill-versions/bm-writing/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "browser",
+      "name": "browser",
+      "version": "fusion-2026-10-05",
+      "canonical": "browser",
+      "variant": 1,
+      "sourcePath": "fused-skills/browser"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "browser",
+      "name": "browser",
+      "version": "安装保存版",
+      "canonical": "browser",
+      "variant": 2,
+      "sourcePath": "skill-versions/browser/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "browser",
+      "name": "browser",
+      "version": "安装保存版",
+      "canonical": "browser",
+      "variant": 3,
+      "sourcePath": "skill-versions/browser/v03"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "playwright",
+      "name": "playwright",
+      "version": "安装保存版",
+      "canonical": "browser",
+      "variant": 4,
+      "sourcePath": "skills/playwright"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "citation-network-builder",
+      "name": "citation-network-builder",
+      "version": "安装保存版",
+      "canonical": "citation-network-builder",
+      "variant": 1,
+      "sourcePath": "local-skills/citation-network-builder"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "codeagent",
+      "name": "codeagent",
+      "version": "安装保存版",
+      "canonical": "codeagent",
+      "variant": 1,
+      "sourcePath": "local-skills/codeagent"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "codeagent",
+      "name": "codeagent",
+      "version": "安装保存版",
+      "canonical": "codeagent",
+      "variant": 2,
+      "sourcePath": "skill-versions/codeagent/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "company-intel",
+      "name": "company-intel",
+      "version": "安装保存版",
+      "canonical": "company-intel",
+      "variant": 1,
+      "sourcePath": "local-skills/company-intel"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "competitive-analysis",
+      "name": "competitive-analysis",
+      "version": "安装保存版",
+      "canonical": "competitive-analysis",
+      "variant": 1,
+      "sourcePath": "local-skills/competitive-analysis"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-bundled/computer-use/26.1013.31256/skills/computer-use",
+      "name": "computer-use",
+      "version": "安装保存版",
+      "canonical": "computer-use",
+      "variant": 1,
+      "sourcePath": "local-skills/computer-use"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "context-bridge",
+      "name": "context-bridge",
+      "version": "fusion-2026-10-12",
+      "canonical": "context-bridge",
+      "variant": 1,
+      "sourcePath": "fused-skills/context-bridge"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "context-bridge",
+      "name": "context-bridge",
+      "version": "fusion-2026-10-12",
+      "canonical": "context-bridge",
+      "variant": 1,
+      "sourcePath": "fused-skills/context-bridge"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "context-bridge",
+      "name": "context-bridge",
+      "version": "fusion-2026-10-12",
+      "canonical": "context-bridge",
+      "variant": 1,
+      "sourcePath": "fused-skills/context-bridge"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "harness",
+      "name": "harness",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "context-bridge",
+      "variant": 2,
+      "sourcePath": "skill-versions/context-bridge/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "harness",
+      "name": "harness",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "context-bridge",
+      "variant": 2,
+      "sourcePath": "skill-versions/context-bridge/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-orient",
+      "name": "bm-orient",
+      "version": "安装保存版",
+      "canonical": "context-bridge",
+      "variant": 3,
+      "sourcePath": "skill-versions/context-bridge/v03"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "basic-memory/codex/0.23.2/skills/bm-checkpoint",
+      "name": "bm-checkpoint",
+      "version": "安装保存版",
+      "canonical": "context-bridge",
+      "variant": 4,
+      "sourcePath": "skill-versions/context-bridge/v04"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-orient",
+      "name": "bm-orient",
+      "version": "安装保存版",
+      "canonical": "context-bridge",
+      "variant": 5,
+      "sourcePath": "skill-versions/context-bridge/v05"
+    },
+    {
+      "host": "Claude 插件目录",
+      "root": "claude-plugins",
+      "relative": "basicmachines-co/basic-memory/0.23.2/skills/bm-checkpoint",
+      "name": "bm-checkpoint",
+      "version": "安装保存版",
+      "canonical": "context-bridge",
+      "variant": 6,
+      "sourcePath": "skill-versions/context-bridge/v06"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "cover-letter",
+      "name": "cover-letter",
+      "version": "5.1.0",
+      "canonical": "cover-letter",
+      "variant": 1,
+      "sourcePath": "local-skills/cover-letter"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "cover-letter",
+      "name": "cover-letter",
+      "version": "5.1.0",
+      "canonical": "cover-letter",
+      "variant": 1,
+      "sourcePath": "local-skills/cover-letter"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "cover-letter",
+      "name": "cover-letter",
+      "version": "5.1.0",
+      "canonical": "cover-letter",
+      "variant": 1,
+      "sourcePath": "local-skills/cover-letter"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/work-pets/0.1.6/skills/create-pet",
+      "name": "create-pet",
+      "version": "安装保存版",
+      "canonical": "create-pet",
+      "variant": 1,
+      "sourcePath": "local-skills/create-pet"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/plugin-creator/0.1.27/skills/create-plugin",
+      "name": "create-plugin",
+      "version": "安装保存版",
+      "canonical": "create-plugin",
+      "variant": 1,
+      "sourcePath": "local-skills/create-plugin"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "dblp-cli",
+      "name": "dblp-cli",
+      "version": "安装保存版",
+      "canonical": "dblp-cli",
+      "variant": 1,
+      "sourcePath": "local-skills/dblp-cli"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "deep-research",
+      "name": "deep-research",
+      "version": "fusion-2026-10-05",
+      "canonical": "deep-research",
+      "variant": 1,
+      "sourcePath": "fused-skills/deep-research"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "deep-research",
+      "name": "deep-research",
+      "version": "2.11.0",
+      "canonical": "deep-research",
+      "variant": 2,
+      "sourcePath": "skill-versions/deep-research/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "deep-research",
+      "name": "deep-research",
+      "version": "2.11.0",
+      "canonical": "deep-research",
+      "variant": 3,
+      "sourcePath": "skill-versions/deep-research/v03"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "dev",
+      "name": "dev",
+      "version": "fusion-ecc-2026-10-14",
+      "canonical": "dev",
+      "variant": 1,
+      "sourcePath": "fused-skills/dev"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "dev",
+      "name": "dev",
+      "version": "fusion-ecc-2026-10-14",
+      "canonical": "dev",
+      "variant": 1,
+      "sourcePath": "fused-skills/dev"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "dev",
+      "name": "dev",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 2,
+      "sourcePath": "skill-versions/dev/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "sparv",
+      "name": "sparv",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 3,
+      "sourcePath": "skill-versions/dev/v03"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "sparv",
+      "name": "sparv",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 3,
+      "sourcePath": "skill-versions/dev/v03"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "omo",
+      "name": "omo",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 4,
+      "sourcePath": "skill-versions/dev/v04"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "omo",
+      "name": "omo",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 4,
+      "sourcePath": "skill-versions/dev/v04"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "do",
+      "name": "do",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 5,
+      "sourcePath": "skill-versions/dev/v05"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "do",
+      "name": "do",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "dev",
+      "variant": 5,
+      "sourcePath": "skill-versions/dev/v05"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/documents/26.1013.11914/skills/documents",
+      "name": "documents",
+      "version": "安装保存版",
+      "canonical": "documents",
+      "variant": 1,
+      "sourcePath": "local-skills/documents"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "engineering-memory",
+      "name": "engineering-memory",
+      "version": "安装保存版",
+      "canonical": "engineering-memory",
+      "variant": 1,
+      "sourcePath": "local-skills/engineering-memory"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "engineering-memory",
+      "name": "engineering-memory",
+      "version": "安装保存版",
+      "canonical": "engineering-memory",
+      "variant": 1,
+      "sourcePath": "local-skills/engineering-memory"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "engineering-memory",
+      "name": "engineering-memory",
+      "version": "安装保存版",
+      "canonical": "engineering-memory",
+      "variant": 1,
+      "sourcePath": "local-skills/engineering-memory"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "engineering-toolbox",
+      "name": "engineering-toolbox",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "engineering-toolbox",
+      "variant": 1,
+      "sourcePath": "fused-skills/engineering-toolbox"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "engineering-toolbox",
+      "name": "engineering-toolbox",
+      "version": "fusion-ecc-2026-10-12",
+      "canonical": "engineering-toolbox",
+      "variant": 1,
+      "sourcePath": "fused-skills/engineering-toolbox"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/spreadsheets/26.1013.11914/skills/excel-live-control",
+      "name": "excel-live-control",
+      "version": "安装保存版",
+      "canonical": "excel-live-control",
+      "variant": 1,
+      "sourcePath": "local-skills/excel-live-control"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-code-connect",
+      "name": "figma-code-connect",
+      "version": "安装保存版",
+      "canonical": "figma-code-connect",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-code-connect"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-create-new-file",
+      "name": "figma-create-new-file",
+      "version": "安装保存版",
+      "canonical": "figma-create-new-file",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-create-new-file"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-design-to-code",
+      "name": "figma-design-to-code",
+      "version": "安装保存版",
+      "canonical": "figma-design-to-code",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-design-to-code"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-generate-design",
+      "name": "figma-generate-design",
+      "version": "安装保存版",
+      "canonical": "figma-generate-design",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-generate-design"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-generate-diagram",
+      "name": "figma-generate-diagram",
+      "version": "安装保存版",
+      "canonical": "figma-generate-diagram",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-generate-diagram"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-generate-library",
+      "name": "figma-generate-library",
+      "version": "安装保存版",
+      "canonical": "figma-generate-library",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-generate-library"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-implement-motion",
+      "name": "figma-implement-motion",
+      "version": "安装保存版",
+      "canonical": "figma-implement-motion",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-implement-motion"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-swiftui",
+      "name": "figma-swiftui",
+      "version": "安装保存版",
+      "canonical": "figma-swiftui",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-swiftui"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-use",
+      "name": "figma-use",
+      "version": "安装保存版",
+      "canonical": "figma-use",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-use"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-use-figjam",
+      "name": "figma-use-figjam",
+      "version": "安装保存版",
+      "canonical": "figma-use-figjam",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-use-figjam"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-use-motion",
+      "name": "figma-use-motion",
+      "version": "安装保存版",
+      "canonical": "figma-use-motion",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-use-motion"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/figma/d416fd5a/skills/figma-use-slides",
+      "name": "figma-use-slides",
+      "version": "安装保存版",
+      "canonical": "figma-use-slides",
+      "variant": 1,
+      "sourcePath": "local-skills/figma-use-slides"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "find-skills",
+      "name": "find-skills",
+      "version": "安装保存版",
+      "canonical": "find-skills",
+      "variant": 1,
+      "sourcePath": "local-skills/find-skills"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/app-6a314a73f8ac819195b0d55e36b9c609/2.2.2/skills/firecrawl",
+      "name": "firecrawl",
+      "version": "安装保存版",
+      "canonical": "firecrawl",
+      "variant": 1,
+      "sourcePath": "local-skills/firecrawl"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/frontend-app-builder",
+      "name": "frontend-app-builder",
+      "version": "安装保存版",
+      "canonical": "frontend-app-builder",
+      "variant": 1,
+      "sourcePath": "local-skills/frontend-app-builder"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/frontend-testing-debugging",
+      "name": "frontend-testing-debugging",
+      "version": "安装保存版",
+      "canonical": "frontend-testing-debugging",
+      "variant": 1,
+      "sourcePath": "local-skills/frontend-testing-debugging"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "geopandas",
+      "name": "geopandas",
+      "version": "1.4",
+      "canonical": "geopandas",
+      "variant": 1,
+      "sourcePath": "local-skills/geopandas"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/google-drive/0.1.20/skills/google-docs",
+      "name": "google-docs",
+      "version": "安装保存版",
+      "canonical": "google-docs",
+      "variant": 1,
+      "sourcePath": "local-skills/google-docs"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/google-drive/0.1.20/skills/google-drive",
+      "name": "google-drive",
+      "version": "安装保存版",
+      "canonical": "google-drive",
+      "variant": 1,
+      "sourcePath": "local-skills/google-drive"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/google-drive/0.1.20/skills/google-drive-comments",
+      "name": "google-drive-comments",
+      "version": "安装保存版",
+      "canonical": "google-drive-comments",
+      "variant": 1,
+      "sourcePath": "local-skills/google-drive-comments"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/google-drive/0.1.20/skills/google-sheets",
+      "name": "google-sheets",
+      "version": "安装保存版",
+      "canonical": "google-sheets",
+      "variant": 1,
+      "sourcePath": "local-skills/google-sheets"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/google-drive/0.1.20/skills/google-slides",
+      "name": "google-slides",
+      "version": "安装保存版",
+      "canonical": "google-slides",
+      "variant": 1,
+      "sourcePath": "local-skills/google-slides"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "grilling",
+      "name": "grilling",
+      "version": "安装保存版",
+      "canonical": "grilling",
+      "variant": 1,
+      "sourcePath": "local-skills/grilling"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "grill-me",
+      "name": "grill-me",
+      "version": "安装保存版",
+      "canonical": "grilling",
+      "variant": 2,
+      "sourcePath": "skill-versions/grilling/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/hyperframes/d416fd5a/skills/gsap",
+      "name": "gsap",
+      "version": "安装保存版",
+      "canonical": "gsap",
+      "variant": 1,
+      "sourcePath": "local-skills/gsap"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "hatch-pet",
+      "name": "hatch-pet",
+      "version": "安装保存版",
+      "canonical": "hatch-pet",
+      "variant": 1,
+      "sourcePath": "local-skills/hatch-pet"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes",
+      "name": "hyperframes",
+      "version": "安装保存版",
+      "canonical": "hyperframes",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes",
+      "name": "hyperframes",
+      "version": "安装保存版",
+      "canonical": "hyperframes",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/hyperframes/d416fd5a/skills/hyperframes",
+      "name": "hyperframes",
+      "version": "安装保存版",
+      "canonical": "hyperframes",
+      "variant": 2,
+      "sourcePath": "skill-versions/hyperframes/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-animation",
+      "name": "hyperframes-animation",
+      "version": "安装保存版",
+      "canonical": "hyperframes-animation",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-animation"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-animation",
+      "name": "hyperframes-animation",
+      "version": "安装保存版",
+      "canonical": "hyperframes-animation",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-animation"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-audio",
+      "name": "hyperframes-audio",
+      "version": "安装保存版",
+      "canonical": "hyperframes-audio",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-audio"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-audio",
+      "name": "hyperframes-audio",
+      "version": "安装保存版",
+      "canonical": "hyperframes-audio",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-audio"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-cli",
+      "name": "hyperframes-cli",
+      "version": "安装保存版",
+      "canonical": "hyperframes-cli",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-cli"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-cli",
+      "name": "hyperframes-cli",
+      "version": "安装保存版",
+      "canonical": "hyperframes-cli",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-cli"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/hyperframes/d416fd5a/skills/hyperframes-cli",
+      "name": "hyperframes-cli",
+      "version": "安装保存版",
+      "canonical": "hyperframes-cli",
+      "variant": 2,
+      "sourcePath": "skill-versions/hyperframes-cli/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-core",
+      "name": "hyperframes-core",
+      "version": "安装保存版",
+      "canonical": "hyperframes-core",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-core"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-core",
+      "name": "hyperframes-core",
+      "version": "安装保存版",
+      "canonical": "hyperframes-core",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-core"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-creative",
+      "name": "hyperframes-creative",
+      "version": "安装保存版",
+      "canonical": "hyperframes-creative",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-creative"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-creative",
+      "name": "hyperframes-creative",
+      "version": "安装保存版",
+      "canonical": "hyperframes-creative",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-creative"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-keyframes",
+      "name": "hyperframes-keyframes",
+      "version": "安装保存版",
+      "canonical": "hyperframes-keyframes",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-keyframes"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-keyframes",
+      "name": "hyperframes-keyframes",
+      "version": "安装保存版",
+      "canonical": "hyperframes-keyframes",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-keyframes"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-registry",
+      "name": "hyperframes-registry",
+      "version": "安装保存版",
+      "canonical": "hyperframes-registry",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-registry"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-registry",
+      "name": "hyperframes-registry",
+      "version": "安装保存版",
+      "canonical": "hyperframes-registry",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-registry"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/hyperframes/d416fd5a/skills/hyperframes-registry",
+      "name": "hyperframes-registry",
+      "version": "安装保存版",
+      "canonical": "hyperframes-registry",
+      "variant": 2,
+      "sourcePath": "skill-versions/hyperframes-registry/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "hyperframes-studio",
+      "name": "hyperframes-studio",
+      "version": "安装保存版",
+      "canonical": "hyperframes-studio",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-studio"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "hyperframes-studio",
+      "name": "hyperframes-studio",
+      "version": "安装保存版",
+      "canonical": "hyperframes-studio",
+      "variant": 1,
+      "sourcePath": "local-skills/hyperframes-studio"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": ".system/imagegen",
+      "name": "imagegen",
+      "version": "安装保存版",
+      "canonical": "imagegen",
+      "variant": 1,
+      "sourcePath": "local-skills/imagegen"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "impeccable",
+      "name": "impeccable",
+      "version": "fusion-2026-10-05",
+      "canonical": "impeccable",
+      "variant": 1,
+      "sourcePath": "fused-skills/impeccable"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "frontend-design",
+      "name": "frontend-design",
+      "version": "安装保存版",
+      "canonical": "impeccable",
+      "variant": 2,
+      "sourcePath": "skill-versions/impeccable/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "frontend-design",
+      "name": "frontend-design",
+      "version": "安装保存版",
+      "canonical": "impeccable",
+      "variant": 2,
+      "sourcePath": "skill-versions/impeccable/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "frontend-design",
+      "name": "frontend-design",
+      "version": "安装保存版",
+      "canonical": "impeccable",
+      "variant": 3,
+      "sourcePath": "skill-versions/impeccable/v03"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "intelligence-collection-disciplines",
+      "name": "intelligence-collection-disciplines",
+      "version": "安装保存版",
+      "canonical": "intelligence-collection-disciplines",
+      "variant": 1,
+      "sourcePath": "local-skills/intelligence-collection-disciplines"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "knowledge-graph-construction",
+      "name": "knowledge-graph-construction",
+      "version": "安装保存版",
+      "canonical": "knowledge-graph-construction",
+      "variant": 1,
+      "sourcePath": "local-skills/knowledge-graph-construction"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "lean-agent-harness",
+      "name": "lean-agent-harness",
+      "version": "安装保存版",
+      "canonical": "lean-agent-harness",
+      "variant": 1,
+      "sourcePath": "local-skills/lean-agent-harness"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "lean-agent-harness",
+      "name": "lean-agent-harness",
+      "version": "安装保存版",
+      "canonical": "lean-agent-harness",
+      "variant": 1,
+      "sourcePath": "local-skills/lean-agent-harness"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "lean-agent-harness",
+      "name": "lean-agent-harness",
+      "version": "安装保存版",
+      "canonical": "lean-agent-harness",
+      "variant": 1,
+      "sourcePath": "local-skills/lean-agent-harness"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/linear/11c74d6b/skills/linear",
+      "name": "linear",
+      "version": "安装保存版",
+      "canonical": "linear",
+      "variant": 1,
+      "sourcePath": "local-skills/linear"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "literature-search-openalex",
+      "name": "literature-search-openalex",
+      "version": "安装保存版",
+      "canonical": "literature-search-openalex",
+      "variant": 1,
+      "sourcePath": "local-skills/literature-search-openalex"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/pages/0.1.23/skills/maintain-space",
+      "name": "maintain-space",
+      "version": "安装保存版",
+      "canonical": "maintain-space",
+      "variant": 1,
+      "sourcePath": "local-skills/maintain-space"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/pages/0.1.23/skills/manage-schedules",
+      "name": "manage-schedules",
+      "version": "安装保存版",
+      "canonical": "manage-schedules",
+      "variant": 1,
+      "sourcePath": "local-skills/manage-schedules"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "market-researcher-agent",
+      "name": "market-researcher-agent",
+      "version": "安装保存版",
+      "canonical": "market-researcher-agent",
+      "variant": 1,
+      "sourcePath": "local-skills/market-researcher-agent"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "media-use",
+      "name": "media-use",
+      "version": "安装保存版",
+      "canonical": "media-use",
+      "variant": 1,
+      "sourcePath": "local-skills/media-use"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "media-use",
+      "name": "media-use",
+      "version": "安装保存版",
+      "canonical": "media-use",
+      "variant": 1,
+      "sourcePath": "local-skills/media-use"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry",
+      "name": "microsoft-foundry",
+      "version": "1.2.27",
+      "canonical": "microsoft-foundry",
+      "variant": 1,
+      "sourcePath": "local-skills/microsoft-foundry"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry/models/deploy-model/preset",
+      "name": "preset",
+      "version": "1.0.1",
+      "canonical": "microsoft-foundry",
+      "variant": 2,
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/preset"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry/models/deploy-model/customize",
+      "name": "customize",
+      "version": "1.0.1",
+      "canonical": "microsoft-foundry",
+      "variant": 3,
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/customize"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry/models/deploy-model/capacity",
+      "name": "capacity",
+      "version": "1.0.0",
+      "canonical": "microsoft-foundry",
+      "variant": 4,
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model/capacity"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry/models/deploy-model",
+      "name": "deploy-model",
+      "version": "1.0.0",
+      "canonical": "microsoft-foundry",
+      "variant": 5,
+      "sourcePath": "local-skills/microsoft-foundry/models/deploy-model"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "microsoft-foundry/finetuning",
+      "name": "finetuning",
+      "version": "0.0.0-placeholder",
+      "canonical": "microsoft-foundry",
+      "variant": 6,
+      "sourcePath": "local-skills/microsoft-foundry/finetuning"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "multi-agent-security",
+      "name": "multi-agent-security",
+      "version": "安装保存版",
+      "canonical": "multi-agent-security",
+      "variant": 1,
+      "sourcePath": "local-skills/multi-agent-security"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "multi-agent-security",
+      "name": "multi-agent-security",
+      "version": "安装保存版",
+      "canonical": "multi-agent-security",
+      "variant": 1,
+      "sourcePath": "local-skills/multi-agent-security"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "multi-agent-security",
+      "name": "multi-agent-security",
+      "version": "安装保存版",
+      "canonical": "multi-agent-security",
+      "variant": 1,
+      "sourcePath": "local-skills/multi-agent-security"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "networkx",
+      "name": "networkx",
+      "version": "1.4",
+      "canonical": "networkx",
+      "variant": 1,
+      "sourcePath": "local-skills/networkx"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "one-day-prototype",
+      "name": "one-day-prototype",
+      "version": "安装保存版",
+      "canonical": "one-day-prototype",
+      "variant": 1,
+      "sourcePath": "local-skills/one-day-prototype"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/defense-factory/0.1.1/skills/open-defense-factory",
+      "name": "open-defense-factory",
+      "version": "安装保存版",
+      "canonical": "open-defense-factory",
+      "variant": 1,
+      "sourcePath": "local-skills/open-defense-factory"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": ".system/openai-docs",
+      "name": "openai-docs",
+      "version": "安装保存版",
+      "canonical": "openai-docs",
+      "variant": 1,
+      "sourcePath": "local-skills/openai-docs"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-apply-change",
+      "name": "openspec-apply-change",
+      "version": "1.0",
+      "canonical": "openspec-apply-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-apply-change"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-apply-change",
+      "name": "openspec-apply-change",
+      "version": "1.0",
+      "canonical": "openspec-apply-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-apply-change"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-apply-change",
+      "name": "openspec-apply-change",
+      "version": "1.0",
+      "canonical": "openspec-apply-change",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-apply-change/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-archive-change",
+      "name": "openspec-archive-change",
+      "version": "1.0",
+      "canonical": "openspec-archive-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-archive-change"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-archive-change",
+      "name": "openspec-archive-change",
+      "version": "1.0",
+      "canonical": "openspec-archive-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-archive-change"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-archive-change",
+      "name": "openspec-archive-change",
+      "version": "1.0",
+      "canonical": "openspec-archive-change",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-archive-change/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-explore",
+      "name": "openspec-explore",
+      "version": "1.0",
+      "canonical": "openspec-explore",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-explore"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-explore",
+      "name": "openspec-explore",
+      "version": "1.0",
+      "canonical": "openspec-explore",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-explore"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-explore",
+      "name": "openspec-explore",
+      "version": "1.0",
+      "canonical": "openspec-explore",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-explore/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-propose",
+      "name": "openspec-propose",
+      "version": "1.0",
+      "canonical": "openspec-propose",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-propose"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-propose",
+      "name": "openspec-propose",
+      "version": "1.0",
+      "canonical": "openspec-propose",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-propose"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-propose",
+      "name": "openspec-propose",
+      "version": "1.0",
+      "canonical": "openspec-propose",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-propose/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-sync-specs",
+      "name": "openspec-sync-specs",
+      "version": "1.0",
+      "canonical": "openspec-sync-specs",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-sync-specs"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-sync-specs",
+      "name": "openspec-sync-specs",
+      "version": "1.0",
+      "canonical": "openspec-sync-specs",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-sync-specs"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-sync-specs",
+      "name": "openspec-sync-specs",
+      "version": "1.0",
+      "canonical": "openspec-sync-specs",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-sync-specs/v02"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "openspec-update-change",
+      "name": "openspec-update-change",
+      "version": "1.0",
+      "canonical": "openspec-update-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-update-change"
+    },
+    {
+      "host": "本项目目录",
+      "root": "project",
+      "relative": "openspec-update-change",
+      "name": "openspec-update-change",
+      "version": "1.0",
+      "canonical": "openspec-update-change",
+      "variant": 1,
+      "sourcePath": "local-skills/openspec-update-change"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "openspec-update-change",
+      "name": "openspec-update-change",
+      "version": "1.0",
+      "canonical": "openspec-update-change",
+      "variant": 2,
+      "sourcePath": "skill-versions/openspec-update-change/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "orcid-api",
+      "name": "orcid-api",
+      "version": "安装保存版",
+      "canonical": "orcid-api",
+      "variant": 1,
+      "sourcePath": "local-skills/orcid-api"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/pages/0.1.23/skills/organize-space",
+      "name": "organize-space",
+      "version": "安装保存版",
+      "canonical": "organize-space",
+      "variant": 1,
+      "sourcePath": "local-skills/organize-space"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "paper-audit",
+      "name": "paper-audit",
+      "version": "fusion-2026-10-05",
+      "canonical": "paper-audit",
+      "variant": 1,
+      "sourcePath": "fused-skills/paper-audit"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "paper-audit",
+      "name": "paper-audit",
+      "version": "5.1.0",
+      "canonical": "paper-audit",
+      "variant": 2,
+      "sourcePath": "skill-versions/paper-audit/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "paper-audit",
+      "name": "paper-audit",
+      "version": "5.1.0",
+      "canonical": "paper-audit",
+      "variant": 2,
+      "sourcePath": "skill-versions/paper-audit/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "academic-paper-reviewer",
+      "name": "academic-paper-reviewer",
+      "version": "1.10.0",
+      "canonical": "paper-audit",
+      "variant": 3,
+      "sourcePath": "skill-versions/paper-audit/v03"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "academic-paper-reviewer",
+      "name": "academic-paper-reviewer",
+      "version": "1.10.0",
+      "canonical": "paper-audit",
+      "variant": 3,
+      "sourcePath": "skill-versions/paper-audit/v03"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "academic-paper-review",
+      "name": "academic-paper-review",
+      "version": "安装保存版",
+      "canonical": "paper-audit",
+      "variant": 4,
+      "sourcePath": "skill-versions/paper-audit/v04"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "academic-paper-reviewer",
+      "name": "academic-paper-reviewer",
+      "version": "1.10.0",
+      "canonical": "paper-audit",
+      "variant": 5,
+      "sourcePath": "skill-versions/paper-audit/v05"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "paper-search",
+      "name": "paper-search",
+      "version": "安装保存版",
+      "canonical": "paper-search",
+      "variant": 1,
+      "sourcePath": "local-skills/paper-search"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "pdf",
+      "name": "pdf",
+      "version": "fusion-2026-10-05",
+      "canonical": "pdf",
+      "variant": 1,
+      "sourcePath": "fused-skills/pdf"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/pdf/26.1013.11914/skills/pdf",
+      "name": "pdf",
+      "version": "安装保存版",
+      "canonical": "pdf",
+      "variant": 2,
+      "sourcePath": "skill-versions/pdf/v02"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/work-pets/0.1.6/skills/pets",
+      "name": "pets",
+      "version": "安装保存版",
+      "canonical": "pets",
+      "variant": 1,
+      "sourcePath": "local-skills/pets"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-batch-production",
+      "name": "photon-batch-production",
+      "version": "安装保存版",
+      "canonical": "photon-batch-production",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-batch-production"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-batch-production",
+      "name": "photon-batch-production",
+      "version": "安装保存版",
+      "canonical": "photon-batch-production",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-batch-production"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-composite",
+      "name": "photon-composite",
+      "version": "安装保存版",
+      "canonical": "photon-composite",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-composite"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-composite",
+      "name": "photon-composite",
+      "version": "安装保存版",
+      "canonical": "photon-composite",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-composite"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-edit",
+      "name": "photon-edit",
+      "version": "安装保存版",
+      "canonical": "photon-edit",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-edit"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-edit",
+      "name": "photon-edit",
+      "version": "安装保存版",
+      "canonical": "photon-edit",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-edit"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-generated-images",
+      "name": "photon-generated-images",
+      "version": "安装保存版",
+      "canonical": "photon-generated-images",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-generated-images"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-generated-images",
+      "name": "photon-generated-images",
+      "version": "安装保存版",
+      "canonical": "photon-generated-images",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-generated-images"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-photo-finish",
+      "name": "photon-photo-finish",
+      "version": "安装保存版",
+      "canonical": "photon-photo-finish",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-photo-finish"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-photo-finish",
+      "name": "photon-photo-finish",
+      "version": "安装保存版",
+      "canonical": "photon-photo-finish",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-photo-finish"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "photon-vector-design",
+      "name": "photon-vector-design",
+      "version": "安装保存版",
+      "canonical": "photon-vector-design",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-vector-design"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "photon-vector-design",
+      "name": "photon-vector-design",
+      "version": "安装保存版",
+      "canonical": "photon-vector-design",
+      "variant": 1,
+      "sourcePath": "local-skills/photon-vector-design"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/plugin-management/0.1.0/skills/plugin-management",
+      "name": "plugin-management",
+      "version": "安装保存版",
+      "canonical": "plugin-management",
+      "variant": 1,
+      "sourcePath": "local-skills/plugin-management"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/plugin-creator/0.1.27/skills/prepare-plugin-submission",
+      "name": "prepare-plugin-submission",
+      "version": "安装保存版",
+      "canonical": "prepare-plugin-submission",
+      "variant": 1,
+      "sourcePath": "local-skills/prepare-plugin-submission"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/presentations/26.1013.11914/skills/presentations",
+      "name": "Presentations",
+      "version": "安装保存版",
+      "canonical": "presentations",
+      "variant": 1,
+      "sourcePath": "local-skills/presentations"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "product-requirements",
+      "name": "product-requirements",
+      "version": "安装保存版",
+      "canonical": "product-requirements",
+      "variant": 1,
+      "sourcePath": "local-skills/product-requirements"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "product-requirements",
+      "name": "product-requirements",
+      "version": "安装保存版",
+      "canonical": "product-requirements",
+      "variant": 1,
+      "sourcePath": "local-skills/product-requirements"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "project-index-router",
+      "name": "project-index-router",
+      "version": "安装保存版",
+      "canonical": "project-index-router",
+      "variant": 1,
+      "sourcePath": "local-skills/project-index-router"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "project-index-router",
+      "name": "project-index-router",
+      "version": "安装保存版",
+      "canonical": "project-index-router",
+      "variant": 1,
+      "sourcePath": "local-skills/project-index-router"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "project-index-router",
+      "name": "project-index-router",
+      "version": "安装保存版",
+      "canonical": "project-index-router",
+      "variant": 1,
+      "sourcePath": "local-skills/project-index-router"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "prototype-prompt-generator",
+      "name": "prototype-prompt-generator",
+      "version": "安装保存版",
+      "canonical": "prototype-prompt-generator",
+      "variant": 1,
+      "sourcePath": "local-skills/prototype-prompt-generator"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "prototype-prompt-generator",
+      "name": "prototype-prompt-generator",
+      "version": "安装保存版",
+      "canonical": "prototype-prompt-generator",
+      "variant": 1,
+      "sourcePath": "local-skills/prototype-prompt-generator"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/react-best-practices",
+      "name": "react-best-practices",
+      "version": "1.0.0",
+      "canonical": "react-best-practices",
+      "variant": 1,
+      "sourcePath": "local-skills/react-best-practices"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "remotion-best-practices",
+      "name": "remotion-best-practices",
+      "version": "安装保存版",
+      "canonical": "remotion-best-practices",
+      "variant": 1,
+      "sourcePath": "local-skills/remotion-best-practices"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "research-gap",
+      "name": "research-gap",
+      "version": "安装保存版",
+      "canonical": "research-gap",
+      "variant": 1,
+      "sourcePath": "local-skills/research-gap"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "reverse-engineer-anything",
+      "name": "reverse-engineer-anything",
+      "version": "37",
+      "canonical": "reverse-engineer-anything",
+      "variant": 1,
+      "sourcePath": "local-skills/reverse-engineer-anything"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": ".system/review-agent",
+      "name": "review-agent",
+      "version": "安装保存版",
+      "canonical": "review-agent",
+      "variant": 1,
+      "sourcePath": "local-skills/review-agent"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "scene-to-art-lab",
+      "name": "scene-to-art-lab",
+      "version": "安装保存版",
+      "canonical": "scene-to-art-lab",
+      "variant": 1,
+      "sourcePath": "skills/scene-to-art-lab"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "scientific-data-visualization",
+      "name": "scientific-data-visualization",
+      "version": "fusion-2026-10-05",
+      "canonical": "scientific-data-visualization",
+      "variant": 1,
+      "sourcePath": "fused-skills/scientific-data-visualization"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "scientific-data-visualization",
+      "name": "scientific-data-visualization",
+      "version": "安装保存版",
+      "canonical": "scientific-data-visualization",
+      "variant": 2,
+      "sourcePath": "skill-versions/scientific-data-visualization/v02"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "scientific-data-visualization",
+      "name": "scientific-data-visualization",
+      "version": "安装保存版",
+      "canonical": "scientific-data-visualization",
+      "variant": 2,
+      "sourcePath": "skill-versions/scientific-data-visualization/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "scipilot-figure-skill",
+      "name": "scipilot-figure-skill",
+      "version": "安装保存版",
+      "canonical": "scientific-data-visualization",
+      "variant": 3,
+      "sourcePath": "skill-versions/scientific-data-visualization/v03"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/shadcn-best-practices",
+      "name": "shadcn",
+      "version": "安装保存版",
+      "canonical": "shadcn",
+      "variant": 1,
+      "sourcePath": "local-skills/shadcn"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/sites/1.0.2-remix-a.1/skills/sites",
+      "name": "sites",
+      "version": "安装保存版",
+      "canonical": "sites",
+      "variant": 1,
+      "sourcePath": "local-skills/sites"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": ".system/skill-creator",
+      "name": "skill-creator",
+      "version": "安装保存版",
+      "canonical": "skill-creator",
+      "variant": 1,
+      "sourcePath": "local-skills/skill-creator"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "skill-install",
+      "name": "skill-install",
+      "version": "安装保存版",
+      "canonical": "skill-install",
+      "variant": 1,
+      "sourcePath": "local-skills/skill-install"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "skill-install",
+      "name": "skill-install",
+      "version": "安装保存版",
+      "canonical": "skill-install",
+      "variant": 2,
+      "sourcePath": "skill-versions/skill-install/v02"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": ".system/skill-installer",
+      "name": "skill-installer",
+      "version": "安装保存版",
+      "canonical": "skill-installer",
+      "variant": 1,
+      "sourcePath": "local-skills/skill-installer"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/spreadsheets/26.1013.11914/skills/spreadsheets",
+      "name": "Spreadsheets",
+      "version": "安装保存版",
+      "canonical": "spreadsheets",
+      "variant": 1,
+      "sourcePath": "local-skills/spreadsheets"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/plugin-creator/0.1.27/skills/create-plugin/assets/starter-plugin/skills/starter-workflow",
+      "name": "starter-workflow",
+      "version": "安装保存版",
+      "canonical": "starter-workflow",
+      "variant": 1,
+      "sourcePath": "local-skills/create-plugin/assets/starter-plugin/skills/starter-workflow"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/stripe-best-practices",
+      "name": "stripe-best-practices",
+      "version": "安装保存版",
+      "canonical": "stripe-best-practices",
+      "variant": 1,
+      "sourcePath": "local-skills/stripe-best-practices"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/build-web-apps/11c74d6b/skills/supabase-best-practices",
+      "name": "supabase-postgres-best-practices",
+      "version": "1.1.0",
+      "canonical": "supabase-postgres-best-practices",
+      "variant": 1,
+      "sourcePath": "local-skills/supabase-postgres-best-practices"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "systematic-literature-review",
+      "name": "systematic-literature-review",
+      "version": "安装保存版",
+      "canonical": "systematic-literature-review",
+      "variant": 1,
+      "sourcePath": "local-skills/systematic-literature-review"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "task-contract",
+      "name": "task-contract",
+      "version": "安装保存版",
+      "canonical": "task-contract",
+      "variant": 1,
+      "sourcePath": "local-skills/task-contract"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "task-contract",
+      "name": "task-contract",
+      "version": "安装保存版",
+      "canonical": "task-contract",
+      "variant": 1,
+      "sourcePath": "local-skills/task-contract"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "task-contract",
+      "name": "task-contract",
+      "version": "安装保存版",
+      "canonical": "task-contract",
+      "variant": 1,
+      "sourcePath": "local-skills/task-contract"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "task-lanes",
+      "name": "task-lanes",
+      "version": "安装保存版",
+      "canonical": "task-lanes",
+      "variant": 1,
+      "sourcePath": "local-skills/task-lanes"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "task-lanes",
+      "name": "task-lanes",
+      "version": "安装保存版",
+      "canonical": "task-lanes",
+      "variant": 1,
+      "sourcePath": "local-skills/task-lanes"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "task-lanes",
+      "name": "task-lanes",
+      "version": "安装保存版",
+      "canonical": "task-lanes",
+      "variant": 1,
+      "sourcePath": "local-skills/task-lanes"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-primary-runtime/template-creator/26.1013.11914/skills/template-creator",
+      "name": "template-creator",
+      "version": "安装保存版",
+      "canonical": "template-creator",
+      "variant": 1,
+      "sourcePath": "local-skills/template-creator"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "test-cases",
+      "name": "test-cases",
+      "version": "安装保存版",
+      "canonical": "test-cases",
+      "variant": 1,
+      "sourcePath": "local-skills/test-cases"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "test-cases",
+      "name": "test-cases",
+      "version": "安装保存版",
+      "canonical": "test-cases",
+      "variant": 1,
+      "sourcePath": "local-skills/test-cases"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/work-pets/0.1.6/skills/update-pet",
+      "name": "update-pet",
+      "version": "安装保存版",
+      "canonical": "update-pet",
+      "variant": 1,
+      "sourcePath": "local-skills/update-pet"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/plugin-creator/0.1.27/skills/update-plugin",
+      "name": "update-plugin",
+      "version": "安装保存版",
+      "canonical": "update-plugin",
+      "variant": 1,
+      "sourcePath": "local-skills/update-plugin"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "visual-style-router",
+      "name": "visual-style-router",
+      "version": "安装保存版",
+      "canonical": "visual-style-router",
+      "variant": 1,
+      "sourcePath": "local-skills/visual-style-router"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "visual-style-router",
+      "name": "visual-style-router",
+      "version": "安装保存版",
+      "canonical": "visual-style-router",
+      "variant": 1,
+      "sourcePath": "local-skills/visual-style-router"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "visual-style-router",
+      "name": "visual-style-router",
+      "version": "安装保存版",
+      "canonical": "visual-style-router",
+      "variant": 1,
+      "sourcePath": "local-skills/visual-style-router"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-bundled/visualize/1.0.50/skills/visualize",
+      "name": "visualize",
+      "version": "安装保存版",
+      "canonical": "visualize",
+      "variant": 1,
+      "sourcePath": "local-skills/visualize"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-api-curated/hyperframes/d416fd5a/skills/website-to-hyperframes",
+      "name": "website-to-hyperframes",
+      "version": "安装保存版",
+      "canonical": "website-to-hyperframes",
+      "variant": 1,
+      "sourcePath": "local-skills/website-to-hyperframes"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "wechat-to-memory",
+      "name": "wechat-to-memory",
+      "version": "安装保存版",
+      "canonical": "wechat-to-memory",
+      "variant": 1,
+      "sourcePath": "local-skills/wechat-to-memory"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "workflow-skill-capture",
+      "name": "workflow-skill-capture",
+      "version": "安装保存版",
+      "canonical": "workflow-skill-capture",
+      "variant": 1,
+      "sourcePath": "local-skills/workflow-skill-capture"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "workflow-skill-capture",
+      "name": "workflow-skill-capture",
+      "version": "安装保存版",
+      "canonical": "workflow-skill-capture",
+      "variant": 1,
+      "sourcePath": "local-skills/workflow-skill-capture"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "workflow-skill-capture",
+      "name": "workflow-skill-capture",
+      "version": "安装保存版",
+      "canonical": "workflow-skill-capture",
+      "variant": 1,
+      "sourcePath": "local-skills/workflow-skill-capture"
+    },
+    {
+      "host": "Codex 插件目录（含缓存）",
+      "root": "codex-plugins",
+      "relative": "openai-curated-remote/pages/0.1.23/skills/write-page",
+      "name": "write-page",
+      "version": "安装保存版",
+      "canonical": "write-page",
+      "variant": 1,
+      "sourcePath": "local-skills/write-page"
+    }
+  ]
+}

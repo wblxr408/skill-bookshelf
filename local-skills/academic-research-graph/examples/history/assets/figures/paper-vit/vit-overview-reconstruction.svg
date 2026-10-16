@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="420" viewBox="0 0 960 420" role="img" aria-labelledby="title desc">
+<title id="title">Vision Transformer method overview reconstruction</title>
+<desc id="desc">An image is split into fixed-size patches, converted into a token sequence with a class token, processed by repeated Transformer encoder blocks, and classified.</desc>
+<defs><linearGradient id="bg" x1="0" x2="1"><stop stop-color="#f7f9fc"/><stop offset="1" stop-color="#eaf0f8"/></linearGradient><marker id="a" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10z" fill="#526b91"/></marker></defs>
+<rect width="960" height="420" rx="24" fill="url(#bg)"/>
+<g font-family="Arial, sans-serif" fill="#1c2b43">
+<text x="48" y="48" font-size="24" font-weight="700">ViT：把图像变成序列，再交给 Transformer</text>
+<g transform="translate(48 102)"><rect width="180" height="180" rx="12" fill="#d8e4f3" stroke="#6c85a8" stroke-width="2"/><g stroke="#ffffff" stroke-width="3"><path d="M45 0v180M90 0v180M135 0v180M0 45h180M0 90h180M0 135h180"/></g><text x="90" y="210" text-anchor="middle" font-size="18">固定大小图像块</text></g>
+<path d="M245 190H330" stroke="#526b91" stroke-width="4" marker-end="url(#a)"/>
+<g transform="translate(350 95)"><rect width="190" height="195" rx="14" fill="#fff" stroke="#6c85a8" stroke-width="2"/><circle cx="35" cy="48" r="20" fill="#f0b15c"/><text x="35" y="54" text-anchor="middle" font-size="15" font-weight="700">CLS</text><g fill="#6e91c5"><rect x="70" y="28" width="90" height="40" rx="8"/><rect x="30" y="88" width="130" height="24" rx="6"/><rect x="30" y="124" width="130" height="24" rx="6"/><rect x="30" y="160" width="130" height="24" rx="6"/></g><text x="95" y="220" text-anchor="middle" font-size="18">Patch tokens + 位置编码</text></g>
+<path d="M555 190H640" stroke="#526b91" stroke-width="4" marker-end="url(#a)"/>
+<g transform="translate(660 72)"><rect width="170" height="240" rx="15" fill="#dfe8f6" stroke="#5f79a0" stroke-width="2"/><g transform="translate(20 25)"><rect width="130" height="52" rx="9" fill="#7f9fd0"/><text x="65" y="32" text-anchor="middle" fill="#fff" font-size="16">多头自注意力</text><rect y="72" width="130" height="52" rx="9" fill="#7798ca"/><text x="65" y="104" text-anchor="middle" fill="#fff" font-size="16">前馈网络</text><rect y="144" width="130" height="52" rx="9" fill="#6e8fbe"/><text x="65" y="176" text-anchor="middle" fill="#fff" font-size="16">重复 L 层</text></g><text x="85" y="270" text-anchor="middle" font-size="18">Transformer 编码器</text></g>
+<path d="M845 190H905" stroke="#526b91" stroke-width="4" marker-end="url(#a)"/>
+<g transform="translate(858 140)"><circle cx="50" cy="50" r="46" fill="#f0b15c" stroke="#a86e20" stroke-width="2"/><text x="50" y="47" text-anchor="middle" font-size="16" font-weight="700">类别</text><text x="50" y="68" text-anchor="middle" font-size="14">预测</text></g>
+<text x="48" y="385" font-size="14" fill="#62718a">分析者示意重绘，仅用于演示 Skill 的主图展示能力；不是论文原图。</text>
+</g></svg>

@@ -1,0 +1,28 @@
+{
+  "name": "openai-docs",
+  "title": "OpenAI 产品文档",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI Skills",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "openai-docs",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/openai-docs",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 17
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/openai-docs"
+}

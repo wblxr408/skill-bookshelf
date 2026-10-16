@@ -1,0 +1,15 @@
+{
+  "skill": "systematic-literature-review",
+  "source": "bytedance/deer-flow",
+  "ref": "8d994cc1e7ee63c61283a71a169248beb4ed1c52",
+  "source_path": "skills/public/systematic-literature-review",
+  "files": [
+    "SKILL.md",
+    "evals\\evals.json",
+    "evals\\trigger_eval_set.json",
+    "scripts\\arxiv_search.py",
+    "templates\\apa.md",
+    "templates\\bibtex.md",
+    "templates\\ieee.md"
+  ]
+}

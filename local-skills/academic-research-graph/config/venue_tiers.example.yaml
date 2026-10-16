@@ -1,0 +1,15 @@
+# Example only. Venue prestige is field- and policy-dependent.
+# A real run must record the adopted source/rule and as-of date.
+policy:
+  name: example-domain-venue-policy
+  basis: user-supplied or institution-approved venue list
+  as_of: 2026-08-05
+  require_basis_for_top: true
+entries:
+  - aliases: [ExampleConf, EC]
+    type: conference
+    tier: top
+    tier_label:
+      zh-CN: 顶会
+      en: Top-tier conference
+    basis: Example only; replace with an explicit domain ranking or user rule.

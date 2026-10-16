@@ -1,0 +1,335 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Academic Research Graph Request",
+  "type": "object",
+  "properties": {
+    "operation": {
+      "enum": [
+        "build",
+        "expand"
+      ],
+      "default": "build"
+    },
+    "input": {
+      "type": "object",
+      "required": [
+        "type",
+        "value"
+      ],
+      "properties": {
+        "type": {
+          "enum": [
+            "paper",
+            "concept",
+            "claim",
+            "benchmark",
+            "github_repo"
+          ]
+        },
+        "value": {
+          "type": "string"
+        },
+        "identifiers": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "base_graph": {
+      "type": "string",
+      "description": "Path or resolvable reference to an existing graph.json for operation=expand."
+    },
+    "start_node_id": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "mode": {
+      "enum": [
+        "quick",
+        "standard",
+        "deep",
+        "foundational"
+      ],
+      "default": "standard"
+    },
+    "output_language": {
+      "enum": [
+        "zh-CN",
+        "en",
+        "bilingual"
+      ],
+      "default": "zh-CN"
+    },
+    "source_languages": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    },
+    "date_range": {
+      "type": "object",
+      "properties": {
+        "from": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        },
+        "to": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date"
+        }
+      },
+      "additionalProperties": false
+    },
+    "emphasis": {
+      "type": "array",
+      "items": {
+        "enum": [
+          "origins",
+          "descendants",
+          "applications",
+          "benchmark_use",
+          "conflicts",
+          "replication",
+          "repository",
+          "latest_frontier"
+        ]
+      },
+      "uniqueItems": true
+    },
+    "candidate_budget": {
+      "type": "integer",
+      "minimum": 10
+    },
+    "analysis_budget": {
+      "type": "integer",
+      "minimum": 5
+    },
+    "max_depth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+    },
+    "expansion": {
+      "type": "object",
+      "properties": {
+        "direction": {
+          "enum": [
+            "backward",
+            "forward",
+            "both",
+            "related",
+            "conflicts",
+            "benchmark_use",
+            "repository"
+          ],
+          "default": "both"
+        },
+        "reason": {
+          "type": "string"
+        },
+        "allow_main_path_revision": {
+          "type": "boolean",
+          "default": true
+        },
+        "refresh_existing_searches": {
+          "type": "boolean",
+          "default": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "translation_policy": {
+      "type": "object",
+      "properties": {
+        "preserve_original_titles": {
+          "type": "boolean",
+          "default": true
+        },
+        "include_original_claim_wording": {
+          "type": "boolean",
+          "default": true
+        },
+        "build_terminology_glossary": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "notes": {
+      "type": "string"
+    },
+    "venue_tier_policy": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "name": {
+          "type": "string"
+        },
+        "basis": {
+          "type": "string"
+        },
+        "as_of": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "registry": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "require_basis_for_top": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "summary_policy": {
+      "type": "object",
+      "properties": {
+        "audience": {
+          "enum": [
+            "field_familiar_unread",
+            "expert_refresh",
+            "general_technical"
+          ],
+          "default": "field_familiar_unread"
+        },
+        "exposition_depth": {
+          "enum": [
+            "concise",
+            "explanatory",
+            "tutorial"
+          ],
+          "default": "explanatory"
+        },
+        "explain_background": {
+          "type": "boolean",
+          "default": true
+        },
+        "define_paper_specific_terms": {
+          "type": "boolean",
+          "default": true
+        },
+        "expand_acronyms_on_first_use": {
+          "type": "boolean",
+          "default": true
+        },
+        "name_comparison_baselines": {
+          "type": "boolean",
+          "default": true
+        },
+        "require_limitations_and_scope": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "figure_policy": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "selection_mode": {
+          "enum": [
+            "selective",
+            "seed_and_main_path",
+            "all_reviewed"
+          ],
+          "default": "selective"
+        },
+        "max_per_paper": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "prefer_kinds": {
+          "type": "array",
+          "items": {
+            "enum": [
+              "method_overview",
+              "architecture",
+              "pipeline",
+              "conceptual_diagram",
+              "qualitative_result",
+              "benchmark_summary",
+              "other"
+            ]
+          }
+        },
+        "require_source_attribution": {
+          "type": "boolean",
+          "default": true
+        },
+        "require_alt_text": {
+          "type": "boolean",
+          "default": true
+        },
+        "embed_local_assets": {
+          "type": "boolean",
+          "default": true
+        },
+        "allow_remote_images": {
+          "type": "boolean",
+          "default": false
+        },
+        "max_embedded_bytes": {
+          "type": "integer",
+          "minimum": 1024,
+          "default": 2500000
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "operation": {
+            "const": "expand"
+          }
+        },
+        "required": [
+          "operation"
+        ]
+      },
+      "then": {
+        "required": [
+          "base_graph",
+          "start_node_id",
+          "focus"
+        ]
+      },
+      "else": {
+        "required": [
+          "input",
+          "focus"
+        ]
+      }
+    }
+  ],
+  "additionalProperties": false
+}

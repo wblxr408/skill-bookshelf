@@ -1,0 +1,48 @@
+{
+  "name": "academic-pipeline",
+  "title": "研究到投稿流水线",
+  "author": "Imbad0202 / Academic Research Skills",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Imbad0202 / Academic Research Skills",
+      "url": "https://github.com/Imbad0202/academic-research-skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "academic-pipeline",
+      "label": "3.19.0",
+      "sourcePath": "local-skills/academic-pipeline",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 30
+    },
+    {
+      "name": "academic-pipeline",
+      "label": "3.19.0",
+      "sourcePath": "skill-versions/academic-pipeline/v02",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 30
+    },
+    {
+      "name": "academic-pipeline",
+      "label": "3.19.0",
+      "sourcePath": "skill-versions/academic-pipeline/v03",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 30
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/academic-pipeline"
+}

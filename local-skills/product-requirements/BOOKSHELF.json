@@ -1,0 +1,29 @@
+{
+  "name": "product-requirements",
+  "title": "产品需求整理",
+  "author": "stellarlinkco / myclaude（原 cexll）",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "stellarlinkco / myclaude（原 cexll）",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "product-requirements",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/product-requirements",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/product-requirements"
+}

@@ -1,0 +1,28 @@
+{
+  "name": "finetuning",
+  "title": "模型微调",
+  "author": "Microsoft Foundry 技能分发",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Microsoft Foundry",
+      "url": "https://learn.microsoft.com/azure/ai-foundry/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "finetuning",
+      "label": "0.0.0-placeholder",
+      "sourcePath": "local-skills/microsoft-foundry/finetuning",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 安装"
+      ],
+      "fileCount": 34
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/microsoft-foundry/finetuning"
+}

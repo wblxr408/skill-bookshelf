@@ -1,0 +1,30 @@
+{
+  "name": "all-images-ai-automation",
+  "title": "图像服务自动化",
+  "author": "Composio",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Composio",
+      "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "all-images-ai-automation",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/all-images-ai-automation",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/all-images-ai-automation"
+}

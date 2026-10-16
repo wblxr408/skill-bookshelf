@@ -1,0 +1,23 @@
+{
+  "name": "remotion-best-practices",
+  "title": "Remotion 视频制作",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "remotion-best-practices",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/remotion-best-practices",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 141
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/remotion-best-practices"
+}

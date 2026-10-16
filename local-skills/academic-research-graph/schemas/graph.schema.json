@@ -1,0 +1,1071 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Reviewed Academic Research Graph",
+  "type": "object",
+  "required": [
+    "meta",
+    "nodes",
+    "edges"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "title",
+        "focus",
+        "generated_at"
+      ],
+      "properties": {
+        "title": {
+          "type": "string"
+        },
+        "focus": {
+          "type": "string"
+        },
+        "generated_at": {
+          "type": "string"
+        },
+        "search_cutoff": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "coverage": {
+          "type": "object"
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "graph_id": {
+          "type": "string"
+        },
+        "revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "parent_revision": {
+          "type": [
+            "integer",
+            "null"
+          ]
+        },
+        "output_language": {
+          "enum": [
+            "zh-CN",
+            "en",
+            "bilingual"
+          ]
+        },
+        "terminology_glossary": {
+          "type": "object",
+          "additionalProperties": {
+            "type": "string"
+          }
+        },
+        "expansion_history": {
+          "type": "array",
+          "items": {
+            "type": "object"
+          }
+        },
+        "venue_tier_policy": {
+          "type": "object",
+          "properties": {
+            "name": {
+              "type": "string"
+            },
+            "basis": {
+              "type": "string"
+            },
+            "as_of": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "notes": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "additionalProperties": true
+        },
+        "latest_increment": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "properties": {
+            "revision": {
+              "type": "integer",
+              "minimum": 2
+            },
+            "expansion_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "base_revision": {
+              "type": "integer",
+              "minimum": 1
+            },
+            "start_node_id": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "merged_at": {
+              "type": [
+                "string",
+                "null"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "summary_policy": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "const": "field_familiar_unread"
+            },
+            "exposition_depth": {
+              "enum": [
+                "concise",
+                "explanatory",
+                "tutorial"
+              ]
+            },
+            "explain_background": {
+              "type": "boolean"
+            },
+            "define_paper_specific_terms": {
+              "type": "boolean"
+            },
+            "expand_acronyms_on_first_use": {
+              "type": "boolean"
+            },
+            "name_comparison_baselines": {
+              "type": "boolean"
+            },
+            "require_limitations_and_scope": {
+              "type": "boolean"
+            }
+          },
+          "additionalProperties": true
+        },
+        "figure_policy": {
+          "type": "object",
+          "properties": {
+            "enabled": {
+              "type": "boolean"
+            },
+            "selection_mode": {
+              "enum": [
+                "selective",
+                "seed_and_main_path",
+                "all_reviewed"
+              ]
+            },
+            "max_per_paper": {
+              "type": "integer",
+              "minimum": 0,
+              "maximum": 1
+            },
+            "prefer_kinds": {
+              "type": "array",
+              "items": {
+                "enum": [
+                  "method_overview",
+                  "architecture",
+                  "pipeline",
+                  "conceptual_diagram",
+                  "qualitative_result",
+                  "benchmark_summary",
+                  "other"
+                ]
+              }
+            },
+            "require_source_attribution": {
+              "type": "boolean"
+            },
+            "require_alt_text": {
+              "type": "boolean"
+            },
+            "embed_local_assets": {
+              "type": "boolean"
+            },
+            "allow_remote_images": {
+              "type": "boolean"
+            },
+            "max_embedded_bytes": {
+              "type": "integer",
+              "minimum": 1024
+            },
+            "max_display_width_px": {
+              "type": "integer",
+              "minimum": 320
+            }
+          },
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "nodes": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type",
+          "title",
+          "year",
+          "summary",
+          "role"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "type": {
+            "enum": [
+              "paper",
+              "concept",
+              "benchmark",
+              "repository",
+              "dataset"
+            ]
+          },
+          "title": {
+            "type": "string"
+          },
+          "authors": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "year": {
+            "type": [
+              "integer",
+              "null"
+            ]
+          },
+          "date": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "venue": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "status": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "summary": {
+            "type": "string"
+          },
+          "role": {
+            "type": "string"
+          },
+          "cluster": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "relevance": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "quality": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "is_seed": {
+            "type": "boolean"
+          },
+          "latest_frontier": {
+            "type": "boolean"
+          },
+          "identifiers": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "urls": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "code": {
+            "type": "object"
+          },
+          "claims": {
+            "type": "array",
+            "items": {
+              "type": "object"
+            }
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "notes": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "titles": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "summaries": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "roles": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "added_in_revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "updated_in_revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "expansion_status": {
+            "type": "object"
+          },
+          "expansion_seed_for": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "publication": {
+            "type": "object",
+            "properties": {
+              "status": {
+                "enum": [
+                  "preprint_only",
+                  "under_review",
+                  "accepted",
+                  "in_press",
+                  "published",
+                  "withdrawn",
+                  "retracted",
+                  "unknown"
+                ]
+              },
+              "type": {
+                "enum": [
+                  "preprint",
+                  "conference_paper",
+                  "journal_article",
+                  "workshop_paper",
+                  "technical_report",
+                  "book_chapter",
+                  "thesis",
+                  "other"
+                ]
+              },
+              "peer_reviewed": {
+                "type": [
+                  "boolean",
+                  "null"
+                ]
+              },
+              "primary_venue": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "properties": {
+                  "name": {
+                    "type": "string"
+                  },
+                  "short_name": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "type": {
+                    "enum": [
+                      "conference",
+                      "journal",
+                      "workshop",
+                      "preprint_server",
+                      "other"
+                    ]
+                  },
+                  "tier": {
+                    "enum": [
+                      "top",
+                      "major",
+                      "other",
+                      "unranked",
+                      "unknown"
+                    ]
+                  },
+                  "tier_label": {
+                    "type": "object",
+                    "additionalProperties": {
+                      "type": "string"
+                    }
+                  },
+                  "tier_basis": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "tier_as_of": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "url": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              },
+              "versions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "kind": {
+                      "enum": [
+                        "preprint",
+                        "conference",
+                        "journal",
+                        "workshop",
+                        "technical_report",
+                        "other"
+                      ]
+                    },
+                    "label": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "date": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "status": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "venue": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "url": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "identifier": {
+                      "type": [
+                        "string",
+                        "null"
+                      ]
+                    },
+                    "peer_reviewed": {
+                      "type": [
+                        "boolean",
+                        "null"
+                      ]
+                    },
+                    "is_primary": {
+                      "type": "boolean"
+                    }
+                  },
+                  "additionalProperties": true
+                }
+              },
+              "notes": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": true
+          },
+          "venue_tier": {
+            "enum": [
+              "top",
+              "major",
+              "other",
+              "unranked",
+              "unknown"
+            ]
+          },
+          "venue_tier_basis": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "venue_tier_as_of": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "is_top_venue": {
+            "type": "boolean"
+          },
+          "reader_summary": {
+            "type": "object",
+            "required": [
+              "audience"
+            ],
+            "properties": {
+              "audience": {
+                "const": "field_familiar_unread"
+              },
+              "zh-CN": {
+                "$ref": "#/$defs/readerSummaryContent"
+              },
+              "en": {
+                "$ref": "#/$defs/readerSummaryContent"
+              }
+            },
+            "additionalProperties": false,
+            "anyOf": [
+              {
+                "required": [
+                  "zh-CN"
+                ]
+              },
+              {
+                "required": [
+                  "en"
+                ]
+              }
+            ]
+          },
+          "featured_figure": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "required": [
+              "kind",
+              "source",
+              "asset"
+            ],
+            "properties": {
+              "kind": {
+                "enum": [
+                  "method_overview",
+                  "architecture",
+                  "pipeline",
+                  "conceptual_diagram",
+                  "qualitative_result",
+                  "benchmark_summary",
+                  "other"
+                ]
+              },
+              "display_kind": {
+                "enum": [
+                  "paper_figure",
+                  "author_asset",
+                  "analyst_reconstruction"
+                ]
+              },
+              "label": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "caption": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "captions": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "alt_text": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "alt_texts": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "reader_note": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "reader_notes": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "selection_reason": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "selection_reasons": {
+                "type": "object",
+                "additionalProperties": {
+                  "type": "string"
+                }
+              },
+              "source": {
+                "type": "object",
+                "required": [
+                  "citation",
+                  "rights_status"
+                ],
+                "properties": {
+                  "citation": {
+                    "type": "string"
+                  },
+                  "paper_version": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "figure_number": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "page": {
+                    "type": [
+                      "integer",
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "url": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "license": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "rights_status": {
+                    "enum": [
+                      "open_license",
+                      "author_provided",
+                      "publisher_permission",
+                      "fair_use_thumbnail",
+                      "analyst_original",
+                      "unknown"
+                    ]
+                  },
+                  "retrieved_at": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "notes": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "additionalProperties": true
+              },
+              "asset": {
+                "type": "object",
+                "properties": {
+                  "path": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "url": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "data_uri": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "mime_type": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "sha256": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  },
+                  "width": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1
+                  },
+                  "height": {
+                    "type": [
+                      "integer",
+                      "null"
+                    ],
+                    "minimum": 1
+                  },
+                  "cropped": {
+                    "type": "boolean"
+                  },
+                  "crop_notes": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                },
+                "additionalProperties": true,
+                "anyOf": [
+                  {
+                    "required": [
+                      "path"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "url"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "data_uri"
+                    ]
+                  }
+                ]
+              },
+              "evidence_ids": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "additionalProperties": false,
+            "allOf": [
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "caption"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "captions"
+                    ]
+                  }
+                ]
+              },
+              {
+                "anyOf": [
+                  {
+                    "required": [
+                      "alt_text"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "alt_texts"
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        "additionalProperties": true,
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "paper"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            },
+            "then": {
+              "required": [
+                "reader_summary"
+              ]
+            }
+          }
+        ]
+      }
+    },
+    "edges": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "source",
+          "target",
+          "relationship",
+          "explanation",
+          "confidence"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "source": {
+            "type": "string"
+          },
+          "target": {
+            "type": "string"
+          },
+          "relationship": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            },
+            "minItems": 1
+          },
+          "primary_relationship": {
+            "type": "string"
+          },
+          "explanation": {
+            "type": "string"
+          },
+          "confidence": {
+            "type": "number",
+            "minimum": 0,
+            "maximum": 1
+          },
+          "evidence_level": {
+            "enum": [
+              "direct",
+              "strong_indirect",
+              "inferred"
+            ]
+          },
+          "main_path": {
+            "type": "boolean"
+          },
+          "conflict": {
+            "type": "boolean"
+          },
+          "conflict_type": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "evidence_ids": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "citation_direction": {
+            "enum": [
+              "source_cites_target",
+              "target_cites_source",
+              "non_citation"
+            ]
+          },
+          "explanations": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "string"
+            }
+          },
+          "added_in_revision": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "updated_in_revision": {
+            "type": "integer",
+            "minimum": 1
+          }
+        },
+        "additionalProperties": true
+      }
+    },
+    "conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "clusters": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "expansions": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "readerSummaryContent": {
+      "type": "object",
+      "required": [
+        "background",
+        "problem",
+        "approach",
+        "key_findings",
+        "why_it_matters",
+        "limitations"
+      ],
+      "properties": {
+        "background": {
+          "type": "string",
+          "minLength": 20
+        },
+        "problem": {
+          "type": "string",
+          "minLength": 15
+        },
+        "approach": {
+          "type": "string",
+          "minLength": 30
+        },
+        "key_findings": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 10
+          },
+          "minItems": 1
+        },
+        "why_it_matters": {
+          "type": "string",
+          "minLength": 15
+        },
+        "limitations": {
+          "type": "array",
+          "items": {
+            "type": "string",
+            "minLength": 8
+          },
+          "minItems": 1
+        },
+        "concepts": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": [
+              "term",
+              "explanation"
+            ],
+            "properties": {
+              "term": {
+                "type": "string"
+              },
+              "explanation": {
+                "type": "string",
+                "minLength": 8
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "evidence_ids": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        }
+      },
+      "additionalProperties": true
+    }
+  }
+}

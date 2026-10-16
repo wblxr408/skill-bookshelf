@@ -1,0 +1,24 @@
+{
+  "skill": "paper-search",
+  "source": "microsoft/ResearchStudio",
+  "ref": "063f10088af49909e1a4a7ea8d29efe19633f34e",
+  "source_path": "ResearchStudio-Idea/skills/paper_search",
+  "files": [
+    "SKILL.md",
+    "references\\programmatic_api.md",
+    "scripts\\_env.py",
+    "scripts\\_http_runtime.py",
+    "scripts\\postprocess.py",
+    "scripts\\search_papers.py",
+    "scripts\\search_papers_by_arxiv.py",
+    "scripts\\search_papers_by_crossref.py",
+    "scripts\\search_papers_by_dblp.py",
+    "scripts\\search_papers_by_google_scholar.py",
+    "scripts\\search_papers_by_open_alex.py",
+    "scripts\\search_papers_by_openreview.py",
+    "scripts\\search_papers_by_semantic_scholar.py",
+    "scripts\\selftest_postprocess.py",
+    "scripts\\selftest_runtime.py",
+    "scripts\\source_worker.py"
+  ]
+}

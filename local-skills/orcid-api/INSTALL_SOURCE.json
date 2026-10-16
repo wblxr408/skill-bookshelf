@@ -1,0 +1,9 @@
+{
+  "skill": "orcid-api",
+  "source": "wentorai/research-plugins",
+  "ref": "bf44b3cd617fa94c8a1b254c5d1987142ca3d631",
+  "source_path": "skills/literature/metadata/orcid-api",
+  "files": [
+    "SKILL.md"
+  ]
+}

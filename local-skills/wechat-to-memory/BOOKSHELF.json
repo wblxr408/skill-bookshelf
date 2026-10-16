@@ -1,0 +1,32 @@
+{
+  "name": "wechat-to-memory",
+  "title": "微信文章入库",
+  "author": "王博 · 个人定制工作流",
+  "origin": "own",
+  "sources": [
+    {
+      "name": "王博的个人工作流",
+      "url": "https://github.com/wblxr408/skill-bookshelf"
+    },
+    {
+      "name": "Basic Machines / Basic Memory（存储依赖）",
+      "url": "https://github.com/basicmachines-co/basic-memory"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "wechat-to-memory",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/wechat-to-memory",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/wechat-to-memory"
+}

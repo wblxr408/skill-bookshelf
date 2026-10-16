@@ -1,0 +1,23 @@
+{
+  "name": "literature-search-openalex",
+  "title": "OpenAlex 文献检索",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "literature-search-openalex",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/literature-search-openalex",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 13
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/literature-search-openalex"
+}

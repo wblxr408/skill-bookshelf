@@ -1,0 +1,80 @@
+{
+  "name": "dev",
+  "title": "统一开发入口",
+  "author": "stellarlinkco / myclaude（原 cexll） / Affaan Mustafa / ECC",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "stellarlinkco / myclaude（原 cexll）",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    },
+    {
+      "name": "Affaan Mustafa / ECC",
+      "url": "https://github.com/affaan-m/ECC"
+    }
+  ],
+  "aliases": [
+    "do",
+    "omo",
+    "sparv"
+  ],
+  "installedCopies": 9,
+  "variants": [
+    {
+      "name": "dev",
+      "label": "fusion-ecc-2026-10-14",
+      "sourcePath": "fused-skills/dev",
+      "copies": 2,
+      "hosts": [
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1399
+    },
+    {
+      "name": "dev",
+      "label": "fusion-ecc-2026-10-12",
+      "sourcePath": "skill-versions/dev/v02",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 1399
+    },
+    {
+      "name": "sparv",
+      "label": "fusion-ecc-2026-10-12",
+      "sourcePath": "skill-versions/dev/v03",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 13
+    },
+    {
+      "name": "omo",
+      "label": "fusion-ecc-2026-10-12",
+      "sourcePath": "skill-versions/dev/v04",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 9
+    },
+    {
+      "name": "do",
+      "label": "fusion-ecc-2026-10-12",
+      "sourcePath": "skill-versions/dev/v05",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 12
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "fused-skills/dev"
+}

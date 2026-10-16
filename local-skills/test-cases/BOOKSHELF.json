@@ -1,0 +1,29 @@
+{
+  "name": "test-cases",
+  "title": "测试用例设计",
+  "author": "stellarlinkco / myclaude（原 cexll）",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "stellarlinkco / myclaude（原 cexll）",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "test-cases",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/test-cases",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/test-cases"
+}

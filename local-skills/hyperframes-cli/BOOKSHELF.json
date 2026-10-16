@@ -1,0 +1,39 @@
+{
+  "name": "hyperframes-cli",
+  "title": "视频开发与渲染",
+  "author": "HeyGen / HyperFrames",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "HeyGen / HyperFrames",
+      "url": "https://github.com/heygen-com/hyperframes"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "hyperframes-cli",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/hyperframes-cli",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 11
+    },
+    {
+      "name": "hyperframes-cli",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "skill-versions/hyperframes-cli/v02",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/hyperframes-cli"
+}

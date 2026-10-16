@@ -1,0 +1,25 @@
+{
+  "name": "task-contract",
+  "title": "任务契约",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "task-contract",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/task-contract",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/task-contract"
+}

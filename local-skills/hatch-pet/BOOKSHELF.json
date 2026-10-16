@@ -1,0 +1,28 @@
+{
+  "name": "hatch-pet",
+  "title": "动态宠物制作",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "hatch-pet",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/hatch-pet",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 27
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/hatch-pet"
+}

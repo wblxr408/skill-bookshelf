@@ -1,64 +1,32 @@
 {
-  "version": "2026-10-16.1",
+  "version": "2026-10-16.2",
   "date": "2026-10-16",
   "repository": "https://github.com/wblxr408/skill-bookshelf",
   "skills": {
-    "impeccable": {
-      "title": "统一前端设计",
-      "dependencies": [
-        "dev"
-      ],
-      "runtime": "Node.js 18+（使用 JS 工具时）；Impeccable engine 由保留的启动器按原项目方式获取。浏览器验证需客户端提供浏览器工具。",
-      "example": "用 $impeccable 为这个页面设计并实现与现有品牌一致的界面，先说明视觉方向，再完成当前交互。",
+    "-21risk-automation": {
+      "title": "风险业务自动化",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/-21risk-automation",
       "sources": [
         {
-          "name": "Paul Bakaus / Impeccable",
-          "url": "https://github.com/pbakaus/impeccable"
-        },
-        {
-          "name": "Anthropic",
-          "url": "https://github.com/anthropics/skills"
+          "name": "Composio",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills"
         }
       ],
-      "changes": [
-        "保留两个原始能力模块，使用短入口按需加载。",
-        "将已有品牌、用户约束和真实交互验证放到统一路径。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
-    },
-    "paper-audit": {
-      "title": "统一论文审查",
-      "dependencies": [
-        "dev",
-        "academic-paper",
-        "deep-research"
-      ],
-      "runtime": "Python 3.10+；PDF 输入按需安装 pypdf 或 PyMuPDF；稿件相关编译依赖由稿件项目提供。",
-      "example": "用 $paper-audit 审查这篇稿件，按严重性列出证据、位置和最小修订建议。",
-      "sources": [
-        {
-          "name": "bahayonghang",
-          "url": "https://github.com/bahayonghang/academic-writing-skills"
-        },
-        {
-          "name": "Imbad0202 / Academic Research Skills",
-          "url": "https://github.com/Imbad0202/academic-research-skills"
-        }
-      ],
-      "changes": [
-        "按快速审查、深度方法、投稿门槛与修订复核选择分支。",
-        "保留原始模块，合并重复发现和审查输出。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。 academic-writing-skills 根目录未找到统一 LICENSE；保留作者的安装/自行修改说明及原文件，不另宣称 MIT 或商业许可。"
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
     },
     "academic-paper": {
       "title": "统一学术写作",
       "dependencies": [
-        "dev",
-        "deep-research"
+        "deep-research",
+        "dev"
       ],
       "runtime": "Python 3.10+；TeX / Typst / Pandoc 仅在对应格式任务需要；编译也可使用客户端自带编译工具。",
       "example": "用 $academic-paper 修改这份论文的引言，保持已有引用键、数学符号和研究主张。",
+      "sourcePath": "fused-skills/academic-paper",
       "sources": [
         {
           "name": "Imbad0202 / Academic Research Skills",
@@ -75,50 +43,681 @@
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。 academic-writing-skills 根目录未找到统一 LICENSE；保留作者的安装/自行修改说明及原文件，不另宣称 MIT 或商业许可。"
     },
-    "scientific-data-visualization": {
-      "title": "统一科研绘图",
+    "academic-pipeline": {
+      "title": "研究到投稿流水线",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/academic-pipeline",
+      "sources": [
+        {
+          "name": "Imbad0202 / Academic Research Skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "academic-research-graph": {
+      "title": "研究脉络与争议图谱",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $academic-research-graph 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/academic-research-graph",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "agent-crosscheck": {
+      "title": "统一成果审查",
       "dependencies": [
         "dev"
       ],
-      "runtime": "Python 3.10+。按任务使用 numpy、pandas、matplotlib、scipy、PyYAML、openpyxl；期刊方案按需用 seaborn、SciencePlots、plotly。",
-      "example": "用 $scientific-data-visualization 分析 data.csv，先判断数据结构和图型，再输出 SVG 与 PNG。",
+      "runtime": "支持技能的 AI 客户端；开发结果审查共享包内 dev 规则。独立审查角色仅在用户授权和工具可用时使用。",
+      "example": "用 $agent-crosscheck 审查这份结果是否满足原目标，给出有证据的问题和最小修复建议。",
+      "sourcePath": "fused-skills/agent-crosscheck",
+      "sources": [],
+      "changes": [
+        "将目的、边界、代价与正确性放到同一审查入口。",
+        "按实际风险选择分支，不机械重复审查。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 原始 agent-crosscheck / intent-review 作者尚未核实，不宣称原始部分为王博原创。"
+    },
+    "algorithmic-art": {
+      "title": "生成式算法艺术",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/algorithmic-art",
       "sources": [
         {
-          "name": "王博 / wblxr408",
-          "url": "https://github.com/wblxr408/skill-bookshelf"
-        },
-        {
-          "name": "Haojae",
-          "url": "https://github.com/Haojae/scipilot-figure-skill"
+          "name": "Anthropic",
+          "url": "https://github.com/anthropics/skills"
         }
       ],
-      "changes": [
-        "保留 reproducible 与 publication 两条绘图分支。",
-        "先明确实验单位、缺失值和图型，再按所需规格导出。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+      "changes": [],
+      "licenseNote": "Apache-2.0"
     },
-    "dev": {
-      "title": "统一开发入口",
+    "all-images-ai-automation": {
+      "title": "图像服务自动化",
       "dependencies": [],
-      "runtime": "适用于支持 SKILL.md 的编码客户端。具体语言、构建和测试工具由目标项目决定，ECC 参考资料不代表已连接全部服务。",
-      "example": "用 $dev 完成这个功能，先把本次改动的可观察行为写清楚，再实施和验证。",
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/all-images-ai-automation",
+      "sources": [
+        {
+          "name": "Composio",
+          "url": "https://github.com/ComposioHQ/awesome-claude-skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "artifact-template-analytics-dashboard": {
+      "title": "模板 · 分析仪表板",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-analytics-dashboard 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-analytics-dashboard",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-annual-impact-report": {
+      "title": "模板 · 年度影响力报告",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-annual-impact-report 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-annual-impact-report",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-brand-guidelines": {
+      "title": "模板 · 品牌规范",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-brand-guidelines 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-brand-guidelines",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-business-review": {
+      "title": "模板 · 业务复盘",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-business-review 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-business-review",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-calder-architecture": {
+      "title": "模板 · 建筑作品集",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-calder-architecture 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-calder-architecture",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-creative-campaign-brief": {
+      "title": "模板 · 创意活动简报",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-creative-campaign-brief 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-creative-campaign-brief",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-design-report": {
+      "title": "模板 · 设计报告",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-design-report 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-design-report",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-experiment-analysis": {
+      "title": "模板 · 实验分析",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-experiment-analysis 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-experiment-analysis",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-financial-budget": {
+      "title": "模板 · 财务预算",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-financial-budget 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-financial-budget",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-growth-strategy": {
+      "title": "模板 · 增长策略",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-growth-strategy 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-growth-strategy",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-investment-committee-memo": {
+      "title": "模板 · 投委会备忘录",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-investment-committee-memo 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-investment-committee-memo",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-legal-memorandum": {
+      "title": "模板 · 法律备忘录",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-legal-memorandum 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-legal-memorandum",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-market-trends-report": {
+      "title": "模板 · 市场趋势报告",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-market-trends-report 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-market-trends-report",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-minimal-letterhead": {
+      "title": "模板 · 极简信纸",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-minimal-letterhead 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-minimal-letterhead",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-next-generation-os": {
+      "title": "模板 · 操作系统概念",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-next-generation-os 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-next-generation-os",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-operating-calendar": {
+      "title": "模板 · 运营日历",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-operating-calendar 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-operating-calendar",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-photography-portfolio": {
+      "title": "模板 · 摄影作品集",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-photography-portfolio 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-photography-portfolio",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-product-pitch": {
+      "title": "模板 · 产品提案",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-product-pitch 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-product-pitch",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-product-strategy": {
+      "title": "模板 · 产品策略",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-product-strategy 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-product-strategy",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-project-kickoff": {
+      "title": "模板 · 项目启动",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-project-kickoff 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-project-kickoff",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-project-tracker": {
+      "title": "模板 · 项目追踪",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-project-tracker 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-project-tracker",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-sales-pipeline": {
+      "title": "模板 · 销售漏斗",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-sales-pipeline 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-sales-pipeline",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-state-of-art": {
+      "title": "模板 · 研究现状报告",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-state-of-art 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-state-of-art",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-strategy-memorandum": {
+      "title": "模板 · 战略备忘录",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-strategy-memorandum 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-strategy-memorandum",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-system-design": {
+      "title": "模板 · 系统设计",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-system-design 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-system-design",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-three-statement-forecast": {
+      "title": "模板 · 财务三表预测",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-three-statement-forecast 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-three-statement-forecast",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "artifact-template-weekly-business-review": {
+      "title": "模板 · 周度业务复盘",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $artifact-template-weekly-business-review 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/artifact-template-weekly-business-review",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bib-search-citation": {
+      "title": "文献库检索与引用",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/bib-search-citation",
+      "sources": [
+        {
+          "name": "bahayonghang",
+          "url": "https://github.com/bahayonghang/academic-writing-skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "bibliometrix-guide": {
+      "title": "文献计量分析",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $bibliometrix-guide 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bibliometrix-guide",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-decide": {
+      "title": "工程决定记录",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-decide 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-decide",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-remember": {
+      "title": "记住事实与偏好",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-remember 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-remember",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-setup": {
+      "title": "Basic Memory 设置",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-setup 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-setup",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-share": {
+      "title": "记忆分享",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-share 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-share",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-status": {
+      "title": "记忆服务状态",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-status 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-status",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "bm-writing": {
+      "title": "记忆写作规范",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $bm-writing 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/bm-writing",
+      "sources": [
+        {
+          "name": "Basic Machines / Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "browser": {
+      "title": "统一浏览器操作",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "已有标签页操作需要客户端提供 cua_repl 等浏览器工具。CDP 路线需 Node.js 18+，在安装后的 browser 目录执行 npm install；本地验收需自行安装 Playwright 与浏览器。",
+      "example": "用 $browser 按当前可用的浏览器工具完成这个网页操作，记录实际交互结果。",
+      "sourcePath": "fused-skills/browser",
       "sources": [
         {
           "name": "stellarlinkco / myclaude（原 cexll）",
           "url": "https://github.com/stellarlinkco/myclaude"
         },
         {
-          "name": "Affaan Mustafa / ECC",
-          "url": "https://github.com/affaan-m/ECC"
+          "name": "OpenAI",
+          "url": "https://github.com/openai/skills"
         }
       ],
       "changes": [
-        "按任务选载技术指南，保留现有设计、记忆与连续性所有者。",
-        "当前契约要求仅对本次行为做最小 TDD；回归测试需用户另行明确授权。",
-        "旧 do / omo / sparv / harness 名称作为兼容路由。"
+        "已有页面和登录态优先 cua_repl。",
+        "重复本地界面验收使用 Playwright Edge，CDP 作为已诊断缺口的备选。"
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
+    },
+    "citation-network-builder": {
+      "title": "引用网络构建",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $citation-network-builder 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/citation-network-builder",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "codeagent": {
+      "title": "多后端代码工具",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/codeagent",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "company-intel": {
+      "title": "公司与行业研究",
+      "dependencies": [
+        "intelligence-collection-disciplines"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $company-intel 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/company-intel",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "competitive-analysis": {
+      "title": "竞品分析",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $competitive-analysis 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/competitive-analysis",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "computer-use": {
+      "title": "电脑界面操作",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $computer-use 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/computer-use",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
     },
     "context-bridge": {
       "title": "统一任务连续性",
@@ -127,6 +726,7 @@
       ],
       "runtime": "Python 3.9+，核心脚本仅用标准库。Basic Memory 保存/恢复分支需要用户自行配置 Basic Memory MCP；本地交接分支可独立使用。",
       "example": "用 $context-bridge 保存这个长任务的目标、最新修正、工作现场和下一步，以便之后恢复。",
+      "sourcePath": "fused-skills/context-bridge",
       "sources": [
         {
           "name": "王博 / wblxr408",
@@ -144,71 +744,74 @@
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 Basic Memory 插件元数据署名 Basic Machines，license=MIT，来源 plugins/codex；harness 原始作者未确认。"
     },
-    "agent-crosscheck": {
-      "title": "统一成果审查",
-      "dependencies": [
-        "dev"
+    "cover-letter": {
+      "title": "投稿附信",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/cover-letter",
+      "sources": [
+        {
+          "name": "bahayonghang",
+          "url": "https://github.com/bahayonghang/academic-writing-skills"
+        }
       ],
-      "runtime": "支持技能的 AI 客户端；开发结果审查共享包内 dev 规则。独立审查角色仅在用户授权和工具可用时使用。",
-      "example": "用 $agent-crosscheck 审查这份结果是否满足原目标，给出有证据的问题和最小修复建议。",
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "create-pet": {
+      "title": "创建动态宠物",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $create-pet 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/create-pet",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "create-plugin": {
+      "title": "插件开发",
+      "dependencies": [
+        "prepare-plugin-submission",
+        "update-plugin"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $create-plugin 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/create-plugin",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "dblp-cli": {
+      "title": "DBLP 文献检索",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $dblp-cli 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/dblp-cli",
       "sources": [],
-      "changes": [
-        "将目的、边界、代价与正确性放到同一审查入口。",
-        "按实际风险选择分支，不机械重复审查。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 原始 agent-crosscheck / intent-review 作者尚未核实，不宣称原始部分为王博原创。"
-    },
-    "pdf": {
-      "title": "统一 PDF 工作流",
-      "dependencies": [
-        "dev"
-      ],
-      "runtime": "Python 3.10+；按操作安装 pypdf、pdfplumber、reportlab、PyMuPDF。Poppler / pdftoppm 为可选渲染工具；Node.js 仅供宿主需要的文档标记脚本。",
-      "example": "用 $pdf 读取这份 PDF 并处理表单，保留交互字段，输出修改结果和受影响页预览。",
-      "sources": [
-        {
-          "name": "OpenAI",
-          "url": "https://github.com/openai/skills"
-        }
-      ],
-      "changes": [
-        "按任务选择原生或便携处理模块。",
-        "保留交互表单，仅在明确要求时扁平化。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
-    },
-    "browser": {
-      "title": "统一浏览器操作",
-      "dependencies": [
-        "dev"
-      ],
-      "runtime": "已有标签页操作需要客户端提供 cua_repl 等浏览器工具。CDP 路线需 Node.js 18+，在安装后的 browser 目录执行 npm install；本地验收需自行安装 Playwright 与浏览器。",
-      "example": "用 $browser 按当前可用的浏览器工具完成这个网页操作，记录实际交互结果。",
-      "sources": [
-        {
-          "name": "stellarlinkco / myclaude（原 cexll）",
-          "url": "https://github.com/stellarlinkco/myclaude"
-        },
-        {
-          "name": "OpenAI",
-          "url": "https://github.com/openai/skills"
-        }
-      ],
-      "changes": [
-        "已有页面和登录态优先 cua_repl。",
-        "重复本地界面验收使用 Playwright Edge，CDP 作为已诊断缺口的备选。"
-      ],
-      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
     },
     "deep-research": {
       "title": "研究入口分流版",
       "dependencies": [
-        "dev",
         "academic-paper",
+        "dev",
         "paper-audit"
       ],
       "runtime": "支持联网检索的 AI 客户端；论文链接、数据库或模型服务需用户自己的连接。不会随包分发 API 密钥。",
       "example": "用 $deep-research 调研这个问题，交付可追溯的来源、分歧和证据边界。",
+      "sourcePath": "fused-skills/deep-research",
       "sources": [
         {
           "name": "Imbad0202 / Academic Research Skills",
@@ -221,6 +824,61 @@
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。"
     },
+    "dev": {
+      "title": "统一开发入口",
+      "dependencies": [],
+      "runtime": "适用于支持 SKILL.md 的编码客户端。具体语言、构建和测试工具由目标项目决定，ECC 参考资料不代表已连接全部服务。",
+      "example": "用 $dev 完成这个功能，先把本次改动的可观察行为写清楚，再实施和验证。",
+      "sourcePath": "fused-skills/dev",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        },
+        {
+          "name": "Affaan Mustafa / ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "changes": [
+        "按任务选载技术指南，保留现有设计、记忆与连续性所有者。",
+        "当前契约要求仅对本次行为做最小 TDD；回归测试需用户另行明确授权。",
+        "旧 do / omo / sparv / harness 名称作为兼容路由。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
+    },
+    "documents": {
+      "title": "Word 与文档制作",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $documents 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/documents",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "engineering-memory": {
+      "title": "工程经验记忆",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "需要使用者自行配置 Basic Memory 或相应知识库。源码包不包含王博的私有知识页、记忆库、后台服务或凭据；依赖的个人知识索引需按公开来源在自己的环境建立。",
+      "example": null,
+      "sourcePath": "local-skills/engineering-memory",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
     "engineering-toolbox": {
       "title": "工程专项工具箱",
       "dependencies": [
@@ -228,6 +886,7 @@
       ],
       "runtime": "使用包内 dev 的 ECC 资料库；具体框架、外部服务和依赖按所选指南配置。",
       "example": "用 $engineering-toolbox 从目录中选择与当前技术问题匹配的一份专项指南，交给当前任务的主入口使用。",
+      "sourcePath": "fused-skills/engineering-toolbox",
       "sources": [
         {
           "name": "Affaan Mustafa / ECC",
@@ -240,6 +899,1568 @@
         "不安装第二套默认记忆、后台观察或代理框架。"
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "excel-live-control": {
+      "title": "Excel 实时操作",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $excel-live-control 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/excel-live-control",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-code-connect": {
+      "title": "Figma 组件连接",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-code-connect 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-code-connect",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-create-new-file": {
+      "title": "Figma 新建设计",
+      "dependencies": [
+        "figma-use-slides"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-create-new-file 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-create-new-file",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-design-to-code": {
+      "title": "Figma 设计转代码",
+      "dependencies": [
+        "figma-generate-design"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-design-to-code 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-design-to-code",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-generate-design": {
+      "title": "Figma 设计生成",
+      "dependencies": [
+        "figma-code-connect",
+        "figma-generate-library",
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-generate-design 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-generate-design",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-generate-diagram": {
+      "title": "Figma 图表生成",
+      "dependencies": [
+        "figma-use-figjam"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-generate-diagram 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-generate-diagram",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-generate-library": {
+      "title": "Figma 组件库生成",
+      "dependencies": [
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-generate-library 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-generate-library",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-implement-motion": {
+      "title": "Figma 动效实现",
+      "dependencies": [
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-implement-motion 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-implement-motion",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-swiftui": {
+      "title": "Figma 与 SwiftUI",
+      "dependencies": [
+        "figma-generate-design",
+        "figma-generate-library",
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-swiftui 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-swiftui",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-use": {
+      "title": "Figma 设计操作",
+      "dependencies": [
+        "figma-generate-design",
+        "figma-generate-library",
+        "figma-use-slides"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-use 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-use",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-use-figjam": {
+      "title": "FigJam 协作白板",
+      "dependencies": [
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-use-figjam 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-use-figjam",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-use-motion": {
+      "title": "Figma 动效操作",
+      "dependencies": [
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-use-motion 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-use-motion",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "figma-use-slides": {
+      "title": "Figma 幻灯片",
+      "dependencies": [
+        "figma-use"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $figma-use-slides 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/figma-use-slides",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "find-skills": {
+      "title": "发现与安装 Skill",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $find-skills 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/find-skills",
+      "sources": [
+        {
+          "name": "Skills 目录",
+          "url": "https://skills.sh/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "firecrawl": {
+      "title": "网页搜索与抓取",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $firecrawl 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/firecrawl",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "frontend-app-builder": {
+      "title": "前端应用搭建",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $frontend-app-builder 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/frontend-app-builder",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "frontend-testing-debugging": {
+      "title": "前端交互排错",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $frontend-testing-debugging 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/frontend-testing-debugging",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "geopandas": {
+      "title": "地理空间数据分析",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $geopandas 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/geopandas",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "google-docs": {
+      "title": "Google Docs 文档",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $google-docs 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/google-docs",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "google-drive": {
+      "title": "Google Drive 文件",
+      "dependencies": [
+        "google-docs",
+        "google-drive-comments",
+        "google-sheets",
+        "google-slides"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $google-drive 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/google-drive",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "google-drive-comments": {
+      "title": "文档批注",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $google-drive-comments 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/google-drive-comments",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "google-sheets": {
+      "title": "Google Sheets 表格",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $google-sheets 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/google-sheets",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "google-slides": {
+      "title": "Google Slides 演示",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $google-slides 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/google-slides",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "grilling": {
+      "title": "方案追问与推敲",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $grilling 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/grilling",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "gsap": {
+      "title": "GSAP 动画",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $gsap 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/gsap",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hatch-pet": {
+      "title": "动态宠物制作",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/hatch-pet",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "Apache-2.0"
+    },
+    "hyperframes": {
+      "title": "HyperFrames 视频总入口",
+      "dependencies": [
+        "hyperframes-core",
+        "media-use"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-animation": {
+      "title": "视频动画设计",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-animation 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-animation",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-audio": {
+      "title": "视频音频混合",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-audio 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-audio",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-cli": {
+      "title": "视频开发与渲染",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-cli 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-cli",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-core": {
+      "title": "视频合成结构",
+      "dependencies": [
+        "hyperframes"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-core 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-core",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-creative": {
+      "title": "视频创意与分镜",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-creative 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-creative",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-keyframes": {
+      "title": "镜头与关键帧",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-keyframes 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-keyframes",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-registry": {
+      "title": "视频组件与模板",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-registry 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-registry",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "hyperframes-studio": {
+      "title": "视频 Studio 工作流",
+      "dependencies": [
+        "hyperframes",
+        "hyperframes-core"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $hyperframes-studio 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/hyperframes-studio",
+      "sources": [
+        {
+          "name": "HeyGen / HyperFrames",
+          "url": "https://github.com/heygen-com/hyperframes"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "imagegen": {
+      "title": "图像生成与编辑",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $imagegen 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/imagegen",
+      "sources": [
+        {
+          "name": "OpenAI Skills",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "impeccable": {
+      "title": "统一前端设计",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Node.js 18+（使用 JS 工具时）；Impeccable engine 由保留的启动器按原项目方式获取。浏览器验证需客户端提供浏览器工具。",
+      "example": "用 $impeccable 为这个页面设计并实现与现有品牌一致的界面，先说明视觉方向，再完成当前交互。",
+      "sourcePath": "fused-skills/impeccable",
+      "sources": [
+        {
+          "name": "Paul Bakaus / Impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "name": "Anthropic",
+          "url": "https://github.com/anthropics/skills"
+        }
+      ],
+      "changes": [
+        "保留两个原始能力模块，使用短入口按需加载。",
+        "将已有品牌、用户约束和真实交互验证放到统一路径。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "intelligence-collection-disciplines": {
+      "title": "多来源情报研究",
+      "dependencies": [
+        "company-intel"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $intelligence-collection-disciplines 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/intelligence-collection-disciplines",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "knowledge-graph-construction": {
+      "title": "知识图谱构建",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $knowledge-graph-construction 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/knowledge-graph-construction",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "lean-agent-harness": {
+      "title": "精简 Agent 指令",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/lean-agent-harness",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "linear": {
+      "title": "Linear 项目管理",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $linear 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/linear",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "literature-search-openalex": {
+      "title": "OpenAlex 文献检索",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $literature-search-openalex 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/literature-search-openalex",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "maintain-space": {
+      "title": "Space 知识维护",
+      "dependencies": [
+        "organize-space",
+        "write-page"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $maintain-space 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/maintain-space",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "manage-schedules": {
+      "title": "Space 定时任务",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $manage-schedules 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/manage-schedules",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "market-researcher-agent": {
+      "title": "市场研究",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $market-researcher-agent 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/market-researcher-agent",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "media-use": {
+      "title": "视频媒体素材",
+      "dependencies": [
+        "hyperframes"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $media-use 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/media-use",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "microsoft-foundry": {
+      "title": "Microsoft Foundry 总入口",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $microsoft-foundry 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/microsoft-foundry",
+      "sources": [
+        {
+          "name": "Microsoft Foundry",
+          "url": "https://learn.microsoft.com/azure/ai-foundry/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "multi-agent-security": {
+      "title": "多 Agent 安全",
+      "dependencies": [],
+      "runtime": "需要使用者自行配置 Basic Memory 或相应知识库。源码包不包含王博的私有知识页、记忆库、后台服务或凭据；依赖的个人知识索引需按公开来源在自己的环境建立。",
+      "example": "使用 $multi-agent-security 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/multi-agent-security",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "networkx": {
+      "title": "复杂网络分析",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $networkx 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/networkx",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "3-clause BSD license"
+    },
+    "one-day-prototype": {
+      "title": "一天原型",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/one-day-prototype",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "open-defense-factory": {
+      "title": "代码安全云入口",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $open-defense-factory 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/open-defense-factory",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "openai-docs": {
+      "title": "OpenAI 产品文档",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openai-docs 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openai-docs",
+      "sources": [
+        {
+          "name": "OpenAI Skills",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "openspec-apply-change": {
+      "title": "OpenSpec 实施",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-apply-change 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-apply-change",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "openspec-archive-change": {
+      "title": "OpenSpec 归档",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-archive-change 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-archive-change",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "openspec-explore": {
+      "title": "OpenSpec 需求探索",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-explore 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-explore",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "openspec-propose": {
+      "title": "OpenSpec 需求提案",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-propose 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-propose",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "openspec-sync-specs": {
+      "title": "OpenSpec 规格同步",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-sync-specs 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-sync-specs",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "openspec-update-change": {
+      "title": "OpenSpec 变更修订",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $openspec-update-change 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/openspec-update-change",
+      "sources": [
+        {
+          "name": "OpenSpec",
+          "url": "https://github.com/Fission-AI/OpenSpec"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "MIT"
+    },
+    "orcid-api": {
+      "title": "研究者身份检索",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $orcid-api 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/orcid-api",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "organize-space": {
+      "title": "Space 页面整理",
+      "dependencies": [
+        "write-page"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $organize-space 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/organize-space",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "paper-audit": {
+      "title": "统一论文审查",
+      "dependencies": [
+        "academic-paper",
+        "deep-research",
+        "dev"
+      ],
+      "runtime": "Python 3.10+；PDF 输入按需安装 pypdf 或 PyMuPDF；稿件相关编译依赖由稿件项目提供。",
+      "example": "用 $paper-audit 审查这篇稿件，按严重性列出证据、位置和最小修订建议。",
+      "sourcePath": "fused-skills/paper-audit",
+      "sources": [
+        {
+          "name": "bahayonghang",
+          "url": "https://github.com/bahayonghang/academic-writing-skills"
+        },
+        {
+          "name": "Imbad0202 / Academic Research Skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills"
+        }
+      ],
+      "changes": [
+        "按快速审查、深度方法、投稿门槛与修订复核选择分支。",
+        "保留原始模块，合并重复发现和审查输出。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。 academic-writing-skills 根目录未找到统一 LICENSE；保留作者的安装/自行修改说明及原文件，不另宣称 MIT 或商业许可。"
+    },
+    "paper-search": {
+      "title": "多库论文检索",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $paper-search 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/paper-search",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "pdf": {
+      "title": "统一 PDF 工作流",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Python 3.10+；按操作安装 pypdf、pdfplumber、reportlab、PyMuPDF。Poppler / pdftoppm 为可选渲染工具；Node.js 仅供宿主需要的文档标记脚本。",
+      "example": "用 $pdf 读取这份 PDF 并处理表单，保留交互字段，输出修改结果和受影响页预览。",
+      "sourcePath": "fused-skills/pdf",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [
+        "按任务选择原生或便携处理模块。",
+        "保留交互表单，仅在明确要求时扁平化。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "pets": {
+      "title": "动态宠物管理",
+      "dependencies": [
+        "create-pet",
+        "update-pet"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $pets 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/pets",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-batch-production": {
+      "title": "Photon 批量变体",
+      "dependencies": [
+        "photon-edit"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-batch-production 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-batch-production",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-composite": {
+      "title": "Photon 图层合成",
+      "dependencies": [
+        "photon-edit"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-composite 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-composite",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-edit": {
+      "title": "Photon 图像编辑",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-edit 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-edit",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-generated-images": {
+      "title": "Photon 生成图像",
+      "dependencies": [
+        "photon-edit"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-generated-images 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-generated-images",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-photo-finish": {
+      "title": "Photon 照片精修",
+      "dependencies": [
+        "photon-edit"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-photo-finish 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-photo-finish",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "photon-vector-design": {
+      "title": "Photon 矢量设计",
+      "dependencies": [
+        "photon-edit"
+      ],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $photon-vector-design 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/photon-vector-design",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "plugin-management": {
+      "title": "插件管理",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $plugin-management 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/plugin-management",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "prepare-plugin-submission": {
+      "title": "插件提交准备",
+      "dependencies": [
+        "create-plugin",
+        "update-plugin"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $prepare-plugin-submission 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/prepare-plugin-submission",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "presentations": {
+      "title": "演示文稿",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $presentations 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/presentations",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "product-requirements": {
+      "title": "产品需求整理",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/product-requirements",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "project-index-router": {
+      "title": "项目索引路由",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/project-index-router",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "prototype-prompt-generator": {
+      "title": "原型提示词生成",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/prototype-prompt-generator",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "react-best-practices": {
+      "title": "React 工程实践",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $react-best-practices 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/react-best-practices",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "remotion-best-practices": {
+      "title": "Remotion 视频制作",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $remotion-best-practices 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/remotion-best-practices",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "research-gap": {
+      "title": "研究空白分析",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $research-gap 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/research-gap",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "reverse-engineer-anything": {
+      "title": "软件与系统逆向",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $reverse-engineer-anything 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/reverse-engineer-anything",
+      "sources": [
+        {
+          "name": "REA",
+          "url": "https://github.com/morluto/rea"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "review-agent": {
+      "title": "代码审查",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $review-agent 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/review-agent",
+      "sources": [
+        {
+          "name": "OpenAI Skills",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "scientific-data-visualization": {
+      "title": "统一科研绘图",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Python 3.10+。按任务使用 numpy、pandas、matplotlib、scipy、PyYAML、openpyxl；期刊方案按需用 seaborn、SciencePlots、plotly。",
+      "example": "用 $scientific-data-visualization 分析 data.csv，先判断数据结构和图型，再输出 SVG 与 PNG。",
+      "sourcePath": "fused-skills/scientific-data-visualization",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        },
+        {
+          "name": "Haojae",
+          "url": "https://github.com/Haojae/scipilot-figure-skill"
+        }
+      ],
+      "changes": [
+        "保留 reproducible 与 publication 两条绘图分支。",
+        "先明确实验单位、缺失值和图型，再按所需规格导出。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "shadcn": {
+      "title": "shadcn 组件设计",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $shadcn 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/shadcn",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "sites": {
+      "title": "Sites 网站搭建",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $sites 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/sites",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "skill-creator": {
+      "title": "Skill 创建与维护",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $skill-creator 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/skill-creator",
+      "sources": [
+        {
+          "name": "OpenAI Skills",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "skill-install": {
+      "title": "Skill 安装助手",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/skill-install",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "skill-installer": {
+      "title": "官方 Skill 安装",
+      "dependencies": [],
+      "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
+      "example": "使用 $skill-installer 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/skill-installer",
+      "sources": [
+        {
+          "name": "OpenAI Skills",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "spreadsheets": {
+      "title": "电子表格",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $spreadsheets 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/spreadsheets",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "starter-workflow": {
+      "title": "新项目工作流",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $starter-workflow 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/create-plugin/assets/starter-plugin/skills/starter-workflow",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "stripe-best-practices": {
+      "title": "Stripe 接入实践",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $stripe-best-practices 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/stripe-best-practices",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "supabase-postgres-best-practices": {
+      "title": "PostgreSQL 工程实践",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $supabase-postgres-best-practices 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/supabase-postgres-best-practices",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "systematic-literature-review": {
+      "title": "系统性文献综述",
+      "dependencies": [],
+      "runtime": "Python 3.10+；按包内 references/research-runtime.md 和原项目依赖说明配置，文献计量等分支可能需要 R / bibliometrix 或 Graphviz。",
+      "example": "使用 $systematic-literature-review 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/systematic-literature-review",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "task-contract": {
+      "title": "任务契约",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/task-contract",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "task-lanes": {
+      "title": "任务分流",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/task-lanes",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "template-creator": {
+      "title": "可复用模板制作",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $template-creator 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/template-creator",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "test-cases": {
+      "title": "测试用例设计",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/test-cases",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "update-pet": {
+      "title": "修改动态宠物",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $update-pet 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/update-pet",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "update-plugin": {
+      "title": "插件更新",
+      "dependencies": [
+        "create-plugin",
+        "prepare-plugin-submission"
+      ],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $update-plugin 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/update-plugin",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "visual-style-router": {
+      "title": "视觉风格路由",
+      "dependencies": [],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/visual-style-router",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "visualize": {
+      "title": "交互式可视化",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $visualize 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/visualize",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "website-to-hyperframes": {
+      "title": "网站转视频",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $website-to-hyperframes 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/website-to-hyperframes",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "wechat-to-memory": {
+      "title": "微信文章入库",
+      "dependencies": [],
+      "runtime": "需要使用者自行配置 Basic Memory 或相应知识库。源码包不包含王博的私有知识页、记忆库、后台服务或凭据；依赖的个人知识索引需按公开来源在自己的环境建立。",
+      "example": "使用 $wechat-to-memory 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/wechat-to-memory",
+      "sources": [
+        {
+          "name": "王博的个人工作流",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        },
+        {
+          "name": "Basic Machines / Basic Memory（存储依赖）",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "workflow-skill-capture": {
+      "title": "工作流沉淀",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": null,
+      "example": null,
+      "sourcePath": "local-skills/workflow-skill-capture",
+      "sources": [],
+      "changes": [],
+      "licenseNote": "见源项目说明，本站不另授许可"
+    },
+    "write-page": {
+      "title": "Pages 写作",
+      "dependencies": [],
+      "runtime": "需对应宿主插件及其实际可用工具。",
+      "example": "使用 $write-page 完成具体任务；先读取入口，按需加载相关参考资料。",
+      "sourcePath": "local-skills/write-page",
+      "sources": [
+        {
+          "name": "OpenAI 插件分发来源",
+          "url": "https://openai.com/codex/"
+        }
+      ],
+      "changes": [],
+      "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
     }
   }
 }

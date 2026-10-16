@@ -1,0 +1,162 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Node-centered Research Expansion Request",
+  "type": "object",
+  "required": [
+    "operation",
+    "base_graph_id",
+    "base_revision",
+    "start_node_id",
+    "focus",
+    "direction",
+    "output_language"
+  ],
+  "properties": {
+    "operation": {
+      "const": "expand"
+    },
+    "base_graph": {
+      "type": "string"
+    },
+    "base_graph_id": {
+      "type": "string"
+    },
+    "base_revision": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "start_node_id": {
+      "type": "string"
+    },
+    "start_node_title": {
+      "type": "string"
+    },
+    "focus": {
+      "type": "string"
+    },
+    "direction": {
+      "enum": [
+        "backward",
+        "forward",
+        "both",
+        "related",
+        "conflicts",
+        "benchmark_use",
+        "repository"
+      ]
+    },
+    "mode": {
+      "enum": [
+        "quick",
+        "standard",
+        "deep"
+      ]
+    },
+    "max_depth": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 8
+    },
+    "candidate_budget": {
+      "type": "integer",
+      "minimum": 10
+    },
+    "analysis_budget": {
+      "type": "integer",
+      "minimum": 5
+    },
+    "output_language": {
+      "enum": [
+        "zh-CN",
+        "en",
+        "bilingual"
+      ]
+    },
+    "allow_main_path_revision": {
+      "type": "boolean"
+    },
+    "created_at": {
+      "type": "string"
+    },
+    "summary_policy": {
+      "type": "object",
+      "properties": {
+        "audience": {
+          "enum": [
+            "field_familiar_unread",
+            "expert_refresh",
+            "general_technical"
+          ],
+          "default": "field_familiar_unread"
+        },
+        "exposition_depth": {
+          "enum": [
+            "concise",
+            "explanatory",
+            "tutorial"
+          ],
+          "default": "explanatory"
+        },
+        "explain_background": {
+          "type": "boolean",
+          "default": true
+        },
+        "define_paper_specific_terms": {
+          "type": "boolean",
+          "default": true
+        },
+        "expand_acronyms_on_first_use": {
+          "type": "boolean",
+          "default": true
+        },
+        "name_comparison_baselines": {
+          "type": "boolean",
+          "default": true
+        },
+        "require_limitations_and_scope": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "figure_policy": {
+      "type": "object",
+      "properties": {
+        "enabled": {
+          "type": "boolean"
+        },
+        "selection_mode": {
+          "enum": [
+            "selective",
+            "seed_and_main_path",
+            "all_reviewed"
+          ]
+        },
+        "max_per_paper": {
+          "type": "integer",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "require_source_attribution": {
+          "type": "boolean"
+        },
+        "require_alt_text": {
+          "type": "boolean"
+        },
+        "embed_local_assets": {
+          "type": "boolean"
+        },
+        "allow_remote_images": {
+          "type": "boolean"
+        },
+        "max_embedded_bytes": {
+          "type": "integer",
+          "minimum": 1024
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": false
+}

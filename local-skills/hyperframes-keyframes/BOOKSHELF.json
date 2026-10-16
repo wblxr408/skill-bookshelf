@@ -1,0 +1,29 @@
+{
+  "name": "hyperframes-keyframes",
+  "title": "镜头与关键帧",
+  "author": "HeyGen / HyperFrames",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "HeyGen / HyperFrames",
+      "url": "https://github.com/heygen-com/hyperframes"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "hyperframes-keyframes",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/hyperframes-keyframes",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 3
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/hyperframes-keyframes"
+}

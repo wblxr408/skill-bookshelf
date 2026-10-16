@@ -1,0 +1,24 @@
+{
+  "name": "media-use",
+  "title": "视频媒体素材",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "media-use",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/media-use",
+      "copies": 2,
+      "hosts": [
+        "Claude Code 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 110
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/media-use"
+}

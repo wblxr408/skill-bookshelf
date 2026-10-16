@@ -1,0 +1,30 @@
+{
+  "name": "engineering-memory",
+  "title": "工程经验记忆",
+  "author": "王博 / wblxr408",
+  "origin": "own",
+  "sources": [
+    {
+      "name": "王博 / wblxr408",
+      "url": "https://github.com/wblxr408/skill-bookshelf"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "engineering-memory",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/engineering-memory",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 7
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/engineering-memory"
+}

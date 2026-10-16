@@ -1,0 +1,23 @@
+{
+  "name": "orcid-api",
+  "title": "研究者身份检索",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "orcid-api",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/orcid-api",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/orcid-api"
+}

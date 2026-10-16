@@ -1,0 +1,28 @@
+{
+  "name": "skill-installer",
+  "title": "官方 Skill 安装",
+  "author": "OpenAI",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI Skills",
+      "url": "https://github.com/openai/skills"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "skill-installer",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/skill-installer",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 8
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/skill-installer"
+}

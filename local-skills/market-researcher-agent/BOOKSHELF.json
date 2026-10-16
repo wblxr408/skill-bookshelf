@@ -1,0 +1,23 @@
+{
+  "name": "market-researcher-agent",
+  "title": "市场研究",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "market-researcher-agent",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/market-researcher-agent",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 5
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/market-researcher-agent"
+}

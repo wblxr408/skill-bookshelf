@@ -1,0 +1,28 @@
+{
+  "name": "sites",
+  "title": "Sites 网站搭建",
+  "author": "OpenAI 插件分发 · 原作者以文件署名为准",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "OpenAI 插件分发来源",
+      "url": "https://openai.com/codex/"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "sites",
+      "label": "Codex 插件目录（含缓存）",
+      "sourcePath": "local-skills/sites",
+      "copies": 1,
+      "hosts": [
+        "Codex 插件目录（含缓存）"
+      ],
+      "fileCount": 137
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/sites"
+}

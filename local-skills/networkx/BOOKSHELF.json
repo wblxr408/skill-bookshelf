@@ -1,0 +1,23 @@
+{
+  "name": "networkx",
+  "title": "复杂网络分析",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "networkx",
+      "label": "1.4",
+      "sourcePath": "local-skills/networkx",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 8
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/networkx"
+}

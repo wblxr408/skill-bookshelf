@@ -1,0 +1,13 @@
+{
+  "version": "1.2.0",
+  "protocolVersion": 1,
+  "requiredCapabilities": [
+    "inspect",
+    "render",
+    "session.create",
+    "layer.adjustment.new",
+    "document.adjustment",
+    "document.profile.assign",
+    "document.profile.convert"
+  ]
+}

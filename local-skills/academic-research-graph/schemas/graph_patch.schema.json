@@ -1,0 +1,135 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Academic Research Graph Expansion Patch",
+  "type": "object",
+  "required": [
+    "meta",
+    "upsert_nodes",
+    "upsert_edges"
+  ],
+  "properties": {
+    "meta": {
+      "type": "object",
+      "required": [
+        "expansion_id",
+        "base_graph_id",
+        "base_revision",
+        "start_node_id",
+        "focus",
+        "created_at"
+      ],
+      "properties": {
+        "expansion_id": {
+          "type": "string"
+        },
+        "base_graph_id": {
+          "type": "string"
+        },
+        "base_revision": {
+          "type": "integer",
+          "minimum": 1
+        },
+        "start_node_id": {
+          "type": "string"
+        },
+        "focus": {
+          "type": "string"
+        },
+        "direction": {
+          "enum": [
+            "backward",
+            "forward",
+            "both",
+            "related",
+            "conflicts",
+            "benchmark_use",
+            "repository"
+          ]
+        },
+        "output_language": {
+          "enum": [
+            "zh-CN",
+            "en",
+            "bilingual"
+          ]
+        },
+        "created_at": {
+          "type": "string"
+        },
+        "search_cutoff": {
+          "type": "string"
+        },
+        "sources": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "warnings": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "summary_policy": {
+          "type": "object",
+          "properties": {
+            "audience": {
+              "const": "field_familiar_unread"
+            },
+            "exposition_depth": {
+              "enum": [
+                "concise",
+                "explanatory",
+                "tutorial"
+              ]
+            }
+          },
+          "additionalProperties": true
+        },
+        "figure_policy": {
+          "type": "object",
+          "additionalProperties": true
+        }
+      },
+      "additionalProperties": true
+    },
+    "upsert_nodes": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "upsert_edges": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "upsert_conflicts": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "upsert_clusters": {
+      "type": "array",
+      "items": {
+        "type": "object"
+      }
+    },
+    "coverage_delta": {
+      "type": "object"
+    },
+    "main_path_reassessment": {
+      "type": "object"
+    },
+    "notes": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      }
+    }
+  },
+  "additionalProperties": false
+}

@@ -1,0 +1,23 @@
+{
+  "name": "knowledge-graph-construction",
+  "title": "知识图谱构建",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "knowledge-graph-construction",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/knowledge-graph-construction",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 5
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/knowledge-graph-construction"
+}

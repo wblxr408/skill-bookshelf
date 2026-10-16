@@ -1,0 +1,28 @@
+{
+  "name": "reverse-engineer-anything",
+  "title": "软件与系统逆向",
+  "author": "morluto / REA",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "REA",
+      "url": "https://github.com/morluto/rea"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "reverse-engineer-anything",
+      "label": "37",
+      "sourcePath": "local-skills/reverse-engineer-anything",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 7
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/reverse-engineer-anything"
+}

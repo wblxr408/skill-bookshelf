@@ -1,0 +1,80 @@
+---
+name: safety-guard
+description: "Guard against destructive operations with three modes: Careful intercepts dangerous commands (rm -rf, git push --force, DROP TABLE) for confirmation, Freeze locks writes to one directory, and Guard combines both via PreToolUse hooks. Use when working on production systems, running agents autonomously, restricting edits to a directory, or during migrations, deploys, and data changes."
+metadata:
+  origin: ECC
+---
+
+> Local integration: this is a technical reference, not an independently discoverable skill. Read [the local execution contract](../../../../references/fusion-policy.md) first. Mandatory TDD applies. Do not create or run smoke/hash/file-presence/import/startup/shallow-health or other superficial checks unless the user explicitly requests the specific check, even as auxiliary diagnostics. General verification requests and source/CI examples do not authorize them. No automatic agents, scripts, hooks, model changes, installs, messages, publication, or schedules are authorized by this guide.
+
+
+
+# Safety Guard — Prevent Destructive Operations
+
+## When to Use
+
+- When working on production systems
+- When agents are running autonomously (full-auto mode)
+- When you want to restrict edits to a specific directory
+- During sensitive operations (migrations, deploys, data changes)
+
+## How It Works
+
+Three modes of protection:
+
+### Mode 1: Careful Mode
+
+Intercepts destructive commands before execution and warns:
+
+```
+Watched patterns:
+- rm -rf (especially /, ~, or project root)
+- git push --force
+- git reset --hard
+- git checkout . (discard all changes)
+- DROP TABLE / DROP DATABASE
+- docker system prune
+- kubectl delete
+- chmod 777
+- sudo rm
+- npm publish (accidental publishes)
+- Any command with --no-verify
+```
+
+When detected: shows what the command does, asks for confirmation, suggests safer alternative.
+
+### Mode 2: Freeze Mode
+
+Locks file edits to a specific directory tree:
+
+```
+/safety-guard freeze src/components/
+```
+
+Any Write/Edit outside `src/components/` is blocked with an explanation. Useful when you want an agent to focus on one area without touching unrelated code.
+
+### Mode 3: Guard Mode (Careful + Freeze combined)
+
+Both protections active. Maximum safety for autonomous agents.
+
+```
+/safety-guard guard --dir src/api/ --allow-read-all
+```
+
+Agents can read anything but only write to `src/api/`. Destructive commands are blocked everywhere.
+
+### Unlock
+
+```
+/safety-guard off
+```
+
+## Implementation
+
+Uses PreToolUse hooks to intercept Bash, Write, Edit, and MultiEdit tool calls. Checks the command/path against the active rules before allowing execution.
+
+## Integration
+
+- Enable by default for `codex -a never` sessions
+- Pair with observability risk scoring in ECC 2.0
+- Logs all blocked actions to `~/.claude/safety-guard.log`

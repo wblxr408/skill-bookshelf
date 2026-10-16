@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dev"
+  short_description: "Implement features, diagnose bugs, and refactor code with pro..."
+  default_prompt: "Use $dev to complete the requested dev task."

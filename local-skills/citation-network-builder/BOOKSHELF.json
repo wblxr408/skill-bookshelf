@@ -1,0 +1,23 @@
+{
+  "name": "citation-network-builder",
+  "title": "引用网络构建",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "citation-network-builder",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/citation-network-builder",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 2
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/citation-network-builder"
+}

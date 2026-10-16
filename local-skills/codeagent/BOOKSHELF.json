@@ -1,0 +1,38 @@
+{
+  "name": "codeagent",
+  "title": "多后端代码工具",
+  "author": "stellarlinkco / myclaude（原 cexll）",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "stellarlinkco / myclaude（原 cexll）",
+      "url": "https://github.com/stellarlinkco/myclaude"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "codeagent",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/codeagent",
+      "copies": 1,
+      "hosts": [
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    },
+    {
+      "name": "codeagent",
+      "label": "Claude Code 目录",
+      "sourcePath": "skill-versions/codeagent/v02",
+      "copies": 1,
+      "hosts": [
+        "Claude Code 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/codeagent"
+}

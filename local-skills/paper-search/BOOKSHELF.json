@@ -1,0 +1,23 @@
+{
+  "name": "paper-search",
+  "title": "多库论文检索",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 1,
+  "variants": [
+    {
+      "name": "paper-search",
+      "label": "Codex 目录",
+      "sourcePath": "local-skills/paper-search",
+      "copies": 1,
+      "hosts": [
+        "Codex 目录"
+      ],
+      "fileCount": 17
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/paper-search"
+}

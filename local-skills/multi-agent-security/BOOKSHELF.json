@@ -1,0 +1,25 @@
+{
+  "name": "multi-agent-security",
+  "title": "多 Agent 安全",
+  "author": "原作者待核实",
+  "origin": "pending",
+  "sources": [],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "multi-agent-security",
+      "label": "共享 Skill 目录",
+      "sourcePath": "local-skills/multi-agent-security",
+      "copies": 3,
+      "hosts": [
+        "Claude Code 目录",
+        "Codex 目录",
+        "共享 Skill 目录"
+      ],
+      "fileCount": 1
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/multi-agent-security"
+}
