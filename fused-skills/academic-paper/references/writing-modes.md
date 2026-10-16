@@ -1,0 +1,7 @@
+# writing modes
+
+Retain all writing modes: full, plan, outline, revision, revision-coach, abstract, lit-review, format-convert, citation-check, disclosure, and rebuttal-audit (the last is executed with paper-audit). Keep the six paper-type structures, five citation formats, bilingual abstracts, style calibration, judgment/anti-pattern criteria, source-supported novelty and claims, figures/tables, authorship/credit, funding, journal fit, reporting obligations, and LaTeX/DOCX-via-Pandoc/PDF outputs.
+
+Read the selected mode, relevant structure/citation/style reference, and requested output format only. A full draft can use specialist writer/editor/methodology/statistics/figure perspectives; a paragraph edit does not require twelve agents. Preserve the generator/evaluator distinction where substantive verification is useful, but do not dispatch a fixed four-call sequence or unavailable named tools.
+
+Revision uses the existing patch protocol: anchor reviewer comments, classify intent, plan compatible localized changes, preserve evidence, verify affected sections and response correspondence. Plan/coaching/guided modes remain conversational when the user requests them; ordinary clear work proceeds with reasonable disclosed assumptions. Never fabricate citations, experimental data, funding, author roles, publication facts, or disclosure policy. Verify a named venue's current policy before an authoritative compliance claim. Existing scripts/templates/references and outputs remain available in the writing/format modules.

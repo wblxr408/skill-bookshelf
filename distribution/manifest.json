@@ -1,0 +1,245 @@
+{
+  "version": "2026-10-16.1",
+  "date": "2026-10-16",
+  "repository": "https://github.com/wblxr408/skill-bookshelf",
+  "skills": {
+    "impeccable": {
+      "title": "统一前端设计",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Node.js 18+（使用 JS 工具时）；Impeccable engine 由保留的启动器按原项目方式获取。浏览器验证需客户端提供浏览器工具。",
+      "example": "用 $impeccable 为这个页面设计并实现与现有品牌一致的界面，先说明视觉方向，再完成当前交互。",
+      "sources": [
+        {
+          "name": "Paul Bakaus / Impeccable",
+          "url": "https://github.com/pbakaus/impeccable"
+        },
+        {
+          "name": "Anthropic",
+          "url": "https://github.com/anthropics/skills"
+        }
+      ],
+      "changes": [
+        "保留两个原始能力模块，使用短入口按需加载。",
+        "将已有品牌、用户约束和真实交互验证放到统一路径。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "paper-audit": {
+      "title": "统一论文审查",
+      "dependencies": [
+        "dev",
+        "academic-paper",
+        "deep-research"
+      ],
+      "runtime": "Python 3.10+；PDF 输入按需安装 pypdf 或 PyMuPDF；稿件相关编译依赖由稿件项目提供。",
+      "example": "用 $paper-audit 审查这篇稿件，按严重性列出证据、位置和最小修订建议。",
+      "sources": [
+        {
+          "name": "bahayonghang",
+          "url": "https://github.com/bahayonghang/academic-writing-skills"
+        },
+        {
+          "name": "Imbad0202 / Academic Research Skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills"
+        }
+      ],
+      "changes": [
+        "按快速审查、深度方法、投稿门槛与修订复核选择分支。",
+        "保留原始模块，合并重复发现和审查输出。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。 academic-writing-skills 根目录未找到统一 LICENSE；保留作者的安装/自行修改说明及原文件，不另宣称 MIT 或商业许可。"
+    },
+    "academic-paper": {
+      "title": "统一学术写作",
+      "dependencies": [
+        "dev",
+        "deep-research"
+      ],
+      "runtime": "Python 3.10+；TeX / Typst / Pandoc 仅在对应格式任务需要；编译也可使用客户端自带编译工具。",
+      "example": "用 $academic-paper 修改这份论文的引言，保持已有引用键、数学符号和研究主张。",
+      "sources": [
+        {
+          "name": "Imbad0202 / Academic Research Skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills"
+        },
+        {
+          "name": "bahayonghang",
+          "url": "https://github.com/bahayonghang/academic-writing-skills"
+        }
+      ],
+      "changes": [
+        "保留英文 TeX、中文学位论文和 Typst 的脚本与资料。",
+        "按实际修改范围读取，不默认启动完整写作流程。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。 academic-writing-skills 根目录未找到统一 LICENSE；保留作者的安装/自行修改说明及原文件，不另宣称 MIT 或商业许可。"
+    },
+    "scientific-data-visualization": {
+      "title": "统一科研绘图",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Python 3.10+。按任务使用 numpy、pandas、matplotlib、scipy、PyYAML、openpyxl；期刊方案按需用 seaborn、SciencePlots、plotly。",
+      "example": "用 $scientific-data-visualization 分析 data.csv，先判断数据结构和图型，再输出 SVG 与 PNG。",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        },
+        {
+          "name": "Haojae",
+          "url": "https://github.com/Haojae/scipilot-figure-skill"
+        }
+      ],
+      "changes": [
+        "保留 reproducible 与 publication 两条绘图分支。",
+        "先明确实验单位、缺失值和图型，再按所需规格导出。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "dev": {
+      "title": "统一开发入口",
+      "dependencies": [],
+      "runtime": "适用于支持 SKILL.md 的编码客户端。具体语言、构建和测试工具由目标项目决定，ECC 参考资料不代表已连接全部服务。",
+      "example": "用 $dev 完成这个功能，先把本次改动的可观察行为写清楚，再实施和验证。",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        },
+        {
+          "name": "Affaan Mustafa / ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "changes": [
+        "按任务选载技术指南，保留现有设计、记忆与连续性所有者。",
+        "当前契约要求仅对本次行为做最小 TDD；回归测试需用户另行明确授权。",
+        "旧 do / omo / sparv / harness 名称作为兼容路由。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
+    },
+    "context-bridge": {
+      "title": "统一任务连续性",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Python 3.9+，核心脚本仅用标准库。Basic Memory 保存/恢复分支需要用户自行配置 Basic Memory MCP；本地交接分支可独立使用。",
+      "example": "用 $context-bridge 保存这个长任务的目标、最新修正、工作现场和下一步，以便之后恢复。",
+      "sources": [
+        {
+          "name": "王博 / wblxr408",
+          "url": "https://github.com/wblxr408/skill-bookshelf"
+        },
+        {
+          "name": "Basic Memory",
+          "url": "https://github.com/basicmachines-co/basic-memory"
+        }
+      ],
+      "changes": [
+        "按保存、恢复、任务状态分支渐进加载。",
+        "保留原目标、最新修正、权限和一个下一步。",
+        "接管使用实际现场和所有权，不能只凭 Git 版本。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 Basic Memory 插件元数据署名 Basic Machines，license=MIT，来源 plugins/codex；harness 原始作者未确认。"
+    },
+    "agent-crosscheck": {
+      "title": "统一成果审查",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "支持技能的 AI 客户端；开发结果审查共享包内 dev 规则。独立审查角色仅在用户授权和工具可用时使用。",
+      "example": "用 $agent-crosscheck 审查这份结果是否满足原目标，给出有证据的问题和最小修复建议。",
+      "sources": [],
+      "changes": [
+        "将目的、边界、代价与正确性放到同一审查入口。",
+        "按实际风险选择分支，不机械重复审查。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 原始 agent-crosscheck / intent-review 作者尚未核实，不宣称原始部分为王博原创。"
+    },
+    "pdf": {
+      "title": "统一 PDF 工作流",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "Python 3.10+；按操作安装 pypdf、pdfplumber、reportlab、PyMuPDF。Poppler / pdftoppm 为可选渲染工具；Node.js 仅供宿主需要的文档标记脚本。",
+      "example": "用 $pdf 读取这份 PDF 并处理表单，保留交互字段，输出修改结果和受影响页预览。",
+      "sources": [
+        {
+          "name": "OpenAI",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [
+        "按任务选择原生或便携处理模块。",
+        "保留交互表单，仅在明确要求时扁平化。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    },
+    "browser": {
+      "title": "统一浏览器操作",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "已有标签页操作需要客户端提供 cua_repl 等浏览器工具。CDP 路线需 Node.js 18+，在安装后的 browser 目录执行 npm install；本地验收需自行安装 Playwright 与浏览器。",
+      "example": "用 $browser 按当前可用的浏览器工具完成这个网页操作，记录实际交互结果。",
+      "sources": [
+        {
+          "name": "stellarlinkco / myclaude（原 cexll）",
+          "url": "https://github.com/stellarlinkco/myclaude"
+        },
+        {
+          "name": "OpenAI",
+          "url": "https://github.com/openai/skills"
+        }
+      ],
+      "changes": [
+        "已有页面和登录态优先 cua_repl。",
+        "重复本地界面验收使用 Playwright Edge，CDP 作为已诊断缺口的备选。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
+    },
+    "deep-research": {
+      "title": "研究入口分流版",
+      "dependencies": [
+        "dev",
+        "academic-paper",
+        "paper-audit"
+      ],
+      "runtime": "支持联网检索的 AI 客户端；论文链接、数据库或模型服务需用户自己的连接。不会随包分发 API 密钥。",
+      "example": "用 $deep-research 调研这个问题，交付可追溯的来源、分歧和证据边界。",
+      "sources": [
+        {
+          "name": "Imbad0202 / Academic Research Skills",
+          "url": "https://github.com/Imbad0202/academic-research-skills"
+        }
+      ],
+      "changes": [
+        "研究入口负责检索、来源核验和综合。",
+        "论文审查意图路由到 paper-audit，避免重复流程。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 ARS 当前公开许可为 CC BY-NC 4.0（原作者 Cheng-I Wu）；其完整文本随包保留。"
+    },
+    "engineering-toolbox": {
+      "title": "工程专项工具箱",
+      "dependencies": [
+        "dev"
+      ],
+      "runtime": "使用包内 dev 的 ECC 资料库；具体框架、外部服务和依赖按所选指南配置。",
+      "example": "用 $engineering-toolbox 从目录中选择与当前技术问题匹配的一份专项指南，交给当前任务的主入口使用。",
+      "sources": [
+        {
+          "name": "Affaan Mustafa / ECC",
+          "url": "https://github.com/affaan-m/ECC"
+        }
+      ],
+      "changes": [
+        "以版本 2.2.3 的来源快照建立 311 项映射。",
+        "仅加载当前缺少的方法，保留原作者及 MIT 许可。",
+        "不安装第二套默认记忆、后台观察或代理框架。"
+      ],
+      "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。"
+    }
+  }
+}

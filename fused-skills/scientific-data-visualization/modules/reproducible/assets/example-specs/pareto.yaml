@@ -1,0 +1,20 @@
+version: 1
+data:
+  path: ../example_measurements.csv
+  layout: long
+theme:
+  path: ../themes/journal-bilingual.yaml
+figure:
+  type: pareto
+  x: defect_type
+  y: count
+  labels:
+    locale: bilingual
+    title: Defect contribution / 缺陷贡献
+    x: Defect type / 缺陷类型
+    y: Count / 数量
+analysis:
+  statistic: sum
+output:
+  stem: defect-pareto
+  formats: [png, svg, pdf]

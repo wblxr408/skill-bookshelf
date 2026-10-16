@@ -1,0 +1,3 @@
+# runtime
+
+Use load_workspace_dependencies for bundled Python/Node and libraries before installing anything. Existing system Python with pypdf/pdfplumber/reportlab and a renderer is also usable. Prefer Poppler for rendering; use a supported PyMuPDF renderer when Poppler is missing. Install a dependency only if actually needed and within the user's authorized task. Invoke PowerShell executables with proper literal paths and arguments; do not copy Unix package-install commands into Windows. Module-relative resource paths are resolved from the module, and the native authoring marker is also available at the unified root.

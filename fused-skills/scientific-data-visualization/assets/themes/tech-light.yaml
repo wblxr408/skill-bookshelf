@@ -1,0 +1,18 @@
+name: tech-light
+canvas: {width_in: 6.8, height_in: 4.3, dpi: 300, background: "#F6FAFF", panel_background: "#FFFFFF", foreground: "#16263A"}
+fonts:
+  cjk_family: Microsoft YaHei
+  latin_family: Arial
+  fallback: [Noto Sans CJK SC, DejaVu Sans]
+  sizes: {title: 12, axis_label: 10, tick: 8, legend: 8, annotation: 8, table: 7}
+palette:
+  categorical: ["#0077B6", "#6D5BD0", "#009E73", "#E88920", "#D94F70", "#00A6C8"]
+  sequential: viridis
+  diverging: RdBu_r
+  reference: "#334E68"
+  alert: "#C53030"
+axis: {spine_width: 0.8, spine_color: "#7892AE", grid: y-major-light, grid_color: "#D6E5F3", grid_alpha: 0.9, grid_width: 0.5, tick_direction: out, tick_color: "#38536F", label_color: "#16263A", title_color: "#102A43"}
+legend: {frame: false, location: best}
+marks: {marker: o, marker_size: 3.7, marker_alpha: 0.86, scatter_size: 25, line_width: 1.6, fit_line_width: 1.25}
+annotation: {background: "#FFFFFF", edge_color: "#9CB6CF", text_color: "#16263A", alpha: 0.95}
+table: {header: true, font_size: 7, header_background: "#DCECF9", cell_background: "#FFFFFF", edge_color: "#AFC7DD", edge_width: 0.5, text_color: "#16263A"}

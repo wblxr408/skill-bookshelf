@@ -1,0 +1,31 @@
+name: journal-bilingual
+canvas:
+  width_in: 6.5
+  height_in: 4.2
+  dpi: 300
+  background: "#FFFFFF"
+fonts:
+  cjk_family: Microsoft YaHei
+  latin_family: Arial
+  fallback: [Noto Sans CJK SC, DejaVu Sans]
+  sizes:
+    title: 12
+    axis_label: 10
+    tick: 8
+    legend: 8
+    annotation: 8
+    table: 7
+palette:
+  categorical: ["#0072B2", "#D55E00", "#009E73", "#CC79A7", "#E69F00", "#56B4E9"]
+  sequential: viridis
+  diverging: RdBu_r
+axis:
+  spine_width: 0.8
+  grid: y-major-light
+  tick_direction: out
+legend:
+  frame: false
+  location: best
+table:
+  header: true
+  font_size: 7

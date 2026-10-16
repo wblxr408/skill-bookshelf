@@ -1,0 +1,19 @@
+{
+  "name": "academic-paper",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev",
+    "deep-research"
+  ],
+  "sourceFileCount": 399,
+  "portableChanges": [
+    "agents/literature_strategist_agent.md：兼容其他模块对原写作代理路径的引用"
+  ],
+  "moduleAttribution": {
+    "modules/writing": "Cheng-I Wu / Imbad0202",
+    "modules/latex-en": "bahayonghang",
+    "modules/latex-zh": "bahayonghang",
+    "modules/typst": "bahayonghang"
+  },
+  "runtime": "Python 3.10+；TeX / Typst / Pandoc 仅在对应格式任务需要；编译也可使用客户端自带编译工具。"
+}

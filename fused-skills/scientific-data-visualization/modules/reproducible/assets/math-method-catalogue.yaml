@@ -1,0 +1,85 @@
+version: 1
+formula_policy: Formula files are optional sidecars under assets/math-formulas and may be read only after confirmed selection.
+recommendation_policy: Catalogue entries describe candidate methods only. An entry may be recommended only when a matching strict adapter returns an eligible decision packet; all other entries require analyst-led method-specific review.
+source_corpus:
+  directory: ../../math
+  image_count: 7
+  inspected: true
+categories:
+  - id: descriptive-statistics
+    label: 描述统计
+    source: 描述统计.png
+    methods:
+      - {id: column-statistics, label: 列统计, role: summarize a numeric variable, data_shape: one or more numeric columns, chart_expression: summary table or distribution caption}
+      - {id: row-statistics, label: 行统计, role: summarize values within rows, data_shape: repeated numeric fields per row, chart_expression: summary profile or table}
+      - {id: statistical-table, label: 统计表, role: produce a tabular summary, data_shape: numeric and optional grouping columns, chart_expression: attached table}
+      - {id: crosstab-chi-square, label: 交叉表格和卡方, role: assess association of categorical variables, data_shape: two categorical variables with counts, chart_expression: contingency mosaic or grouped bar plus chi-square note}
+      - {id: discrete-frequency, label: 离散频数, role: tabulate discrete values, data_shape: discrete numeric or categorical variable, chart_expression: frequency bar chart}
+      - {id: frequency-distribution, label: 频数分布, role: describe distribution frequency, data_shape: numeric variable, chart_expression: histogram or frequency polygon}
+      - {id: binomial-distribution, label: 二项分布, role: model binary-event counts, data_shape: successes and trials, chart_expression: probability mass plot}
+      - {id: normality-test, label: 正态性检验, role: assess normality assumption, data_shape: numeric response with adequate sample size, chart_expression: Q-Q plot plus test note}
+      - {id: pearson-correlation, label: 相关系数, role: quantify linear association, data_shape: two numeric variables, chart_expression: scatter plus r and confidence interval}
+      - {id: partial-correlation, label: 偏相关系数, role: association conditional on covariates, data_shape: two numeric variables plus control variables, chart_expression: residual scatter plus partial-r note}
+      - {id: grubbs-outlier, label: Grubbs检验, role: screen one outlier under normality assumption, data_shape: one numeric sample, chart_expression: distribution plot with flagged observation}
+      - {id: dixon-q, label: Dixon's Q检验, role: screen one outlier in a small sample, data_shape: small numeric sample, chart_expression: ordered dot plot with flagged observation}
+  - id: hypothesis-testing
+    label: 假设检验
+    source: 假设检验.png
+    methods:
+      - {id: one-sample-z, label: 单样本z检验, role: test a mean against a known reference with known variance, data_shape: numeric sample plus reference and known variance, chart_expression: estimate plus reference line and z/p annotation}
+      - {id: paired-t, label: 配对样本t检验, role: compare paired means, data_shape: two numeric measurements linked by subject ID, chart_expression: paired slope plot plus mean-difference CI and p}
+      - {id: two-sample-t, label: 双样本t检验, role: compare two independent means, data_shape: numeric response plus two-level independent group, chart_expression: distribution or dot plot plus CI and p}
+      - {id: one-sample-variance, label: 单样本方差检验, role: test one variance, data_shape: numeric sample plus variance reference, chart_expression: distribution with variance-test annotation}
+      - {id: two-sample-variance, label: 双样本方差检验, role: compare two variances, data_shape: numeric response plus two independent groups, chart_expression: grouped distribution plus variance-ratio note}
+      - {id: one-sample-proportion, label: 单样本比率检验, role: test one proportion, data_shape: successes and trials plus reference proportion, chart_expression: proportion interval plus reference line}
+      - {id: two-sample-proportion, label: 双样本比率检验, role: compare two proportions, data_shape: successes and trials for two groups, chart_expression: proportion interval plot plus difference/p}
+      - {id: logistic-regression, label: Logistic回归, role: model adjusted associations for a binary outcome, data_shape: binary outcome plus pre-specified predictors, chart_expression: odds-ratio intervals plus calibration and validation diagnostics}
+      - {id: ordinal-regression, label: 等级Logistic回归, role: model ordered multi-category outcomes, data_shape: ordered outcome plus pre-specified predictors, chart_expression: odds-ratio intervals plus proportional-odds and validation diagnostics}
+  - id: anova
+    label: 方差分析
+    source: 方差分析.png
+    methods:
+      - {id: one-way-anova, label: 单因素方差分析, role: compare means across independent groups, data_shape: numeric response plus one categorical factor with three or more levels, chart_expression: raw-data distribution plus omnibus p and post-hoc annotation}
+      - {id: one-way-repeated-anova, label: 单因素重复测量方差分析, role: compare repeated measurements across one within-subject factor, data_shape: numeric response plus subject ID and repeated condition, chart_expression: paired trajectories plus omnibus p}
+      - {id: two-way-anova, label: 双因素方差分析, role: test two factors and interaction, data_shape: numeric response plus two categorical factors, chart_expression: interaction plot plus main/interaction p values}
+      - {id: two-way-repeated-anova, label: 双因素重复测量方差分析, role: test repeated factorial effects, data_shape: numeric response plus subject ID and repeated factors, chart_expression: panelled interaction trajectories plus p values}
+      - {id: three-way-anova, label: 三因素方差分析, role: test three factors and interactions, data_shape: numeric response plus three categorical factors, chart_expression: faceted interaction plot plus model summary}
+  - id: nonparametric-testing
+    label: 非参数检验
+    source: 非参数检验.png
+    methods:
+      - {id: one-sample-wilcoxon, label: 单样本Wilcoxon符号秩检验, role: compare a median-like location with a reference, data_shape: one numeric sample plus reference, chart_expression: ordered dot or distribution plot plus test note}
+      - {id: paired-sign, label: 配对样本符号检验, role: compare paired directions without normality, data_shape: paired numeric measurements, chart_expression: paired slope plot plus sign-test p}
+      - {id: paired-wilcoxon, label: 配对样本Wilcoxon符号秩检验, role: compare paired distributions, data_shape: paired numeric measurements, chart_expression: paired slope plot plus signed-rank p}
+      - {id: two-sample-ks, label: 双样本Kolmogorov-Smirnov检验, role: compare two distributions, data_shape: numeric response plus two groups, chart_expression: two ECDFs plus KS statistic/p}
+      - {id: mann-whitney, label: Mann-Whitney检验, role: compare two independent ranked distributions, data_shape: numeric response plus two groups, chart_expression: raw-data distribution plus U/p}
+      - {id: kruskal-wallis, label: Kruskal-Wallis方差分析, role: compare three or more independent ranked groups, data_shape: numeric response plus categorical factor with three or more levels, chart_expression: distribution plot plus H/p and post-hoc note}
+      - {id: mood-median, label: Mood中位数检验, role: compare group medians, data_shape: numeric response plus groups, chart_expression: grouped distribution plus median-test note}
+      - {id: friedman, label: Friedman方差分析, role: compare repeated ranked conditions, data_shape: paired/repeated numeric observations, chart_expression: paired trajectories plus Friedman p}
+  - id: multivariate-analysis
+    label: 多变量分析
+    source: 多变量分析.png
+    methods:
+      - {id: pca, label: 主成份分析, role: reduce correlated numeric variables, data_shape: many numeric variables across observations, chart_expression: scores scatter plus explained-variance annotation}
+      - {id: kmeans, label: K-均值聚类分析, role: partition observations by numeric similarity, data_shape: multiple scaled numeric variables, chart_expression: cluster scatter/heatmap plus cluster labels}
+      - {id: hierarchical-clustering, label: 系统聚类分析, role: form nested clusters, data_shape: multiple numeric variables or distance matrix, chart_expression: dendrogram plus heatmap}
+      - {id: pls, label: 偏最小二乘, role: model multivariate predictors and response, data_shape: multiple numeric predictors and response, chart_expression: scores/loadings and observed-vs-predicted}
+      - {id: multiple-linear-regression, label: 多元线性回归, role: estimate adjusted associations for a continuous response, data_shape: continuous response plus multiple numeric predictors, chart_expression: coefficient intervals plus residual diagnostics}
+      - {id: discriminant-analysis, label: 判别分析, role: classify labeled groups, data_shape: multiple numeric predictors plus categorical class, chart_expression: discriminant-score plot and confusion summary}
+  - id: survival-analysis
+    label: 生存分析
+    source: 生存分析.png
+    methods:
+      - {id: kaplan-meier, label: Kaplan-Meier估计, role: estimate time-to-event survival with censoring, data_shape: duration, event indicator, optional group, chart_expression: survival curve with confidence band and risk table}
+      - {id: cox-model, label: Cox模型估计, role: estimate covariate effects on hazard, data_shape: duration, event indicator, covariates, chart_expression: survival curves or forest plot of hazard ratios}
+      - {id: weibull-fit, label: Weibull拟合, role: fit parametric time-to-event model, data_shape: duration and event indicator, chart_expression: fitted survival/hazard curve with parameter annotation}
+  - id: power-sample-size
+    label: 功效与样本量大小
+    source: 功效与样本量大小.png
+    methods:
+      - {id: power-one-proportion, label: PSS单比率检验, role: plan one-proportion study power/sample size, data_shape: target proportion, reference proportion, alpha/power, chart_expression: power curve or sample-size curve}
+      - {id: power-two-proportion, label: PSS双比率检验, role: plan two-proportion comparison, data_shape: two target proportions, alpha/power, chart_expression: power curve or sample-size curve}
+      - {id: power-one-sample-t, label: PSS单样本t检验, role: plan one-mean study, data_shape: effect size, variance, alpha/power, chart_expression: power curve}
+      - {id: power-two-sample-t, label: PSS双样本t检验, role: plan two-independent-mean study, data_shape: effect size, variance, allocation, alpha/power, chart_expression: power curve}
+      - {id: power-paired-t, label: PSS配对样本t检验, role: plan paired-mean study, data_shape: paired effect size, correlation, alpha/power, chart_expression: power curve}
+      - {id: power-one-way-anova, label: PSS单因素方差分析, role: plan one-way ANOVA, data_shape: group means, variance, alpha/power, chart_expression: power curve}

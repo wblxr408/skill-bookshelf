@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deep Research"
+  short_description: "Verified topic research and literature synthesis"
+  default_prompt: "Use $deep-research to investigate this topic with verified sources."

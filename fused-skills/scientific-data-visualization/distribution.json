@@ -1,0 +1,14 @@
+{
+  "name": "scientific-data-visualization",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 130,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/reproducible": "王博 / scientific-data-visualization",
+    "modules/publication": "Haojae / scipilot-figure-skill"
+  },
+  "runtime": "Python 3.10+。按任务使用 numpy、pandas、matplotlib、scipy、PyYAML、openpyxl；期刊方案按需用 seaborn、SciencePlots、plotly。"
+}

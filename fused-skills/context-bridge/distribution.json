@@ -1,0 +1,20 @@
+{
+  "name": "context-bridge",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 88,
+  "portableChanges": [
+    "modules/bridge/references/hosts.md",
+    "references/hosts.md",
+    "references/hosts.md 及对应保留模块：移除本机解释器与 junction 假设，提供用户目录示例"
+  ],
+  "moduleAttribution": {
+    "modules/bridge": "王博 / context-bridge",
+    "modules/memory-save": "Basic Machines / bm-checkpoint",
+    "modules/memory-resume": "Basic Machines / bm-orient",
+    "modules/task-state": "harness 原作者待核实"
+  },
+  "runtime": "Python 3.9+，核心脚本仅用标准库。Basic Memory 保存/恢复分支需要用户自行配置 Basic Memory MCP；本地交接分支可独立使用。"
+}

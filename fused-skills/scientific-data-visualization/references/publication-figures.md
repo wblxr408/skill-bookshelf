@@ -1,0 +1,5 @@
+# publication figures
+
+Use `modules/publication` for profile_data, setup_style, plot_recipes, layout_tools, visual_qa, export_figure, and strict check_figure. Reuse an existing data profile when adequate. Retain journal reference widths/fonts/DPI, CJK and serif Chinese font resolution, SciencePlots fallback, panel labeling/alignment, constrained/tight layout, colorblind/gray-scale checks, and PDF/SVG/PNG/EPS export.
+
+Read only the selected journal/chart/layout/visual-review resource. Use final publication dimensions and verify current named-venue requirements when necessary; a general preset is a default, not authoritative current venue policy. If Matplotlib already expresses the custom chart well, do not rebuild it through a second renderer just to satisfy another module. Combine semantic, machine-layout, and actual visual evidence once; export after correcting actual defects. Preserve uncertainty definitions and n in the caption; statistical annotation is not automatically added to every figure.

@@ -1,0 +1,5 @@
+interface:
+  display_name: "Scientific Data Visualization"
+  short_description: "Analyze data and create reproducible publication figures with..."
+  default_prompt: "Use $scientific-data-visualization to complete the requested scientific"
+    data visualization task.

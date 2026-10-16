@@ -1,0 +1,4 @@
+interface:
+  display_name: "Impeccable"
+  short_description: "Major-brand frontend design with fluid motion and polished UI"
+  default_prompt: "Use $impeccable to create a coherent major-brand interface with polished components, responsive composition, and exceptionally fluid interactions."

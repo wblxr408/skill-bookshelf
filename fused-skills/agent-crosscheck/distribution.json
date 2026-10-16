@@ -1,0 +1,15 @@
+{
+  "name": "agent-crosscheck",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 10,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/correctness": "agent-crosscheck 原作者待核实",
+    "modules/purpose": "intent-review 原作者待核实",
+    "references": "王博融合整理；保留原始来源边界"
+  },
+  "runtime": "支持技能的 AI 客户端；开发结果审查共享包内 dev 规则。独立审查角色仅在用户授权和工具可用时使用。"
+}

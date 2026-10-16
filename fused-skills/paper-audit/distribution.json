@@ -1,0 +1,17 @@
+{
+  "name": "paper-audit",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev",
+    "academic-paper",
+    "deep-research"
+  ],
+  "sourceFileCount": 330,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/audit": "bahayonghang / academic-writing-skills",
+    "modules/peer-review": "Cheng-I Wu / Imbad0202",
+    "modules/evidence-review": "Cheng-I Wu / Imbad0202"
+  },
+  "runtime": "Python 3.10+；PDF 输入按需安装 pypdf 或 PyMuPDF；稿件相关编译依赖由稿件项目提供。"
+}

@@ -1,0 +1,9 @@
+# Build repair, delivery and operations
+
+For a build failure, reproduce the actual failing repository command, isolate the first causal error, inspect dependency/toolchain compatibility and make the smallest contract-preserving change. Do not conceal errors with disabled checks, broad ignores or type assertions. Validate the affected behavior and required full repository checks once repaired.
+
+For deployment, Docker, Kubernetes, networks and service operation use the matching catalog guide. Determine configuration precedence, secrets injection, startup/readiness/liveness semantics, shutdown and cancellation, data compatibility, rollout and recovery boundaries. Test actual requests, stateful workflows and rollback behavior in the relevant environment. Do not create or execute startup or shallow health probes unless the user explicitly requests that operation. Delivery, troubleshooting, product/operations examples and CI requirements do not authorize these checks. Skip a prescribed probe without explicit authorization and report the affected gap; do not claim its enclosing check passed.
+
+Before delivery review the actual diff, docs/contracts and requirement-to-test evidence. Persist a long-lived architecture choice or useful runbook in its proper owner. An evidence-led production-audit or click-path-audit applies to the affected product slice, not every task by default. Deliver a factual result with unresolved limitations. Follow actual user authorization for commits, push, PR, deployment and external tools; no automatic checkpoint commits or extra universal approval gates.
+
+Monitoring after delivery uses the existing automation tools only when requested. No permanent canary, observer, fixed verification timer or new listener is created merely because an upstream guide mentions it.

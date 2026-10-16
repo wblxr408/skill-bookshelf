@@ -1,0 +1,5 @@
+# State and recovery
+
+Keep useful task journal, failure classification, uncertainty, archive and resume state. Save at a meaningful change, diagnosed failure or handoff. context-bridge owns exact resume and task ownership; engineering-memory owns reusable lessons. Use existing files and listener, not an additional ECC vault/daemon.
+
+Retain current objective, user corrections, scope, acceptance behavior, already collected authorized evidence, incomplete work and one next action. A resume reviews live project state, ownership and requirements; it does not authorize new regression runs. Do not create, modify or run regression tests, or create/run hash-verification, smoke, file-presence/import/startup or shallow health probes without an explicit user request for the specific check, including during diagnosis or recovery. Any replay must be limited to the current requested behavior and obey testing.md; prior completion evidence is not permission to rerun existing suites. Preserve another task's work; repeated failures change the diagnosis, not just a counter. No two-action journaling rule, indefinite retry loop or arbitrary three-failure stop.

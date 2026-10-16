@@ -1,0 +1,4 @@
+interface:
+  display_name: "Browser"
+  short_description: "Operate browser UI and verify web interfaces using proven cua..."
+  default_prompt: "Use $browser to complete the requested browser task."

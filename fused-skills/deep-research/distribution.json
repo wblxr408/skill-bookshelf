@@ -1,0 +1,16 @@
+{
+  "name": "deep-research",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev",
+    "academic-paper",
+    "paper-audit"
+  ],
+  "sourceFileCount": 135,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "agents": "Cheng-I Wu / Imbad0202",
+    "references": "Cheng-I Wu / Imbad0202；王博修改路由"
+  },
+  "runtime": "支持联网检索的 AI 客户端；论文链接、数据库或模型服务需用户自己的连接。不会随包分发 API 密钥。"
+}

@@ -1,0 +1,15 @@
+{
+  "name": "browser",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 65,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/cdp": "stellarlinkco/myclaude / browser",
+    "modules/playwright": "OpenAI / playwright",
+    "references": "王博按工具环境整理的路线"
+  },
+  "runtime": "已有标签页操作需要客户端提供 cua_repl 等浏览器工具。CDP 路线需 Node.js 18+，在安装后的 browser 目录执行 npm install；本地验收需自行安装 Playwright 与浏览器。"
+}

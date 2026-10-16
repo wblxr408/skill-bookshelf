@@ -1,0 +1,5 @@
+# cua
+
+Use the currently exposed `mcp__cua_repl` interface when available. Its first call (or after reset) must contain exactly one documented initialization API: getState when an inventory is needed; getTab for an @mentioned/known tab; createBrowserTab for a requested new URL; getBrowser for a known URL without a specified browser. Read the returned documentation and state before another action. Only use APIs in that documentation. Following context loss in an existing session, call rewriteDocumentation before continuing.
+
+Resolve the user's explicit browser/tab before defaults. For an in-app preview use iab; existing sessions and signed-in pages keep their provider. Read DOM/accessibility state and use supported locator interaction; take visual snapshots when useful. Do not use voice-only screen-context tools in text chat, assume native computer APIs exist, invent locators, or bypass the tool's boundaries through another runtime. Keep interactions bounded and verify their actual UI effect.

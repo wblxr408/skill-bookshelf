@@ -1,0 +1,14 @@
+name: nature
+canvas: {width_in: 7.2, height_in: 4.5, dpi: 300, background: "#FFFFFF"}
+fonts:
+  cjk_family: Microsoft YaHei
+  latin_family: Arial
+  fallback: [Noto Sans CJK SC, DejaVu Sans]
+  sizes: {title: 9, axis_label: 8, tick: 7, legend: 7, annotation: 7, table: 6.5}
+palette:
+  categorical: ["#3C5488", "#E64B35", "#00A087", "#4DBBD5", "#F39B7F", "#8491B4"]
+  sequential: viridis
+  diverging: RdBu_r
+axis: {spine_width: 0.7, grid: false, tick_direction: out}
+legend: {frame: false, location: best}
+table: {header: true, font_size: 6.5}

@@ -1,0 +1,373 @@
+version: 1
+source_corpus:
+  directory: ../../figures
+  image_count: 21
+  inspected: true
+  source_kind: Origin graph-gallery and resource-template screenshots
+categories:
+  - id: exploratory-2d
+    label: Exploratory 2D
+    subcategories:
+      - id: scatter-error
+        label: Scatter, point and error encodings
+        sources: [989f78284d946ef8e2db843bfafe4c96.png, 538cca2840bc3c3a507c13a156139fe8.png, 64486985b348bb117a19a1337dd79b0f.png]
+        grammar: Numeric x-y positions; optional point size/color/error encode additional variables.
+        data_shape: long table with x, y, optional group/error/size/color columns
+        variants:
+          - {id: scatter, label: Scatter plot / 散点图}
+          - {id: centered-scatter, label: Centered-axis scatter / 中轴散点图}
+          - {id: column-scatter, label: Column scatter / 柱形散点图}
+          - {id: y-error, label: Y-error plot / Y误差图}
+          - {id: xy-error, label: X-Y error plot / XY误差图}
+          - {id: error-band, label: Error-band plot / 误差带图}
+          - {id: scatter-rug, label: Scatter with rug / 散点图+轴须}
+          - {id: bubble, label: Bubble plot / 气泡图}
+          - {id: color-mapped-scatter, label: Color-mapped scatter / 颜色映射图}
+          - {id: bubble-color-mapped, label: Bubble plus color mapping / 气泡+颜色映射图}
+          - {id: point-line, label: Point-line plot / 点线图}
+          - {id: stem, label: Stem plot / 棒棒糖图}
+          - {id: drop-line, label: Drop-line plot / 垂线图}
+          - {id: point-density, label: Point-density plot / 点密度图}
+          - {id: color-mapped-line-series, label: Color-mapped line series / 颜色映射的线条序列}
+          - {id: x-offset-scatter, label: X-offset scatter / X偏移散点图}
+      - id: line-sequence
+        label: Lines, steps and paired sequences
+        sources: [989f78284d946ef8e2db843bfafe4c96.png, 969496aaf7d56b6ccf1aa455c1b4ef03.png, 64486985b348bb117a19a1337dd79b0f.png]
+        grammar: Preserve ordered x; draw observations or summaries as connected paths.
+        data_shape: ordered x plus one or more y series; optional subject/group
+        variants:
+          - {id: line, label: Line plot / 折线图}
+          - {id: horizontal-step, label: Horizontal step plot / 水平阶梯图}
+          - {id: vertical-step, label: Vertical step plot / 垂直阶梯图}
+          - {id: spline, label: Spline plot / 样条图}
+          - {id: line-with-symbols, label: Line with symbols / 带端点的线图}
+          - {id: two-point-segment, label: Two-point segment / 2点线段图}
+          - {id: three-point-segment, label: Three-point segment / 3点线段图}
+          - {id: spline-connected, label: Spline-connected plot / 样条连接图}
+          - {id: paired-before-after, label: Before-after comparison / 前后对比图}
+          - {id: multi-y-axis, label: Multiple-Y-axis plot / 多个Y轴图}
+          - {id: two-y, label: Dual-Y plot / 双Y轴}
+          - {id: two-y-line, label: Dual-Y line plot / 双Y轴折线图}
+          - {id: two-y-column, label: Dual-Y column plot / 双Y轴柱状图}
+          - {id: multi-y-grid, label: Multi-panel axis grid / 多窗格图}
+          - {id: zoom-inset, label: Zoom inset / 缩放图}
+  - id: distribution-quality
+    label: Distribution and quality
+    subcategories:
+      - id: box-interval
+        label: Box, interval and uncertainty summaries
+        sources: [3a61faa37c750e2f184d5839767fa009.png]
+        grammar: Compare group location, interval, distribution, and optional raw observations.
+        data_shape: categorical group plus numeric response; optional paired identifier
+        variants:
+          - {id: box, label: Box plot / 箱线图}
+          - {id: interval, label: Interval plot / 区间图}
+          - {id: bar, label: Bar chart / 条形图}
+          - {id: box-points, label: Box with points / 箱线图+点重叠}
+          - {id: box-violin, label: Box with violin / 箱线图+正态曲线}
+          - {id: half-box, label: Half-box plot / 半箱线图}
+          - {id: bar-points, label: Bar with points / 条形图+点重叠}
+          - {id: bar-violin, label: Bar with violin / 条形图+正态曲线}
+          - {id: jitter, label: Jitter plot / 散点间距}
+          - {id: two-y-box, label: Two-Y box plot / 2Ys箱线图}
+          - {id: marginal-box, label: Marginal box plot / 边际箱线图}
+      - id: histogram-density
+        label: Histogram, density and distribution shape
+        sources: [3a61faa37c750e2f184d5839767fa009.png, 48f635084ec4a96d2d2f315f45006f8c.png]
+        grammar: Encode univariate or grouped frequency/density; retain bin policy in spec.
+        data_shape: numeric response; optional group
+        variants:
+          - {id: histogram, label: Histogram / 直方图}
+          - {id: histogram-rug, label: Histogram with rug / 直方图+轴须}
+          - {id: histogram-probability, label: Histogram plus probability / 直方+概率}
+          - {id: multi-panel-histogram, label: Multi-panel histogram / 多面板直方图}
+          - {id: distribution-fit, label: Distribution fit / 分布图}
+          - {id: distribution-rug, label: Distribution with rug / 分布图+轴须}
+          - {id: labeled-histogram, label: Labeled histogram / 带标签的直方图}
+          - {id: stacked-histogram, label: Stacked histogram / 堆积直方图}
+          - {id: population-pyramid, label: Population pyramid / 人口金字塔图}
+          - {id: marginal-histogram, label: Marginal histogram / 边际直方图}
+          - {id: ridgeline, label: Ridgeline plot / 脊线图}
+          - {id: beeswarm, label: Beeswarm plot / 蜂群图}
+          - {id: probability-plot, label: Probability plot / 概率图}
+          - {id: qq, label: Q-Q plot / Q-Q图}
+      - id: violin-quality-control
+        label: Violin, paired distribution and quality control
+        sources: [3a61faa37c750e2f184d5839767fa009.png, 8fb851ba999a738d106ae40e6f2b1e23.png, f45f2f194383c52255c1a49270109e26.png]
+        grammar: Combine density shape with robust summaries or process-control references.
+        data_shape: grouped numeric observations; process order for control charts
+        variants:
+          - {id: violin, label: Violin plot / 小提琴图}
+          - {id: violin-box, label: Violin with box / 带箱体的小提琴图}
+          - {id: violin-points, label: Violin with data / 小提琴图(带数据点)}
+          - {id: violin-quartiles, label: Violin with quartiles / 小提琴图(带四分位)}
+          - {id: violin-line, label: Violin with line / 小提琴图(带横线)}
+          - {id: split-violin, label: Split violin / 分边小提琴图}
+          - {id: half-violin, label: Half violin / 半小提琴图}
+          - {id: confidence-split-violin, label: Split violin with CI / 分边小提琴图(带单独置信区间)}
+          - {id: control-mean-sd, label: Mean-SD quality control / 质量控制(均值标准差)}
+          - {id: bland-altman, label: Bland-Altman plot / Bland-Altman图}
+          - {id: raincloud, label: Raincloud plot / 雨云图}
+          - {id: horizontal-box, label: Horizontal box plot / 水平箱线图}
+          - {id: box-histogram, label: Box with histogram / 带直方图的箱线图}
+  - id: comparison-composition
+    label: Comparison and composition
+    subcategories:
+      - id: bar-column
+        label: Column, bar and waterfall
+        sources: [3f0ec93a83bd74d2fae42ee196941cc2.png, 538cca2840bc3c3a507c13a156139fe8.png, 8fb851ba999a738d106ae40e6f2b1e23.png]
+        grammar: Compare categorical magnitudes; order and baseline are explicit.
+        data_shape: category plus numeric value; optional group/stack
+        variants:
+          - {id: column, label: Column chart / 柱状图}
+          - {id: labeled-column, label: Labeled column chart / 带标签的柱状图}
+          - {id: horizontal-bar, label: Horizontal bar chart / 条形图}
+          - {id: stacked-column, label: Stacked column chart / 堆积柱状图}
+          - {id: stacked-bar, label: Stacked bar chart / 堆积条形图}
+          - {id: percent-stacked-column, label: 100% stacked column / 百分比堆积柱状图}
+          - {id: percent-stacked-bar, label: 100% stacked bar / 百分比堆积条形图}
+          - {id: floating-column, label: Floating column / 浮动柱状图}
+          - {id: floating-bar, label: Floating bar / 浮动条形图}
+          - {id: spiral-bar, label: Spiral bar / 螺旋条形图}
+          - {id: grouped-column, label: Grouped column / 分组柱状图}
+          - {id: grouped-floating-bar, label: Grouped floating bar / 分组浮动条形图}
+          - {id: waterfall, label: Waterfall / 瀑布图}
+          - {id: stacked-waterfall, label: Stacked waterfall / 堆叠瀑布图}
+          - {id: bridge, label: Bridge chart / 桥图}
+          - {id: stacked-bridge, label: Stacked bridge / 堆叠桥图}
+          - {id: multi-panel-bridge, label: Multi-panel bridge / 多面板桥图}
+      - id: part-whole-area
+        label: Pie, ring, area and fill
+        sources: [3f0ec93a83bd74d2fae42ee196941cc2.png, 538cca2840bc3c3a507c13a156139fe8.png]
+        grammar: Use parts-of-whole only for a meaningful fixed total; use area only for ordered x.
+        data_shape: composition categories or ordered x with one/more series
+        variants:
+          - {id: pie-2d, label: 2D pie / 2D饼图}
+          - {id: pie-3d, label: 3D pie / 3D饼图}
+          - {id: ring, label: Ring chart / 环形图}
+          - {id: composite-pie, label: Composite pie / 复合饼图}
+          - {id: composite-bar-pie, label: Composite bar-pie / 复合条饼图}
+          - {id: composite-ring, label: Composite ring / 复合环饼图}
+          - {id: concentric-ring, label: Concentric ring / 同心圆饼图}
+          - {id: multi-radius-pie, label: Multi-radius pie / 多半径饼图}
+          - {id: multi-radius-ring, label: Multi-radius ring / 多半径环形图}
+          - {id: area, label: Area chart / 面积图}
+          - {id: stacked-area, label: Stacked area / 堆积面积图}
+          - {id: percent-stacked-area, label: 100% stacked area / 百分比堆积面积图}
+          - {id: filled-area, label: Filled area / 填充面积图}
+          - {id: two-color-fill, label: Two-color fill / 双色填充图}
+          - {id: banded-area, label: Banded area / 带状图}
+          - {id: percent-banded-area, label: 100% banded area / 百分比带状图}
+  - id: multivariate-coordinated
+    label: Multivariate and coordinated views
+    subcategories:
+      - id: grouped-parallel-flow
+        label: Grouped comparisons, parallel and flow
+        sources: [538cca2840bc3c3a507c13a156139fe8.png]
+        grammar: Show multiple groups or dimensions with consistent semantic color mapping.
+        data_shape: long grouped observations or one row per item with multiple dimensions
+        variants:
+          - {id: grouped-box, label: Grouped box / 分组箱线图}
+          - {id: grouped-interval, label: Grouped interval / 分组区间图}
+          - {id: grouped-mean-bar, label: Grouped mean bar / 分组均值条形图}
+          - {id: grouped-violin, label: Grouped violin / 分组小提琴图}
+          - {id: grouped-half-violin, label: Grouped half violin / 分组半小提琴图}
+          - {id: grouped-candlestick, label: Grouped candlestick / 分组兰烛线}
+          - {id: grid-overlay, label: Grid overlay / 网格叠加图}
+          - {id: xy-grid-overlay, label: XY grid overlay / XY轴网格叠加图}
+          - {id: clustered-bar, label: Clustered bar / 集群图}
+          - {id: parallel-coordinates, label: Parallel coordinates / 平行坐标图}
+          - {id: parallel-chord, label: Parallel chord / 平行索引图}
+          - {id: parallel-set, label: Parallel set / 平行集图}
+          - {id: parallel-banded-set, label: Banded parallel set / 带状覆盖的平行集图}
+          - {id: sankey, label: Sankey / 桑基图}
+          - {id: alluvial, label: Alluvial / 冲积图}
+          - {id: chord, label: Chord / 弦图}
+          - {id: proportion-chord, label: Proportion chord / 比例弦图}
+          - {id: network, label: Network / 网络图}
+          - {id: sunburst, label: Sunburst / 旭日图}
+          - {id: nested-bubble, label: Nested bubble / 圆形嵌套图}
+          - {id: radial-tree, label: Radial tree / 分层边树图}
+      - id: panels-special-layout
+        label: Panels and coordinated layouts
+        sources: [969496aaf7d56b6ccf1aa455c1b4ef03.png, 5762c592732cf2f6522462a639982012.png]
+        grammar: Coordinate repeated views using shared scales and explicit panel semantics.
+        data_shape: multiple response fields or panel variable
+        variants:
+          - {id: xx-y, label: Multiple-X single-Y / 多个X单个Y绘图}
+          - {id: multi-panel-single-series, label: Single-series multi-panel / 多个X单个Y绘制的多面板图}
+          - {id: opposed-panels-horizontal, label: Horizontal opposed panels / 上下对开面板图}
+          - {id: opposed-panels-vertical, label: Vertical opposed panels / 左右对开面板图}
+          - {id: four-panel, label: Four-panel layout / 4窗格图}
+          - {id: nine-panel, label: Nine-panel layout / 9窗格图}
+          - {id: label-partitioned-panels, label: Label-partitioned panels / 根据标签划分多窗格}
+          - {id: time-series-multi-panel, label: Time-series multi-panel / TimeSeries Multi-Pane}
+  - id: matrix-contour-density
+    label: Matrix, contour and density
+    subcategories:
+      - id: heatmap-contour
+        label: Heatmap, contour and matrix
+        sources: [d159fc6db075c4aa7305e80bce244f38.png, 75aa188cf1ea8e609c7cdff2bfefc977.png]
+        grammar: Map a scalar z over a grid; declare interpolation, color scale, and midpoint.
+        data_shape: x-y-z grid or matrix; optional annotation matrix
+        variants:
+          - {id: filled-contour, label: Filled contour / 等高线图颜色填充}
+          - {id: contour-lines, label: Contour lines / 等高线}
+          - {id: gray-contour, label: Gray contour / 灰度映射图}
+          - {id: categorical-contour, label: Categorical contour / 类别等高线图}
+          - {id: heatmap, label: Heatmap / 热图}
+          - {id: labeled-heatmap, label: Labeled heatmap / 带标签热图}
+          - {id: clustered-heatmap, label: Clustered heatmap / 分块热图}
+          - {id: triangular-heatmap, label: Triangular heatmap / 三角形热图}
+          - {id: contour-slice, label: Contour slice / 等高线剖面}
+          - {id: image-slice, label: Image slice / 图像剖面}
+          - {id: polar-contour, label: Polar contour / 极坐标等高线图}
+          - {id: ternary-contour, label: Ternary contour / 三元等高线相图}
+          - {id: kernel-density-2d, label: 2D kernel density / 2D核密度图}
+          - {id: correlation-chord, label: Correlation chord / 相关性和弦图}
+      - id: specialized-matrix
+        label: Specialized matrix and intensity views
+        sources: [75aa188cf1ea8e609c7cdff2bfefc977.png, 9078f138cb08e6b6df49013a76bf91d6.png]
+        grammar: Preserve measurement domain and acquisition axes; do not relabel as generic heatmaps.
+        data_shape: domain-specific matrix or spectra
+        variants:
+          - {id: terrain-3d, label: 3D terrain / 立体地形图}
+          - {id: significant-markers-contour, label: Contour with significance marks / 带显著性标记的热图}
+          - {id: xrd-pdf-stack, label: XRD-PDF stacked plot / XRD-PDF堆叠图}
+          - {id: xps-spectrum-area, label: XPS area plot / XPS面积图}
+          - {id: xps-spectrum-line, label: XPS line plot / XPS线图}
+          - {id: x-offset-stacked-area, label: Y-offset stacked area / Y偏移堆积面积图}
+          - {id: xrd-waterfall, label: XRD waterfall / 带插图的瀑布图}
+  - id: geospatial
+    label: Geospatial
+    subcategories:
+      - id: thematic-map
+        label: Thematic maps
+        sources: [11fd5ffa6a8367bc9a8d082f56787eaa.png, 5762c592732cf2f6522462a639982012.png]
+        grammar: Bind data to geographic geometry; document projection, normalization, and geographic join key.
+        data_shape: spatial geometry/join key plus magnitude/composition
+        variants:
+          - {id: bar-map, label: Bar-map / 条形图地图}
+          - {id: pie-map, label: Pie-map / 饼图地图}
+          - {id: grid-map, label: Grid-map / 网格地图}
+          - {id: sankey-map, label: Sankey-map / 桑基地图}
+          - {id: stif-map, label: Stif map / Stif Map图}
+          - {id: stacked-bar-map, label: Stacked bar map / 堆积条形地图}
+          - {id: percent-stacked-bar-map, label: 100% stacked bar map / 百分比堆积条形地图}
+  - id: polar-ternary-finance
+    label: Polar, ternary and finance
+    subcategories:
+      - id: polar-ternary
+        label: Polar and ternary coordinates
+        sources: [ae39d8f2e4a2fbb437dd72daa994ced1.png, 981c53da09f7320403acad0828f73879.png]
+        grammar: Use non-Cartesian coordinates only when angle/radius or three-part composition has domain meaning.
+        data_shape: angle-radius, ternary a-b-c summing to a whole, or vector components
+        variants:
+          - {id: xyam-vector, label: XYAM vector / XYAM矢量图}
+          - {id: xyxy-vector, label: XYXY vector / XYXY矢量图}
+          - {id: ternary-scatter, label: Ternary scatter / 三元图}
+          - {id: ternary-line, label: Ternary point-line / 三元点线图}
+          - {id: ternary-spline, label: Ternary spline / 三元折线图}
+          - {id: ternary-vector, label: Ternary vector / 三元矢量}
+          - {id: right-triangle-ternary, label: Right-triangle ternary / 直角三角形三元图}
+          - {id: three-line, label: Three-line plot / 三线图}
+          - {id: duro, label: Duro plot / Duro图}
+          - {id: stif, label: Stif plot / Stif图}
+          - {id: radar, label: Radar / 雷达图}
+          - {id: radar-filled, label: Filled radar / 雷达线内填充图}
+          - {id: radar-line, label: Radar line / 雷达线图}
+          - {id: radar-point, label: Radar point / 雷达点图}
+          - {id: polar-r-theta, label: Polar r-theta / 极坐标r-theta图}
+          - {id: polar-theta-r, label: Polar theta-r / 极坐标theta-r图}
+          - {id: polar-line, label: Polar line / 极坐标点线图}
+          - {id: polar-scatter, label: Polar scatter / 极坐标点图}
+          - {id: polar-bar, label: Polar bar / 极坐标条形图}
+          - {id: rose, label: Rose diagram / 风玫瑰图}
+          - {id: radial-bar, label: Radial bar / 径向条形图}
+          - {id: radial-stacked-bar, label: Radial stacked bar / 径向堆积条形图}
+          - {id: polar-vector, label: Polar vector / theta-r极坐标矢量图}
+          - {id: spider, label: Spider plot / 罗盘图}
+          - {id: smith, label: Smith chart / 史密斯图}
+          - {id: ternary-density, label: Ternary density / 三元密度点图}
+      - id: finance
+        label: Financial series
+        sources: [ae39d8f2e4a2fbb437dd72daa994ced1.png]
+        grammar: Preserve market time order and OHLC semantics; do not use as generic bars.
+        data_shape: ordered time with open/high/low/close and optional volume
+        variants:
+          - {id: high-low-close, label: High-low-close / 盘高-盘底-收盘图}
+          - {id: candlestick, label: Candlestick / K线图}
+          - {id: ohlc, label: OHLC / 开盘-盘高-盘低-收盘图}
+          - {id: candlestick-volume, label: Candlestick-volume / K线-成交量图}
+          - {id: stock-line, label: Stock line / 股价线图}
+  - id: three-d-functions
+    label: 3D and functions
+    subcategories:
+      - id: three-d-observation
+        label: 3D points, lines and bars
+        sources: [69dd5b3655157fd212dd261ea1c2bee1.png, af0e9539d9f6453aa9e11deec8da63d7.png, f45f2f194383c52255c1a49270109e26.png]
+        grammar: Use 3D only when depth encodes a measurable third coordinate; provide 2D fallback when possible.
+        data_shape: x-y-z point/trajectory/grid or category plus value
+        variants:
+          - {id: 3d-scatter, label: 3D scatter / 3D散点图}
+          - {id: 3d-scatter-z-error, label: 3D scatter with Z error / 3D散点图+Z误差棒}
+          - {id: 3d-line, label: 3D line / 3D线}
+          - {id: 3d-trajectory, label: 3D trajectory / 3D轨线图}
+          - {id: 3d-vector, label: 3D vector / 3D矢量图}
+          - {id: 3d-vector-xyz, label: 3D XYZ vector / 3D矢量图 XYZ}
+          - {id: 3d-bar, label: 3D bar / 3D条状图}
+          - {id: 3d-stacked-bar, label: 3D stacked bar / 3D堆积条状图}
+          - {id: 3d-percent-stacked-bar, label: 3D percent stacked bar / 3D百分比堆积条状图}
+          - {id: 3d-floating-bar, label: 3D floating bar / 3D浮动条状图}
+          - {id: 3d-histogram, label: 3D histogram / 3D直方图}
+          - {id: 3d-column, label: 3D column / 3D圆柱体图}
+          - {id: 3d-connected-bar, label: Connected 3D bar / 带连接线的3D条状图}
+      - id: surface-volume-function
+        label: Surfaces, volume-like views and mathematical functions
+        sources: [69dd5b3655157fd212dd261ea1c2bee1.png, b08f6f0ec0357d1a86018c73fbedc20d.png, 5c7efd79a031bbca412c1438f9626afe.png]
+        grammar: Make grid interpolation, mesh, colormap, and camera explicit; distinguish measured surface from analytical function.
+        data_shape: x-y-z grid, scalar field, or declared mathematical function
+        variants:
+          - {id: 3d-ribbon, label: 3D ribbon / 3D带状图}
+          - {id: 3d-wall, label: 3D wall / 3D墙形图}
+          - {id: 3d-stacked-wall, label: 3D stacked wall / 3D堆积墙形图}
+          - {id: 3d-percent-stacked-wall, label: 3D percent stacked wall / 3D百分比堆积墙形图}
+          - {id: 3d-waterfall, label: 3D waterfall / 3D瀑布图}
+          - {id: 3d-color-mapped-waterfall, label: Color-mapped 3D waterfall / Y数据颜色映射3D瀑布图}
+          - {id: 3d-wireframe, label: 3D wireframe / 3D线框图}
+          - {id: 3d-wireframe-surface, label: 3D wireframe surface / 3D线框曲面图}
+          - {id: 3d-color-mapped-surface, label: Color-mapped 3D surface / 3D颜色映射的曲面图}
+          - {id: filled-surface, label: Filled surface / 颜色映射曲面图}
+          - {id: 3d-x-base-line, label: 3D X-base line / 3D定X基线图}
+          - {id: 3d-y-base-line, label: 3D Y-base line / 3D定Y基线图}
+          - {id: 3d-triangular-surface, label: 3D triangular surface / 3D颜色映射的3D三元曲面图}
+          - {id: 3d-tetrahedron, label: 3D tetrahedron / 3D四面体}
+          - {id: 3d-ternary-symbol, label: 3D ternary symbol / 3D三元符号}
+          - {id: 3d-heatmap, label: 3D heatmap / 3D堆叠热图}
+          - {id: 2d-function, label: 2D function / 2D图}
+          - {id: 2d-parametric-function, label: 2D parametric function / 2D参数函数图}
+          - {id: 3d-function, label: 3D function / 3D图}
+          - {id: 3d-parametric-function, label: 3D parametric function / 3D参数函数图}
+  - id: domain-templates
+    label: Domain templates
+    subcategories:
+      - id: observed-template-packages
+        label: Resource-template packages (not generic native chart claims)
+        sources: [4ec20150979290b6f79c73e0b8d5e33c.png, 5c7efd79a031bbca412c1438f9626afe.png, 64486985b348bb117a19a1337dd79b0f.png, 8fb851ba999a738d106ae40e6f2b1e23.png, 9078f138cb08e6b6df49013a76bf91d6.png, 981c53da09f7320403acad0828f73879.png, f45f2f194383c52255c1a49270109e26.png]
+        grammar: These are visually inspected examples with domain-specific semantics. Implement only after a dedicated contract is written.
+        data_shape: varies by template; inspect the source-domain requirements before reuse
+        variants:
+          - {id: floating-3d-bar, label: 3D horizontal floating bar / 3D水平浮动条状图, status: reference-only}
+          - {id: clustered-scatter, label: Clustered scatter / 聚类散点图, status: reference-only}
+          - {id: time-series-browser, label: Time series browser / 时间序列浏览, status: reference-only}
+          - {id: grouped-population-pyramid, label: Grouped population pyramid / 分组金字塔图, status: reference-only}
+          - {id: xrd-contour, label: 3D XRD waterfall / 3D XRD瀑布图, status: reference-only}
+          - {id: periodic-table, label: Periodic table / 元素周期表, status: reference-only}
+          - {id: polar-heatmap, label: Polar heatmap / 极坐标热图, status: reference-only}
+          - {id: dual-axis-stacked-column-line, label: Dual-axis stacked column plus line / 双Y轴堆积柱状+线图, status: reference-only}
+          - {id: category-pie, label: Category pie / 来自类别数据的饼图, status: reference-only}
+          - {id: connected-bar, label: Connected bar / 带有连接线的条形图, status: reference-only}
+          - {id: xps-waterfall, label: XPS waterfall / XPS瀑布图, status: reference-only}
+          - {id: color-mapped-waterfall, label: Filled color-mapped waterfall / 填充颜色映射瀑布图, status: reference-only}
+          - {id: correlation-chord-template, label: Correlation chord / 相关性和弦图, status: reference-only}
+          - {id: radial-bubble, label: Radial bubble / 径向气泡图, status: reference-only}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Audit"
+  short_description: "Review academic manuscripts, evidence, methods, and submissio..."
+  default_prompt: "Use $paper-audit to complete the requested paper audit task."

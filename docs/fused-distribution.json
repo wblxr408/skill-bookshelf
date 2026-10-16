@@ -1,0 +1,54 @@
+{
+  "impeccable": {
+    "sourceFiles": 141,
+    "portableChanges": []
+  },
+  "paper-audit": {
+    "sourceFiles": 330,
+    "portableChanges": []
+  },
+  "academic-paper": {
+    "sourceFiles": 399,
+    "portableChanges": [
+      "agents/literature_strategist_agent.md：兼容其他模块对原写作代理路径的引用"
+    ]
+  },
+  "scientific-data-visualization": {
+    "sourceFiles": 130,
+    "portableChanges": []
+  },
+  "dev": {
+    "sourceFiles": 1399,
+    "portableChanges": [
+      "references/compatibility.md"
+    ]
+  },
+  "context-bridge": {
+    "sourceFiles": 88,
+    "portableChanges": [
+      "modules/bridge/references/hosts.md",
+      "references/hosts.md",
+      "references/hosts.md 及对应保留模块：移除本机解释器与 junction 假设，提供用户目录示例"
+    ]
+  },
+  "agent-crosscheck": {
+    "sourceFiles": 10,
+    "portableChanges": []
+  },
+  "pdf": {
+    "sourceFiles": 40,
+    "portableChanges": []
+  },
+  "browser": {
+    "sourceFiles": 65,
+    "portableChanges": []
+  },
+  "deep-research": {
+    "sourceFiles": 135,
+    "portableChanges": []
+  },
+  "engineering-toolbox": {
+    "sourceFiles": 1,
+    "portableChanges": []
+  }
+}

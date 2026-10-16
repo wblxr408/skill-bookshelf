@@ -1,0 +1,14 @@
+{
+  "name": "pdf",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 40,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/native": "OpenAI PDF 原生插件路线",
+    "modules/portable": "OpenAI / PDF 便携路线"
+  },
+  "runtime": "Python 3.10+；按操作安装 pypdf、pdfplumber、reportlab、PyMuPDF。Poppler / pdftoppm 为可选渲染工具；Node.js 仅供宿主需要的文档标记脚本。"
+}

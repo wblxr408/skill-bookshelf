@@ -1,0 +1,17 @@
+{
+  "name": "dev",
+  "version": "2026-10-16.1",
+  "dependencies": [],
+  "sourceFileCount": 1399,
+  "portableChanges": [
+    "references/compatibility.md"
+  ],
+  "moduleAttribution": {
+    "modules/dev": "stellarlinkco/myclaude",
+    "modules/feature": "stellarlinkco/myclaude / do",
+    "modules/routing": "stellarlinkco/myclaude / omo",
+    "modules/journal": "stellarlinkco/myclaude / sparv",
+    "modules/ecc": "Affaan Mustafa / ECC"
+  },
+  "runtime": "适用于支持 SKILL.md 的编码客户端。具体语言、构建和测试工具由目标项目决定，ECC 参考资料不代表已连接全部服务。"
+}

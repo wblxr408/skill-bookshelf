@@ -1,0 +1,4 @@
+interface:
+  display_name: "Academic Paper"
+  short_description: "Write and revise academic papers or theses in prose, LaTeX, a..."
+  default_prompt: "Use $academic-paper to complete the requested academic paper task."

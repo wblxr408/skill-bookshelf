@@ -1,0 +1,5 @@
+interface:
+  display_name: "Agent Crosscheck"
+  short_description: "Review a plan, code change, or answer for user purpose, scope..."
+  default_prompt: "Use $agent-crosscheck to complete the requested agent crosscheck"
+    task.

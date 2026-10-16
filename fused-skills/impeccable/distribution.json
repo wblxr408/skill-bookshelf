@@ -1,0 +1,14 @@
+{
+  "name": "impeccable",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 141,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "modules/impeccable": "Paul Bakaus / Impeccable",
+    "modules/frontend": "Anthropic / frontend-design"
+  },
+  "runtime": "Node.js 18+（使用 JS 工具时）；Impeccable engine 由保留的启动器按原项目方式获取。浏览器验证需客户端提供浏览器工具。"
+}

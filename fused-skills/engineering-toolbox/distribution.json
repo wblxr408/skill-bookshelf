@@ -1,0 +1,13 @@
+{
+  "name": "engineering-toolbox",
+  "version": "2026-10-16.1",
+  "dependencies": [
+    "dev"
+  ],
+  "sourceFileCount": 1,
+  "portableChanges": [],
+  "moduleAttribution": {
+    "SKILL.md": "王博个人路由；依赖 Affaan Mustafa / ECC 资料库"
+  },
+  "runtime": "使用包内 dev 的 ECC 资料库；具体框架、外部服务和依赖按所选指南配置。"
+}
