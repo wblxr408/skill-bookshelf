@@ -1,16 +1,16 @@
 {
   "date": "2026-10-22",
   "stats": {
-    "installedRecords": 291,
-    "distinctNames": 185,
-    "skills": 164,
-    "mergedRecords": 127,
-    "versions": 219,
+    "installedRecords": 293,
+    "distinctNames": 186,
+    "skills": 165,
+    "mergedRecords": 128,
+    "versions": 220,
     "sourceOnly": 1,
     "roots": {
-      "shared": 70,
+      "shared": 71,
       "codex": 60,
-      "claude": 60,
+      "claude": 61,
       "codex-plugins": 87,
       "claude-plugins": 8,
       "project": 6
@@ -2463,6 +2463,25 @@
       "distribution": "packaged"
     },
     {
+      "name": "onetake",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "onetake",
+          "label": "上游公开版 · Windows 运行说明",
+          "sourcePath": "local-skills/onetake",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "Claude Code 目录"
+          ],
+          "fileCount": 92
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
       "name": "open-defense-factory",
       "aliases": [],
       "copies": 1,
@@ -3441,6 +3460,26 @@
       "distribution": "packaged"
     },
     {
+      "name": "tech-stack-evaluator",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "tech-stack-evaluator",
+          "label": "上游固定版本 + 本地流程集成",
+          "sourcePath": "local-skills/tech-stack-evaluator",
+          "copies": 3,
+          "hosts": [
+            "共享 Skill 目录",
+            "Codex 目录",
+            "Claude Code 目录"
+          ],
+          "fileCount": 19
+        }
+      ],
+      "distribution": "packaged"
+    },
+    {
       "name": "template-creator",
       "aliases": [],
       "copies": 1,
@@ -3621,26 +3660,6 @@
             "Codex 插件目录（含缓存）"
           ],
           "fileCount": 5
-        }
-      ],
-      "distribution": "packaged"
-    },
-    {
-      "name": "tech-stack-evaluator",
-      "aliases": [],
-      "copies": 3,
-      "versions": [
-        {
-          "name": "tech-stack-evaluator",
-          "label": "上游固定版本 + 本地流程集成",
-          "sourcePath": "local-skills/tech-stack-evaluator",
-          "copies": 3,
-          "hosts": [
-            "共享 Skill 目录",
-            "Codex 目录",
-            "Claude Code 目录"
-          ],
-          "fileCount": 19
         }
       ],
       "distribution": "packaged"
@@ -6556,6 +6575,26 @@
       "canonical": "tech-stack-evaluator",
       "variant": 1,
       "sourcePath": "local-skills/tech-stack-evaluator"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "onetake",
+      "name": "onetake",
+      "version": "2026-10-22 保存版",
+      "canonical": "onetake",
+      "variant": 1,
+      "sourcePath": "local-skills/onetake"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "onetake",
+      "name": "onetake",
+      "version": "2026-10-22 保存版",
+      "canonical": "onetake",
+      "variant": 1,
+      "sourcePath": "local-skills/onetake"
     }
   ]
 }

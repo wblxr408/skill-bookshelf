@@ -6,7 +6,7 @@
 
 ## 本地全量书橱 · 已去重
 
-书橱网站：https://bo-skill-bookshelf.vercel.app/ 。本次盘点 **288 份本地入口**、184 个名称，归并为 **163 个逻辑 Skill**，合并 125 份重复/兼容入口，并保留 218 个不同资源版本。
+书橱网站：https://bo-skill-bookshelf.vercel.app/ 。本次盘点 **293 份本地入口**、186 个名称，归并为 **165 个逻辑 Skill**，合并 128 份重复/兼容入口，并保留 220 个不同资源版本。
 
 范围覆盖共享、Codex、Claude Code、插件目录（含缓存）及本项目；有文件不等于插件当前已启用。相同用途但没有充分归并依据的技能仍分开保留。同名和已确证的兼容/融合入口合为一张书卡，原名称仍可搜索。
 
@@ -114,4 +114,8 @@
 
 ## 技术栈与依赖选型 · 2026-10-22
 
-新增 [tech-stack-evaluator](local-skills/tech-stack-evaluator/)，保留 Alireza Rezvani 原作者和 MIT 许可。已与 OpenSpec / dev 条件路由衔接，按项目业务、资源、部署和维护约束比较技术与库；说明见 [流程集成](docs/technology-selection-integration.md)。当前书橱 164 项，163 项提供下载。
+新增 [tech-stack-evaluator](local-skills/tech-stack-evaluator/)，保留 Alireza Rezvani 原作者和 MIT 许可。已与 OpenSpec / dev 条件路由衔接，按项目业务、资源、部署和维护约束比较技术与库；说明见 [流程集成](docs/technology-selection-integration.md)。当前书橱 165 项，164 项提供下载。
+
+## 2026-10-22 · onetake
+
+新增第三方技能 onetake，作者 Patrick / feitangyuan，归入视频与媒体。保留 PolyForm Noncommercial 1.0.0 与原作者声明；完整核心工具与 Windows 运行说明可下载，示例成片链接回作者仓库。

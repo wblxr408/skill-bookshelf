@@ -1,0 +1,29 @@
+{
+  "name": "onetake",
+  "title": "onetake 一镜到底产品动效",
+  "author": "Patrick / feitangyuan",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Patrick / feitangyuan · onetake",
+      "url": "https://github.com/feitangyuan/onetake"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "onetake",
+      "label": "上游公开版 · Windows 运行说明",
+      "sourcePath": "local-skills/onetake",
+      "copies": 2,
+      "hosts": [
+        "共享 Skill 目录",
+        "Claude Code 目录"
+      ],
+      "fileCount": 92
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/onetake"
+}

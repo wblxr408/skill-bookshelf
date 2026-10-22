@@ -173,3 +173,5 @@
 11 项融合技能的实质修改见 fused-skills 下各自 CHANGES.md、ATTRIBUTION.md。其余项目为分类、去重、来源保存及可移植说明整理，不因此宣称原始能力由王博原创。微信文章入库工作流按 2026-10-08 的个人定制记录署名王博，Basic Memory 为独立存储依赖。
 
 Niko 非王博署名；scene-to-art-lab 保留第三方归属和原许可限制。插件目录包含缓存，有本地文件不代表插件正在启用。
+
+| onetake | Patrick / feitangyuan | [源码](local-skills/onetake) | 2 | 1 |

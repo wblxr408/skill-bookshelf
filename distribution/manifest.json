@@ -1,5 +1,5 @@
 {
-  "version": "2026-10-22.1",
+  "version": "2026-10-22.2",
   "date": "2026-10-22",
   "repository": "https://github.com/wblxr408/skill-bookshelf",
   "skills": {
@@ -1674,6 +1674,24 @@
       "changes": [],
       "licenseNote": "见源项目说明，本站不另授许可"
     },
+    "onetake": {
+      "title": "onetake 一镜到底产品动效",
+      "dependencies": [],
+      "runtime": "Python 3.12；Playwright + Chromium、NumPy、SciPy、Pillow、Matplotlib、fonttools、brotli、OpenCV；FFmpeg / FFprobe、Node.js。Windows 配置见包内 references/windows-runtime.md；旁白与 3D 依赖按任务另配。",
+      "example": "用 $onetake 为这个 App 制作 15 秒一镜到底发布片，按截图重建界面，交付 HTML 工程和 MP4。",
+      "sourcePath": "local-skills/onetake",
+      "sources": [
+        {
+          "name": "Patrick / feitangyuan · onetake",
+          "url": "https://github.com/feitangyuan/onetake"
+        }
+      ],
+      "changes": [
+        "补充 Windows 虚拟环境与 UTF-8 运行说明，原动效与渲染实现保留。",
+        "示例成片 MP4 / GIF 链接至原作者，分发包保留脚本、模板、字体、图库与案例拆解。"
+      ],
+      "licenseNote": "PolyForm Noncommercial 1.0.0；个人、学习、研究等非商业用途。Required Notice 与完整许可保留于 LICENSE，商业授权见作者 onetake Pro。"
+    },
     "open-defense-factory": {
       "title": "代码安全云入口",
       "dependencies": [],
@@ -2332,6 +2350,30 @@
       "changes": [],
       "licenseNote": "见源项目说明，本站不另授许可"
     },
+    "tech-stack-evaluator": {
+      "title": "技术栈与依赖选型",
+      "dependencies": [],
+      "runtime": "基本选型使用宿主的文件读取与当前官方资料检索能力；按需执行保留的计算脚本时使用 Python 3。脚本接口与输入以实际源码为准。",
+      "example": "使用 $tech-stack-evaluator 为这个网站/业务应用/CLI 选择技术栈和关键库。先读取项目需求、已有代码和部署约束，比较可行候选并说明来源、推荐理由及代价。",
+      "sourcePath": "local-skills/tech-stack-evaluator",
+      "sources": [
+        {
+          "name": "Alireza Rezvani / Claude Skills（固定上游版本）",
+          "url": "https://github.com/alirezarezvani/claude-skills/tree/27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2/engineering-team/skills/tech-stack-evaluator"
+        },
+        {
+          "name": "Skills 目录",
+          "url": "https://skills.sh/alirezarezvani/claude-skills/tech-stack-evaluator"
+        }
+      ],
+      "changes": [
+        "保留上游完整脚本、参考、样例与原入口，并补齐 MIT 许可和固定来源。",
+        "加入按业务与模块约束选型，避免因模型 API 就默认 Python。",
+        "明确 Rust/Go 等基础设施候选的条件，保持用户和项目现有技术约束。",
+        "复用 OpenSpec 设计与 dev 实施；默认评分、成本和安全估算保持证据边界。"
+      ],
+      "licenseNote": "MIT · Copyright (c) 2025 Alireza Rezvani；保留原作者与许可，个人修改单独说明。"
+    },
     "template-creator": {
       "title": "可复用模板制作",
       "dependencies": [],
@@ -2485,30 +2527,6 @@
       ],
       "changes": [],
       "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
-    },
-    "tech-stack-evaluator": {
-      "title": "技术栈与依赖选型",
-      "dependencies": [],
-      "runtime": "基本选型使用宿主的文件读取与当前官方资料检索能力；按需执行保留的计算脚本时使用 Python 3。脚本接口与输入以实际源码为准。",
-      "example": "使用 $tech-stack-evaluator 为这个网站/业务应用/CLI 选择技术栈和关键库。先读取项目需求、已有代码和部署约束，比较可行候选并说明来源、推荐理由及代价。",
-      "sourcePath": "local-skills/tech-stack-evaluator",
-      "sources": [
-        {
-          "name": "Alireza Rezvani / Claude Skills（固定上游版本）",
-          "url": "https://github.com/alirezarezvani/claude-skills/tree/27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2/engineering-team/skills/tech-stack-evaluator"
-        },
-        {
-          "name": "Skills 目录",
-          "url": "https://skills.sh/alirezarezvani/claude-skills/tech-stack-evaluator"
-        }
-      ],
-      "changes": [
-        "保留上游完整脚本、参考、样例与原入口，并补齐 MIT 许可和固定来源。",
-        "加入按业务与模块约束选型，避免因模型 API 就默认 Python。",
-        "明确 Rust/Go 等基础设施候选的条件，保持用户和项目现有技术约束。",
-        "复用 OpenSpec 设计与 dev 实施；默认评分、成本和安全估算保持证据边界。"
-      ],
-      "licenseNote": "MIT · Copyright (c) 2025 Alireza Rezvani；保留原作者与许可，个人修改单独说明。"
     }
   }
 }
