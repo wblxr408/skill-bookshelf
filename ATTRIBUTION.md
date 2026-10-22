@@ -175,3 +175,5 @@
 Niko 非王博署名；scene-to-art-lab 保留第三方归属和原许可限制。插件目录包含缓存，有本地文件不代表插件正在启用。
 
 | onetake | Patrick / feitangyuan | [源码](local-skills/onetake) | 2 | 1 |
+
+| security-audit | Cloudflare, Inc. · MIT | [源码](local-skills/security-audit) | 2 | 1 |

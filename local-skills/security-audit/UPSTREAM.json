@@ -1,0 +1,12 @@
+{
+  "repository": "https://github.com/cloudflare/security-audit-skill",
+  "commit": "c1c8a8c1471069fb0e188eeaff69b8e8db6564a8",
+  "skillPath": "skills/security-audit",
+  "retrieved": "2026-10-22",
+  "license": "MIT",
+  "author": "Cloudflare, Inc.",
+  "localChanges": [
+    "补充根目录 README 与 MIT LICENSE",
+    "新增 Windows / WSL 运行说明并从技能入口链接，审计流程与验证器保持上游实现"
+  ]
+}

@@ -1,0 +1,29 @@
+{
+  "name": "security-audit",
+  "title": "Cloudflare 源码安全审计",
+  "author": "Cloudflare, Inc.",
+  "origin": "third",
+  "sources": [
+    {
+      "name": "Cloudflare · security-audit-skill",
+      "url": "https://github.com/cloudflare/security-audit-skill/tree/c1c8a8c1471069fb0e188eeaff69b8e8db6564a8"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 2,
+  "variants": [
+    {
+      "name": "security-audit",
+      "label": "Cloudflare 固定版本 + Windows 说明",
+      "sourcePath": "local-skills/security-audit",
+      "copies": 2,
+      "hosts": [
+        "共享 Skill 目录",
+        "Claude Code 目录"
+      ],
+      "fileCount": 28
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/security-audit"
+}

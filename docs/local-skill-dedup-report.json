@@ -1,16 +1,16 @@
 {
   "date": "2026-10-22",
   "stats": {
-    "installedRecords": 293,
-    "distinctNames": 186,
-    "skills": 165,
-    "mergedRecords": 128,
-    "versions": 220,
+    "installedRecords": 295,
+    "distinctNames": 187,
+    "skills": 166,
+    "mergedRecords": 129,
+    "versions": 221,
     "sourceOnly": 1,
     "roots": {
-      "shared": 71,
+      "shared": 72,
       "codex": 60,
-      "claude": 61,
+      "claude": 62,
       "codex-plugins": 87,
       "claude-plugins": 8,
       "project": 6
@@ -3663,6 +3663,25 @@
         }
       ],
       "distribution": "packaged"
+    },
+    {
+      "name": "security-audit",
+      "aliases": [],
+      "copies": 2,
+      "versions": [
+        {
+          "name": "security-audit",
+          "label": "Cloudflare 固定版本 + Windows 说明",
+          "sourcePath": "local-skills/security-audit",
+          "copies": 2,
+          "hosts": [
+            "共享 Skill 目录",
+            "Claude Code 目录"
+          ],
+          "fileCount": 28
+        }
+      ],
+      "distribution": "packaged"
     }
   ],
   "records": [
@@ -6595,6 +6614,26 @@
       "canonical": "onetake",
       "variant": 1,
       "sourcePath": "local-skills/onetake"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "security-audit",
+      "name": "security-audit",
+      "version": "c1c8a8c14710",
+      "canonical": "security-audit",
+      "variant": 1,
+      "sourcePath": "local-skills/security-audit"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "security-audit",
+      "name": "security-audit",
+      "version": "c1c8a8c14710",
+      "canonical": "security-audit",
+      "variant": 1,
+      "sourcePath": "local-skills/security-audit"
     }
   ]
 }

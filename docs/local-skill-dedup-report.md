@@ -177,3 +177,7 @@
 ## 2026-10-22 · onetake 增量收录
 
 共享目录及 Claude Code 链接归并为一项 onetake，保留一个可分发资源版本。当前共 165 项技能、220 个资源版本。
+
+## 2026-10-22 · Cloudflare security-audit 增量收录
+
+共享目录和 Claude Code 链接归并为一项；保留 Cloudflare 固定上游版本及完整资源。当前 166 项技能，221 个资源版本。
