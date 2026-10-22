@@ -17,3 +17,7 @@ OpenSpec 规划时完成必要选型并记录在原设计位置；dev 实施时�
 ## 来源与许可
 
 上游：https://github.com/alirezarezvani/claude-skills/tree/27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2/engineering-team/skills/tech-stack-evaluator 。保留 LICENSE、完整 scripts/references/assets，本站不替代原作者署名。
+
+## 多维选型适配
+
+明确每次覆盖开发速度、运行速度、资源性能、安全、生态、复用、库质量与有效供给等 14 维；先筛硬约束，再按项目优先级和证据取舍。 详见 [选型准则](references/evaluation-rubric.md) 与 [决策模板](references/decision-template.md)。原始上游资源和许可保留，主入口与本地准则决定实际工作流。

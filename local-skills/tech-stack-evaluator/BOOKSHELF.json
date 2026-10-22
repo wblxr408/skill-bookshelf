@@ -18,7 +18,7 @@
   "variants": [
     {
       "name": "tech-stack-evaluator",
-      "label": "上游固定版本 + 本地流程集成",
+      "label": "上游固定版本 + 本地多维选型集成",
       "sourcePath": "local-skills/tech-stack-evaluator",
       "copies": 3,
       "hosts": [
@@ -26,7 +26,7 @@
         "Codex 目录",
         "Claude Code 目录"
       ],
-      "fileCount": 19
+      "fileCount": 22
     }
   ],
   "redistribution": "packaged",
