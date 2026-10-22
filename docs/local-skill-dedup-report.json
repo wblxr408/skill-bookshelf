@@ -1,16 +1,16 @@
 {
-  "date": "2026-10-16",
+  "date": "2026-10-22",
   "stats": {
-    "installedRecords": 288,
-    "distinctNames": 184,
-    "skills": 163,
-    "mergedRecords": 125,
-    "versions": 218,
+    "installedRecords": 291,
+    "distinctNames": 185,
+    "skills": 164,
+    "mergedRecords": 127,
+    "versions": 219,
     "sourceOnly": 1,
     "roots": {
-      "shared": 69,
-      "codex": 59,
-      "claude": 59,
+      "shared": 70,
+      "codex": 60,
+      "claude": 60,
       "codex-plugins": 87,
       "claude-plugins": 8,
       "project": 6
@@ -3624,6 +3624,26 @@
         }
       ],
       "distribution": "packaged"
+    },
+    {
+      "name": "tech-stack-evaluator",
+      "aliases": [],
+      "copies": 3,
+      "versions": [
+        {
+          "name": "tech-stack-evaluator",
+          "label": "上游固定版本 + 本地流程集成",
+          "sourcePath": "local-skills/tech-stack-evaluator",
+          "copies": 3,
+          "hosts": [
+            "共享 Skill 目录",
+            "Codex 目录",
+            "Claude Code 目录"
+          ],
+          "fileCount": 19
+        }
+      ],
+      "distribution": "packaged"
     }
   ],
   "records": [
@@ -6506,6 +6526,36 @@
       "canonical": "write-page",
       "variant": 1,
       "sourcePath": "local-skills/write-page"
+    },
+    {
+      "host": "共享 Skill 目录",
+      "root": "shared",
+      "relative": "tech-stack-evaluator",
+      "name": "tech-stack-evaluator",
+      "version": "local-integration-2026-10-22",
+      "canonical": "tech-stack-evaluator",
+      "variant": 1,
+      "sourcePath": "local-skills/tech-stack-evaluator"
+    },
+    {
+      "host": "Codex 目录",
+      "root": "codex",
+      "relative": "tech-stack-evaluator",
+      "name": "tech-stack-evaluator",
+      "version": "local-integration-2026-10-22",
+      "canonical": "tech-stack-evaluator",
+      "variant": 1,
+      "sourcePath": "local-skills/tech-stack-evaluator"
+    },
+    {
+      "host": "Claude Code 目录",
+      "root": "claude",
+      "relative": "tech-stack-evaluator",
+      "name": "tech-stack-evaluator",
+      "version": "local-integration-2026-10-22",
+      "canonical": "tech-stack-evaluator",
+      "variant": 1,
+      "sourcePath": "local-skills/tech-stack-evaluator"
     }
   ]
 }

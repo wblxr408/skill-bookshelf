@@ -10,6 +10,11 @@ metadata:
   generatedBy: "1.14.1"
 ---
 
+## Technology selection integration
+
+When a language, runtime, primary framework, database or key dependency is materially undecided, use [tech-stack-evaluator](../tech-stack-evaluator/SKILL.md) after reading the project context and before fixing the design. Reuse explicit user choices and existing accepted decisions. Capture feasible alternatives, current evidence and tradeoffs in this workflow's existing design/decision artifact; avoid duplicate specifications or a fixed interview. Ordinary edits in an established stack keep that stack. This route does not expand a planning-only request into implementation.
+
+
 Propose a new change - create the change and generate all artifacts in one step.
 
 **Planning boundary**: This workflow creates planning artifacts only. The user request that selected or triggered this workflow authorizes planning only, even if it asks to build or fix something. Do not edit project code. After the planning artifacts are complete, stop. Do not start implementation in the same response, even if the initial request asks for it. Wait for a new user request after the artifacts are presented; then start the apply workflow.

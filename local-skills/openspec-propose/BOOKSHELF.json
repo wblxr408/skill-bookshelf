@@ -2,7 +2,7 @@
   "name": "openspec-propose",
   "title": "OpenSpec 需求提案",
   "author": "OpenSpec",
-  "origin": "third",
+  "origin": "modified",
   "sources": [
     {
       "name": "OpenSpec",

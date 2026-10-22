@@ -1,6 +1,6 @@
 {
-  "version": "2026-10-16.2",
-  "date": "2026-10-16",
+  "version": "2026-10-22.1",
+  "date": "2026-10-22",
   "repository": "https://github.com/wblxr408/skill-bookshelf",
   "skills": {
     "-21risk-automation": {
@@ -826,7 +826,9 @@
     },
     "dev": {
       "title": "统一开发入口",
-      "dependencies": [],
+      "dependencies": [
+        "tech-stack-evaluator"
+      ],
       "runtime": "适用于支持 SKILL.md 的编码客户端。具体语言、构建和测试工具由目标项目决定，ECC 参考资料不代表已连接全部服务。",
       "example": "用 $dev 完成这个功能，先把本次改动的可观察行为写清楚，再实施和验证。",
       "sourcePath": "fused-skills/dev",
@@ -843,7 +845,9 @@
       "changes": [
         "按任务选载技术指南，保留现有设计、记忆与连续性所有者。",
         "当前契约要求仅对本次行为做最小 TDD；回归测试需用户另行明确授权。",
-        "旧 do / omo / sparv / harness 名称作为兼容路由。"
+        "旧 do / omo / sparv / harness 名称作为兼容路由。",
+        "加入技术选型条件路由，使用现有 design/decision 记录候选、来源与取舍。",
+        "已确定的技术栈保持约束，局部修改只比较新增的关键依赖。"
       ],
       "licenseNote": "各模块分别适用其原许可。保留模块内 LICENSE / NOTICE；不得用王博的署名替代原作者。 myclaude 当前公开 LICENSE 为 AGPL-3.0，随包保留；各旧模块没有版本对应许可时明确保留这一边界。"
     },
@@ -1702,7 +1706,9 @@
     },
     "openspec-apply-change": {
       "title": "OpenSpec 实施",
-      "dependencies": [],
+      "dependencies": [
+        "tech-stack-evaluator"
+      ],
       "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
       "example": "使用 $openspec-apply-change 完成具体任务；先读取入口，按需加载相关参考资料。",
       "sourcePath": "local-skills/openspec-apply-change",
@@ -1712,7 +1718,10 @@
           "url": "https://github.com/Fission-AI/OpenSpec"
         }
       ],
-      "changes": [],
+      "changes": [
+        "加入技术选型条件路由，使用现有 design/decision 记录候选、来源与取舍。",
+        "已确定的技术栈保持约束，局部修改只比较新增的关键依赖。"
+      ],
       "licenseNote": "MIT"
     },
     "openspec-archive-change": {
@@ -1732,7 +1741,9 @@
     },
     "openspec-explore": {
       "title": "OpenSpec 需求探索",
-      "dependencies": [],
+      "dependencies": [
+        "tech-stack-evaluator"
+      ],
       "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
       "example": "使用 $openspec-explore 完成具体任务；先读取入口，按需加载相关参考资料。",
       "sourcePath": "local-skills/openspec-explore",
@@ -1742,12 +1753,17 @@
           "url": "https://github.com/Fission-AI/OpenSpec"
         }
       ],
-      "changes": [],
+      "changes": [
+        "加入技术选型条件路由，使用现有 design/decision 记录候选、来源与取舍。",
+        "已确定的技术栈保持约束，局部修改只比较新增的关键依赖。"
+      ],
       "licenseNote": "MIT"
     },
     "openspec-propose": {
       "title": "OpenSpec 需求提案",
-      "dependencies": [],
+      "dependencies": [
+        "tech-stack-evaluator"
+      ],
       "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
       "example": "使用 $openspec-propose 完成具体任务；先读取入口，按需加载相关参考资料。",
       "sourcePath": "local-skills/openspec-propose",
@@ -1757,7 +1773,10 @@
           "url": "https://github.com/Fission-AI/OpenSpec"
         }
       ],
-      "changes": [],
+      "changes": [
+        "加入技术选型条件路由，使用现有 design/decision 记录候选、来源与取舍。",
+        "已确定的技术栈保持约束，局部修改只比较新增的关键依赖。"
+      ],
       "licenseNote": "MIT"
     },
     "openspec-sync-specs": {
@@ -1777,7 +1796,9 @@
     },
     "openspec-update-change": {
       "title": "OpenSpec 变更修订",
-      "dependencies": [],
+      "dependencies": [
+        "tech-stack-evaluator"
+      ],
       "runtime": "按源文件中的运行依赖说明配置 Python、Node 或相应专用工具。",
       "example": "使用 $openspec-update-change 完成具体任务；先读取入口，按需加载相关参考资料。",
       "sourcePath": "local-skills/openspec-update-change",
@@ -1787,7 +1808,10 @@
           "url": "https://github.com/Fission-AI/OpenSpec"
         }
       ],
-      "changes": [],
+      "changes": [
+        "加入技术选型条件路由，使用现有 design/decision 记录候选、来源与取舍。",
+        "已确定的技术栈保持约束，局部修改只比较新增的关键依赖。"
+      ],
       "licenseNote": "MIT"
     },
     "orcid-api": {
@@ -2461,6 +2485,30 @@
       ],
       "changes": [],
       "licenseNote": "原许可与署名保留于源文件；本站未另授统一许可"
+    },
+    "tech-stack-evaluator": {
+      "title": "技术栈与依赖选型",
+      "dependencies": [],
+      "runtime": "基本选型使用宿主的文件读取与当前官方资料检索能力；按需执行保留的计算脚本时使用 Python 3。脚本接口与输入以实际源码为准。",
+      "example": "使用 $tech-stack-evaluator 为这个网站/业务应用/CLI 选择技术栈和关键库。先读取项目需求、已有代码和部署约束，比较可行候选并说明来源、推荐理由及代价。",
+      "sourcePath": "local-skills/tech-stack-evaluator",
+      "sources": [
+        {
+          "name": "Alireza Rezvani / Claude Skills（固定上游版本）",
+          "url": "https://github.com/alirezarezvani/claude-skills/tree/27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2/engineering-team/skills/tech-stack-evaluator"
+        },
+        {
+          "name": "Skills 目录",
+          "url": "https://skills.sh/alirezarezvani/claude-skills/tech-stack-evaluator"
+        }
+      ],
+      "changes": [
+        "保留上游完整脚本、参考、样例与原入口，并补齐 MIT 许可和固定来源。",
+        "加入按业务与模块约束选型，避免因模型 API 就默认 Python。",
+        "明确 Rust/Go 等基础设施候选的条件，保持用户和项目现有技术约束。",
+        "复用 OpenSpec 设计与 dev 实施；默认评分、成本和安全估算保持证据边界。"
+      ],
+      "licenseNote": "MIT · Copyright (c) 2025 Alireza Rezvani；保留原作者与许可，个人修改单独说明。"
     }
   }
 }

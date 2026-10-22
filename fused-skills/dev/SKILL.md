@@ -5,6 +5,11 @@ metadata:
   version: "fusion-ecc-2026-10-14"
 ---
 
+## Technology selection
+
+When the task leaves a consequential language, runtime, framework, database or key dependency undecided, read [tech-stack-evaluator](../tech-stack-evaluator/SKILL.md) before choosing the design or implementation. Reuse the project's approved decision and explicit technology constraints; ordinary edits within an established stack do not reopen stack selection. Record the actual constraints, feasible alternatives, current sources and accepted tradeoffs in the existing OpenSpec design or project decision. For new libraries follow [research and contracts](references/research-contracts.md).
+
+
 # Unified development
 
 Read [the execution contract](references/fusion-policy.md). Derive the goal, scope, constraints, and observable acceptance criteria from the request and repository. Inspect the smallest relevant index and real callers; reuse applicable Basic Memory evidence. Complete already-authorized work and ask only for a material missing choice.

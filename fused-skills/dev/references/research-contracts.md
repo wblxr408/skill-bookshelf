@@ -9,3 +9,5 @@ For cross-service/frontend-backend work, establish one authoritative OpenAPI/sch
 For consequential choices, write an ADR only when another session/reviewer needs the decision: context, alternatives, decision, consequences, reversal cost and evidence. Use engineering-memory for personal reusable lessons, project documentation for project truth, and context-bridge for unfinished work. These have different ownership; do not duplicate the same large narrative in all three.
 
 Source methods: search-first, contract-first, documentation-lookup, iterative-retrieval, architecture-decision-records, context-and-decisions, change-impact, codebase-onboarding and code-tour. Use one relevant catalog guide.
+
+For a consequential stack or library choice, use [tech-stack-evaluator](../../tech-stack-evaluator/SKILL.md) against actual business, deployment and maintenance constraints. Preserve existing decisions for bounded edits and cite current sources instead of default scores.

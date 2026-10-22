@@ -10,6 +10,11 @@ metadata:
   generatedBy: "1.14.1"
 ---
 
+## Technology selection integration
+
+Reuse the technology decision in the change's design and the project's existing stack. If a material stack choice or new key dependency remains unresolved, read [tech-stack-evaluator](../tech-stack-evaluator/SKILL.md), complete the necessary comparison in the existing design/decision context, then implement within the user's authorized scope. Do not reopen approved choices or select a language solely because a model API is involved.
+
+
 Implement tasks from an OpenSpec change.
 
 **Store selection:** If the user names a store (a store is a standalone OpenSpec repo registered on this machine) or the work lives in one, run `openspec store list --json` to discover registered store ids, then pass `--store <id>` on the commands that read or write specs and changes (`new change`, `status`, `instructions`, `list`, `show`, `validate`, `archive`, `doctor`, `context`, `schemas`, `view`). Once selected, treat `--store <id>` as sticky for the rest of the workflow. Every unscoped example of those commands below is shorthand: before running it, append the flag. For example, run `openspec status --change "<name>" --json --store "<id>"`, not the unscoped form shown below. Other commands do not take the flag. Hints printed by commands already carry the flag; keep it on follow-ups. Without a store, commands act on the nearest local `openspec/` root.

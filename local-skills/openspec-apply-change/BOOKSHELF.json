@@ -2,7 +2,7 @@
   "name": "openspec-apply-change",
   "title": "OpenSpec 实施",
   "author": "OpenSpec",
-  "origin": "third",
+  "origin": "modified",
   "sources": [
     {
       "name": "OpenSpec",

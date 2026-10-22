@@ -111,3 +111,7 @@
 ## 署名更正
 
 `scene-to-art-lab` 的原作者为 **Niko**，不是王博的署名；按第三方收录处理，其个人非商业许可限制再分发。原作者来源与王博融合贡献分别保留，不将整套第三方资料统一改署名或改成 MIT。
+
+## 技术栈与依赖选型 · 2026-10-22
+
+新增 [tech-stack-evaluator](local-skills/tech-stack-evaluator/)，保留 Alireza Rezvani 原作者和 MIT 许可。已与 OpenSpec / dev 条件路由衔接，按项目业务、资源、部署和维护约束比较技术与库；说明见 [流程集成](docs/technology-selection-integration.md)。当前书橱 164 项，163 项提供下载。

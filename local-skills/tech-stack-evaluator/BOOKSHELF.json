@@ -1,0 +1,34 @@
+{
+  "name": "tech-stack-evaluator",
+  "title": "技术栈与依赖选型",
+  "author": "Alireza Rezvani",
+  "origin": "modified",
+  "sources": [
+    {
+      "name": "Alireza Rezvani / Claude Skills（固定上游版本）",
+      "url": "https://github.com/alirezarezvani/claude-skills/tree/27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2/engineering-team/skills/tech-stack-evaluator"
+    },
+    {
+      "name": "Skills 目录",
+      "url": "https://skills.sh/alirezarezvani/claude-skills/tech-stack-evaluator"
+    }
+  ],
+  "aliases": [],
+  "installedCopies": 3,
+  "variants": [
+    {
+      "name": "tech-stack-evaluator",
+      "label": "上游固定版本 + 本地流程集成",
+      "sourcePath": "local-skills/tech-stack-evaluator",
+      "copies": 3,
+      "hosts": [
+        "共享 Skill 目录",
+        "Codex 目录",
+        "Claude Code 目录"
+      ],
+      "fileCount": 19
+    }
+  ],
+  "redistribution": "packaged",
+  "sourcePath": "local-skills/tech-stack-evaluator"
+}

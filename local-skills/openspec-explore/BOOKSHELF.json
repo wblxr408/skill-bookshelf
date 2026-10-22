@@ -2,7 +2,7 @@
   "name": "openspec-explore",
   "title": "OpenSpec 需求探索",
   "author": "OpenSpec",
-  "origin": "third",
+  "origin": "modified",
   "sources": [
     {
       "name": "OpenSpec",

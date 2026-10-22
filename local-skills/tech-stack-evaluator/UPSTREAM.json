@@ -1,0 +1,14 @@
+{
+  "repository": "https://github.com/alirezarezvani/claude-skills",
+  "revision": "27cfcd0fb0a41f60adffcbd5271fdf8839f86ed2",
+  "path": "engineering-team/skills/tech-stack-evaluator",
+  "author": "Alireza Rezvani",
+  "license": "MIT",
+  "adaptedBy": "王博 · 个人流程集成",
+  "adaptedOn": "2026-10-22",
+  "changes": [
+    "保留原入口、全部上游脚本/参考/样例和原许可。",
+    "加入按业务及模块约束选型、资料核验和估算边界。",
+    "接入已有 OpenSpec 规划与 dev 实施，不新增并行工作流。"
+  ]
+}

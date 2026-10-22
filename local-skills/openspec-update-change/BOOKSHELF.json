@@ -2,7 +2,7 @@
   "name": "openspec-update-change",
   "title": "OpenSpec 变更修订",
   "author": "OpenSpec",
-  "origin": "third",
+  "origin": "modified",
   "sources": [
     {
       "name": "OpenSpec",
